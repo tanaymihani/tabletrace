@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tabletrace"
+version = "0.1.0"
+description = "OCR and table extraction for materials-science papers, with schema validation, Hungarian-matched scoring, and a calibrated human-review threshold."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "pdfplumber>=0.11",
+    "pypdfium2>=4.30",
+    "pytesseract>=0.3.10",
+    "pillow>=10",
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "scipy>=1.11",
+    "pint>=0.23",
+    "rapidfuzz>=3.5",
+    "pydantic>=2.5",
+    "jiwer>=3.0",
+    "matplotlib>=3.8",
+    "torch>=2.1",
+    "transformers>=4.40",
+    "timm>=0.9",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+tabletrace = "tabletrace.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501", "B905"]  # zips here pair structures of equal length by construction
