@@ -25,18 +25,23 @@ Main results:
 
 ## Pipeline
 
-```
-PDF ─► page router ─┬─► text layer ─► drop hidden text, rebuild words ───────┐
-                    └─► image or scan ─► Tesseract (fine-tuned) ─────────────┤
-        Table Transformer: tables, rows, columns, header, spans ─────────────┤
-                                                                             ▼
-                         assign words to cells, interpret headers
-                                                                             ▼
-                         normalize numbers and units (pint)
-                                                                             ▼
-                         Pydantic validation ─► valid records / quarantine
-                                                                             ▼
-                         confidence per value ─► calibrated review flag
+```mermaid
+flowchart TD
+    A["PDF page"] --> B{"Page router"}
+    B -->|"text layer"| C["Drop hidden text,<br/>rebuild words"]
+    B -->|"image or scan"| D["Tesseract OCR<br/>(fine-tuned)"]
+    A --> E["Table Transformer<br/>tables, rows, columns, spans"]
+    C --> F["Assign words to cells"]
+    D --> F
+    E --> F
+    F --> G["Interpret headers,<br/>orientation and units"]
+    G --> H["Normalize numbers<br/>and units (pint)"]
+    H --> I{"Pydantic validation"}
+    I -->|"invalid"| J["quarantine.jsonl"]
+    I -->|"valid"| K["Confidence per value"]
+    K --> L{"Calibrated threshold"}
+    L -->|"above"| M["Accepted records"]
+    L -->|"below"| N["Human review"]
 ```
 
 ## Results
