@@ -15,8 +15,9 @@ Main results:
 - On the six held-out documents it gets strict F1 0.715 (95% interval over documents 0.50 to
   0.91). On pages with a text layer it gets all 122 labeled values right (1.000); on real scans,
   0.506.
-- Against other tools on the same pages, labels and scorer, it's ahead of Docling, GROBID, Camelot
-  and pdfplumber, and level with the vision-language models on held-out documents. Qwen2.5-VL-7B,
+- Against other tools on the same pages, labels and scorer, it's clearly ahead of GROBID, Camelot
+  and pdfplumber, ahead of Docling on the point estimate (0.715 vs 0.452, but the interval for the
+  difference crosses zero), and level with the vision-language models. Qwen2.5-VL-7B,
   transcribing tables that then go through TableTrace's interpretation, gets 0.784 there (paired
   difference -0.07, interval -0.44 to +0.37). The VLMs read rendered journal pages far better than
   Tesseract (0.950 vs 0.444) but return no location for a value, miss whole tables, and lose the
