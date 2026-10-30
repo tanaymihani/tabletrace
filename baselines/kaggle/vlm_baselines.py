@@ -105,9 +105,8 @@ class StopOnLoop(StoppingCriteria):
         return stop
 
 
-def free(*objs):
-    for o in objs:
-        del o
+def free():
+    """Release cached GPU memory. Callers drop their own references to a model first."""
     gc.collect()
     torch.cuda.empty_cache()
 
@@ -138,7 +137,8 @@ def run_nougat():
             save("nougat", repo, p, secs, processor.post_process_generation(t, fix_markdown=False),
                  {"image": "1600 px longest side, resized by the processor", "max_new_tokens": 3584})
         log(f"nougat {[p['paper_id'] + '_p' + str(p['page']) for p in batch]} {secs:.1f}s/page")
-    free(model, processor)
+    del model, processor
+    free()
     drop_hf_cache(repo)
 
 
@@ -211,14 +211,16 @@ def main():
                 m, pr = run_chat("olmocr2", repo, OLMOCR_PROMPT, "img_olmocr", 6000,
                                  processor_repo="Qwen/Qwen2.5-VL-7B-Instruct",
                                  settings={"note": "olmOCR's own prompt and 1288 px render, greedy instead of temperature 0.1"})
-                free(m, pr)
+                del m, pr
+                free()
                 drop_hf_cache(repo)
             elif name in ("qwen25vl", "qwen3vl"):
                 repo = {"qwen25vl": "Qwen/Qwen2.5-VL-7B-Instruct", "qwen3vl": "Qwen/Qwen3-VL-8B-Instruct"}[name]
                 m, pr = run_chat(f"{name}_tables", repo, TABLE_PROMPT, "img_page", 8192)
-                if time.time() - START < 8 * 3600:
+                if os.environ.get("TT_RECORDS", "1") == "1" and time.time() - START < 8 * 3600:
                     run_chat(f"{name}_records", repo, RECORDS_PROMPT, "img_page", 8192, model=m, processor=pr)
-                free(m, pr)
+                del m, pr
+                free()
                 drop_hf_cache(repo)
         except Exception:
             log(f"{name} failed:\n{traceback.format_exc()}")
