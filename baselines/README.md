@@ -63,10 +63,21 @@ its sample name from the last header row only. A name split over two rows is now
 both halves are element formulas. TableTrace's own extractions are byte-identical with and without
 the change, in all four experiments.
 
+## What didn't run
+
+- **Marker 1.10** was still running on its Kaggle CPU session after about five hours, so it isn't
+  in the results. `kaggle/marker_kaggle.py` and `run_marker.py` are ready to rerun it, ideally on a
+  GPU session.
+- **Qwen3-VL-8B** failed while loading on the 2 x T4 machine, after Qwen2.5-VL had finished. It's
+  still listed in `kaggle/vlm_baselines.py`.
+
 ## Things to know when reading the numbers
 
 - Several tools read the hidden duplicate tables in four of the MDPI papers too: pdfplumber,
   Camelot and Docling all put two values in each cell on those pages.
+- Qwen2.5-VL answered `NO TABLES` on two pages that have one (Yao 2016 page 3 and the 1975 NASA
+  table), and every value it did return was correct. Its prompt asked for HTML; it answered in
+  markdown, which the scorer reads too.
 - With 10 documents the intervals are wide. A difference whose paired interval crosses zero isn't
   a difference this data can show.
 - Seconds per page aren't comparable across rows: some ran on a laptop CPU, some on Kaggle GPUs,

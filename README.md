@@ -12,19 +12,29 @@ a confidence score, and values below a calibrated threshold get sent to a person
 
 Main results:
 
-- On pages with a text layer it gets all 122 labeled values right (F1 1.000). Getting there meant
-  finding that four of the five MDPI papers hide a shifted duplicate of their tables in the text
-  layer. Reading the raw text layer only gets 0.758.
-- On real scans it gets strict F1 0.506. The OCR text that already comes inside those scanned PDFs
-  gets 0.265.
+- On the six held-out documents it gets strict F1 0.715 (95% interval over documents 0.50 to
+  0.91). On pages with a text layer it gets all 122 labeled values right (1.000); on real scans,
+  0.506.
+- Against other tools on the same pages, labels and scorer, it's ahead of Docling, GROBID, Camelot
+  and pdfplumber, and level with the vision-language models on held-out documents. Qwen2.5-VL-7B,
+  transcribing tables that then go through TableTrace's interpretation, gets 0.784 there (paired
+  difference -0.07, interval -0.44 to +0.37). The VLMs read rendered journal pages far better than
+  Tesseract (0.950 vs 0.444) but return no location for a value, miss whole tables, and lose the
+  three-level header of the 1975 NASA report. Asked to produce the records itself, the same model
+  gets 0.288. ([comparison](#compared-with-other-tools))
+- Four of the five MDPI papers hide a shifted duplicate of their tables in the text layer, inside a
+  clipped form. Reading the raw text layer only gets 0.758; pdfplumber, Camelot and Docling all
+  read the hidden copy. Tracking the clip gets 1.000.
 - Stock Tesseract can't output `±`, `σ` or `ε` at all, so I fine-tuned it on synthetic table cells.
   Character error on table regions went from 27.9% to 18.8%.
 - The review threshold targeted 10% error on auto-accepted values and got 6.2% on the held-out
-  papers. When I re-ran the calibration over every way of splitting the papers, it held much less
-  often (details below).
+  papers. When I re-ran the calibration over every way of splitting the papers, it held in only 47%
+  of the splits (details below).
 - 514 labeled values across 10 documents. 278 of them were checked against an independent source,
   including LitXAlloy (all 102 shared values agree) and the MPEA dataset (113 of 124 agree; the
-  other 11 aren't in the tables).
+  other 11 aren't in the tables). A blind second pass over 50 random labels agreed on all 50.
+
+![A value on a scanned NASA page, boxed, and the record it became](reports/figures/provenance.png)
 
 ## Pipeline
 
@@ -84,6 +94,58 @@ It all runs on my laptop CPU (an 8 GB M2). After the OCR cache is built, the ten
 about two minutes. The full report with per-document tables is in [reports/results.md](reports/results.md).
 
 ![F1 by document](reports/figures/f1_by_document.png)
+
+## Compared with other tools
+
+Every tool reads the same 16 labeled pages that TableTrace reads, with its default settings. Its
+tables go through TableTrace's interpretation, normalization and Hungarian matching, so the
+comparison is about finding tables and reading their cells; the "records" row is the exception,
+where the model returns material, property, value and unit itself. Strict F1, with 95% intervals
+from resampling the documents:
+
+| System | Held-out documents | Text-layer pages | Rendered pages | Real scans | Location it gives a value |
+|---|---|---|---|---|---|
+| **TableTrace** | **0.715** [0.50, 0.91] | 1.000 | 0.444 | 0.506 | cell box |
+| Qwen2.5-VL 7B, tables | 0.784 [0.49, 0.96] | 0.870 | 0.950 | 0.383 | page only |
+| olmOCR-2 7B | 0.662 [0.49, 0.97] | 0.943 | 0.700 | 0.258 | page only |
+| Nougat base | 0.662 [0.33, 0.92] | 0.492 | 0.764 | 0.269 | page only |
+| Docling 2.145 | 0.452 [0.10, 0.77] | 0.588 | 0.190 | 0.469 | cell box |
+| GROBID 0.9.1 | 0.432 [0.06, 0.71] | 0.741 | 0.000 | 0.157 | table box |
+| Qwen2.5-VL 7B, records | 0.288 [0.18, 0.55] | 0.323 | 0.740 | 0.233 | page only |
+| Camelot 2.0, stream | 0.261 [0.00, 0.44] | 0.612 | 0.000 | 0.204 | table box |
+| pdfplumber 0.11, word alignment | 0.008 [0.00, 0.02] | 0.000 | 0.000 | 0.006 | table box |
+
+![Baselines](reports/figures/baselines.png)
+
+What the numbers say, with ten documents behind them:
+
+- **No tool is ahead of TableTrace on held-out documents by more than the noise**, and TableTrace is
+  ahead of GROBID, Camelot and pdfplumber by more than the noise (paired intervals above zero). The
+  differences from Qwen2.5-VL, olmOCR-2, Nougat and Docling have intervals that cross zero.
+- **The VLMs are the better readers of rendered pages.** On the three journal papers rendered to
+  images, Qwen2.5-VL gets 0.950 and TableTrace 0.444 (paired interval for the difference -1.00 to
+  -0.30). They read `±`, σ, ε and subscripts that Tesseract mangles. Every one of Qwen's 229
+  values is correct, so its misses are whole tables: it answered `NO TABLES` on Yao 2016 and on the
+  1975 NASA report.
+- **The 1975 typewritten report is where structure matters.** olmOCR-2 read nearly every number on
+  it, but dropped the MN/m² / ksi split from the three-level header, so no value lines up with its
+  column. TableTrace's dual-unit logic is built for that page and gets 0.42 there.
+- **The interpretation layer is doing real work.** The same Qwen model asked for the records
+  directly gets 0.288 instead of 0.784. It names properties for columns that aren't one of the four
+  (shear moduli in GPa come back as Vickers hardness) and repeats values: 146 wrong records on one
+  Tseng 2018 page that holds 6 labeled values.
+- **Hidden text again.** pdfplumber, Camelot and Docling all read the clipped duplicate tables in
+  the MDPI papers, so their cells there hold two values each. The image-based models never see it.
+- **Provenance.** TableTrace and Docling return a box for every cell. The page-level models
+  (Nougat, olmOCR, Qwen) return text, so a value can't be traced back to its cell without matching
+  it against the page again. VLM errors also look plausible: olmOCR-2 read `Cu5` as `Cu2` in every
+  alloy name on the Sanchez page.
+
+Not in the table: Marker 1.10 didn't finish on a Kaggle CPU machine in the time I had, and
+Qwen3-VL-8B failed to load on the Kaggle GPUs; both runners are in `baselines/`.
+Adding a VLM's reading to TableTrace's confidence score as a third route didn't beat the score
+without it on the calibration papers, so it stays off. All of it, including how each tool was run,
+is in [reports/baselines.md](reports/baselines.md) and [baselines/README.md](baselines/README.md).
 
 ## Data
 

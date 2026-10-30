@@ -1,0 +1,15 @@
+{
+ "tool": "qwen25vl_tables",
+ "version": "Qwen/Qwen2.5-VL-7B-Instruct",
+ "paper_id": "tseng2018",
+ "page": 7,
+ "seconds": 29.5,
+ "settings": {
+  "prompt": "Transcribe every table on this page.\n\nFor each table, first write its caption on its own line exactly as printed (for example \"Table 3. Mechanical properties of ...\"), then the table as one HTML <table>. Use <th> for header cells, and colspan or rowspan for merged cells. Copy each cell exactly as printed, including ±, units, footnote marks and words such as NA. Write subscripts inline (Nb1.5TaTiZr0.5). Don't add, compute, convert or summarize anything. If there is no table on the page, answer NO TABLES.",
+  "image": "img_page",
+  "max_new_tokens": 8192,
+  "decoding": "greedy, float16, T4 x2"
+ },
+ "tables": [],
+ "text": "Table 3. The room temperature compressive yield strength and fracture strain of the Hf-Mo-Nb-Ta-Ti-Zr alloy series.\n\n| Yield strength (MPa) | HfMoNb TaTiZr | HfNbTa TiZr [25] | HfMoTa TiZr | HfMoNb TiZr | HfMoNb TaZr | HfMoNb TaTi |\n|---------------------|----------------|------------------|-------------|--------------|--------------|-------------|\n| Fracture strain (%) | 1512           | 929              | > 50        | 1600         | 1351         | 1524        |\n|                     | 12             | > 50             | 4           | 20           | 16           | 27          |\n\nTable 4. The elevated temperature compressive yield strength (MPa) of the Hf-Mo-Nb-Ta-Ti-Zr alloy series.\n\n| Temperature (°C) | HfMoNb TaTiZr | HfNbTa TiZr [25] | HfMoTa TiZr | HfMoNb TiZr | HfMoNb TaZr | HfMoNb TaTi |\n|------------------|----------------|------------------|-------------|--------------|--------------|-------------|\n| 800              | 1007           | 535              | 1045        | 829          | 1005         | 822         |\n| 1000             | 814            | 295              | 855         | 721          | 927          | 778         |\n| 1200             | 556            | 92               | 404         | 301          | 694          | 699         |\n| 1400             | N. A.          | N. A.            | N. A.       | N. A.        | 278          | 367         |"
+}

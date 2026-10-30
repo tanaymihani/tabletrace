@@ -1,0 +1,15 @@
+{
+ "tool": "qwen25vl_tables",
+ "version": "Qwen/Qwen2.5-VL-7B-Instruct",
+ "paper_id": "sanchez2019",
+ "page": 9,
+ "seconds": 31.45,
+ "settings": {
+  "prompt": "Transcribe every table on this page.\n\nFor each table, first write its caption on its own line exactly as printed (for example \"Table 3. Mechanical properties of ...\"), then the table as one HTML <table>. Use <th> for header cells, and colspan or rowspan for merged cells. Copy each cell exactly as printed, including ±, units, footnote marks and words such as NA. Write subscripts inline (Nb1.5TaTiZr0.5). Don't add, compute, convert or summarize anything. If there is no table on the page, answer NO TABLES.",
+  "image": "img_page",
+  "max_new_tokens": 8192,
+  "decoding": "greedy, float16, T4 x2"
+ },
+ "tables": [],
+ "text": "Table 3. Density (ρ) and compressive mechanical properties of the manufactured alloys at RT.\n\n|Alloy| ρ (g/cm³)| σ<sub>y</sub> (MPa)| σ<sub>max</sub> (MPa)| ε<sub>max</sub> (%)| E (GPa)| σ<sub>max</sub>/ρ|\n|---|---|---|---|---|---|---|\n|Al<sub>65</sub>Cu<sub>5</sub>Fe<sub>5</sub>Mg<sub>5</sub>Si<sub>15</sub>Zn<sub>5</sub>| 3.08| 422 ± 75| 482 ± 98| 1| 88.7 ± 04| 156|\n|Al<sub>65</sub>Cu<sub>5</sub>Mg<sub>5</sub>Ni<sub>5</sub>Si<sub>15</sub>Zn<sub>5</sub>| 3.15| 534 ± 04| 574 ± 32| 1| 107.8 ± 17| 182|\n|Al<sub>70</sub>Cr<sub>5</sub>Cu<sub>5</sub>Mg<sub>5</sub>Si<sub>10</sub>Zn<sub>5</sub>| 3.06| 490 ± 18| 608 ± 30| 6| 78.4 ± 03| 199|\n|Al<sub>70</sub>Cu<sub>5</sub>Mg<sub>5</sub>Mn<sub>5</sub>Si<sub>10</sub>Zn<sub>5</sub>| 2.98| 622 ± 15| 644 ± 13| 2| 114.1 ± 02| 216|\n|Al<sub>70</sub>Cu<sub>5</sub>Mg<sub>5</sub>Si<sub>10</sub>Zn<sub>5</sub>Zr<sub>5</sub>| 3.06| 565 ± 79| 633 ± 42| 4| 105.1 ± 27| 207|"
+}

@@ -1,0 +1,15 @@
+{
+ "tool": "qwen25vl_tables",
+ "version": "Qwen/Qwen2.5-VL-7B-Instruct",
+ "paper_id": "haas2019",
+ "page": 6,
+ "seconds": 57.97,
+ "settings": {
+  "prompt": "Transcribe every table on this page.\n\nFor each table, first write its caption on its own line exactly as printed (for example \"Table 3. Mechanical properties of ...\"), then the table as one HTML <table>. Use <th> for header cells, and colspan or rowspan for merged cells. Copy each cell exactly as printed, including ±, units, footnote marks and words such as NA. Write subscripts inline (Nb1.5TaTiZr0.5). Don't add, compute, convert or summarize anything. If there is no table on the page, answer NO TABLES.",
+  "image": "img_page",
+  "max_new_tokens": 8192,
+  "decoding": "greedy, float16, T4 x2"
+ },
+ "tables": [],
+ "text": "Table 2. Ultimate tensile strength (UTS) and strain to failure (\\(\\varepsilon_{\\mathrm{f}}\\)) at different temperature levels for the conventionally cast (CC) state and the directionally solidified (DS) state.\n\n|  | UTS in MPa |  | YS in MPa |  | \\(\\varepsilon_{\\mathrm{f}}\\) in \\% |\n| --- | --- | --- | --- | --- | --- |\n|  | CC | DS | CC | DS | CC | DS |\n| \\(\\sim 23^{\\circ} \\mathrm{C}\\) | \\(696 \\pm 33\\) | \\(1197 \\pm 6\\) | \\(520 \\pm 19\\) | \\(627 \\pm 9\\) | \\(49 \\pm 0\\) | \\(27 \\pm 1\\) |\n| \\(600^{\\circ} \\mathrm{C}\\) | \\(561 \\pm 50\\) | \\(1006 \\pm 16\\) | \\(470 \\pm 8\\) | \\(594 \\pm 3\\) | \\(11 \\pm 8\\) | \\(12 \\pm 2\\) |\n| \\(700^{\\circ} \\mathrm{C}\\) | \\(560 \\pm 27\\) | \\(840 \\pm 1\\) | \\(461 \\pm 10\\) | \\(547 \\pm 42\\) | \\(9 \\pm 4\\) | \\(17 \\pm 5\\) |\n| \\(800^{\\circ} \\mathrm{C}\\) | \\(536 \\pm 7\\) | \\(575 \\pm 7\\) | \\(445 \\pm 2\\) | \\(399 \\pm 1\\) | \\(6 \\pm 4\\) | \\(20 \\pm 4\\) |\n| \\(900^{\\circ} \\mathrm{C}\\) | \\(312 \\pm 6\\) | \\(319 \\pm 1\\) | \\(219 \\pm 6\\) | \\(243 \\pm 2\\) | \\(8 \\pm 6\\) | \\(34 \\pm 1\\) |"
+}

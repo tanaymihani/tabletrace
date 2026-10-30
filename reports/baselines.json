@@ -1494,6 +1494,362 @@
      "docs": 3
     }
    }
+  },
+  "qwen25vl_records": {
+   "version": "Qwen/Qwen2.5-VL-7B-Instruct",
+   "provenance": "page",
+   "tables": 0,
+   "pages": 16,
+   "seconds_per_page": 236.6525000000001,
+   "settings": {
+    "prompt": "List every mechanical property value printed in the tables on this page, for these four properties only: Vickers hardness, yield strength (including 0.2% proof stress), ultimate tensile or compressive strength, and elongation or fracture strain.\n\nAnswer with a JSON array and nothing else, one object per value, with these keys:\n- \"material\": the sample name exactly as printed in its row or column\n- \"property\": one of \"vickers_hardness\", \"yield_strength\", \"ultimate_strength\", \"elongation\"\n- \"value\": the number as printed, without its \u00b1 uncertainty\n- \"unit\": the unit as printed, for example \"HV\", \"MPa\", \"GPa\", \"ksi\" or \"%\"\n- \"test_temperature\": the test temperature with its unit as printed (for example \"-423 F\" or \"650 C\"), or null if the table doesn't give one\n- \"table\": the printed table number, or null\n\nLeave out values marked as calculated, predicted or theoretical, and averages. If there are none, answer [].",
+    "image": "img_page",
+    "max_new_tokens": 8192,
+    "decoding": "greedy, float16, T4 x2"
+   },
+   "quarantined": 28,
+   "sets": {
+    "all documents": {
+     "strict": 0.3333333333333333,
+     "strict_ci": [
+      0.23420240587921334,
+      0.5376884422110553
+     ],
+     "lenient": 0.33970276008492567,
+     "lenient_ci": [
+      0.23851349070072544,
+      0.5388445233048325
+     ],
+     "n_correct": 157,
+     "n_pred": 428,
+     "n_gold": 514,
+     "docs": 10
+    },
+    "held-out documents": {
+     "strict": 0.288,
+     "strict_ci": [
+      0.1752873563218391,
+      0.5505226480836237
+     ],
+     "lenient": 0.288,
+     "lenient_ci": [
+      0.1752873563218391,
+      0.5505226480836237
+     ],
+     "n_correct": 72,
+     "n_pred": 272,
+     "n_gold": 228,
+     "docs": 6
+    },
+    "text layer": {
+     "strict": 0.32335329341317365,
+     "strict_ci": [
+      0.1596244131455399,
+      0.6115702479338843
+     ],
+     "lenient": 0.32335329341317365,
+     "lenient_ci": [
+      0.1596244131455399,
+      0.6115702479338843
+     ],
+     "n_correct": 54,
+     "n_pred": 212,
+     "n_gold": 122,
+     "docs": 4
+    },
+    "rendered pages": {
+     "strict": 0.7401574803149606,
+     "strict_ci": [
+      0.56,
+      0.8571428571428571
+     ],
+     "lenient": 0.7401574803149606,
+     "lenient_ci": [
+      0.56,
+      0.8571428571428571
+     ],
+     "n_correct": 47,
+     "n_pred": 64,
+     "n_gold": 63,
+     "docs": 3
+    },
+    "real scans": {
+     "strict": 0.23284823284823286,
+     "strict_ci": [
+      0.09195402298850575,
+      0.2684563758389262
+     ],
+     "lenient": 0.24532224532224534,
+     "lenient_ci": [
+      0.09195402298850575,
+      0.28859060402684567
+     ],
+     "n_correct": 56,
+     "n_pred": 152,
+     "n_gold": 329,
+     "docs": 3
+    }
+   },
+   "diff": {
+    "all documents": {
+     "strict": 0.2972192127121705,
+     "strict_ci": [
+      0.07774255134582617,
+      0.5779162655707824
+     ],
+     "lenient": 0.43386170362038307,
+     "lenient_ci": [
+      0.1889123707798581,
+      0.5963898112010243
+     ],
+     "n_correct": 291,
+     "n_pred": 409,
+     "n_gold": 514,
+     "docs": 10
+    },
+    "held-out documents": {
+     "strict": 0.42740469973890344,
+     "strict_ci": [
+      0.004133242027000605,
+      0.7008547008547008
+     ],
+     "lenient": 0.42740469973890344,
+     "lenient_ci": [
+      0.004133242027000605,
+      0.7008547008547008
+     ],
+     "n_correct": 137,
+     "n_pred": 155,
+     "n_gold": 228,
+     "docs": 6
+    },
+    "text layer": {
+     "strict": 0.6766467065868264,
+     "strict_ci": [
+      0.38842975206611574,
+      0.8403755868544601
+     ],
+     "lenient": 0.6766467065868264,
+     "lenient_ci": [
+      0.38842975206611574,
+      0.8403755868544601
+     ],
+     "n_correct": 122,
+     "n_pred": 122,
+     "n_gold": 122,
+     "docs": 4
+    },
+    "rendered pages": {
+     "strict": -0.2957130358705162,
+     "strict_ci": [
+      -0.8571428571428571,
+      0.1356521739130434
+     ],
+     "lenient": -0.20682414698162732,
+     "lenient_ci": [
+      -0.5238095238095237,
+      0.1356521739130434
+     ],
+     "n_correct": 20,
+     "n_pred": 27,
+     "n_gold": 63,
+     "docs": 3
+    },
+    "real scans": {
+     "strict": 0.27309404219421196,
+     "strict_ci": [
+      0.15230865148347822,
+      0.7413793103448276
+     ],
+     "lenient": 0.47114634550967316,
+     "lenient_ci": [
+      0.21956521739130436,
+      0.7413793103448276
+     ],
+     "n_correct": 149,
+     "n_pred": 260,
+     "n_gold": 329,
+     "docs": 3
+    }
+   }
+  },
+  "qwen25vl_tables": {
+   "version": "Qwen/Qwen2.5-VL-7B-Instruct",
+   "provenance": "page",
+   "tables": 18,
+   "pages": 16,
+   "seconds_per_page": 46.79500000000001,
+   "settings": {
+    "prompt": "Transcribe every table on this page.\n\nFor each table, first write its caption on its own line exactly as printed (for example \"Table 3. Mechanical properties of ...\"), then the table as one HTML <table>. Use <th> for header cells, and colspan or rowspan for merged cells. Copy each cell exactly as printed, including \u00b1, units, footnote marks and words such as NA. Write subscripts inline (Nb1.5TaTiZr0.5). Don't add, compute, convert or summarize anything. If there is no table on the page, answer NO TABLES.",
+    "image": "img_page",
+    "max_new_tokens": 8192,
+    "decoding": "greedy, float16, T4 x2"
+   },
+   "quarantined": 1,
+   "sets": {
+    "all documents": {
+     "strict": 0.6164199192462988,
+     "strict_ci": [
+      0.2623941390751526,
+      0.9439308262079935
+     ],
+     "lenient": 0.6164199192462988,
+     "lenient_ci": [
+      0.2623941390751526,
+      0.9439308262079935
+     ],
+     "n_correct": 229,
+     "n_pred": 229,
+     "n_gold": 514,
+     "docs": 10
+    },
+    "held-out documents": {
+     "strict": 0.784,
+     "strict_ci": [
+      0.4864864864864865,
+      0.9629629629629629
+     ],
+     "lenient": 0.784,
+     "lenient_ci": [
+      0.4864864864864865,
+      0.9629629629629629
+     ],
+     "n_correct": 147,
+     "n_pred": 147,
+     "n_gold": 228,
+     "docs": 6
+    },
+    "text layer": {
+     "strict": 0.8703703703703703,
+     "strict_ci": [
+      0.45454545454545453,
+      1.0
+     ],
+     "lenient": 0.8703703703703703,
+     "lenient_ci": [
+      0.45454545454545453,
+      1.0
+     ],
+     "n_correct": 94,
+     "n_pred": 94,
+     "n_gold": 122,
+     "docs": 4
+    },
+    "rendered pages": {
+     "strict": 0.95,
+     "strict_ci": [
+      0.8,
+      1.0
+     ],
+     "lenient": 0.95,
+     "lenient_ci": [
+      0.8,
+      1.0
+     ],
+     "n_correct": 57,
+     "n_pred": 57,
+     "n_gold": 63,
+     "docs": 3
+    },
+    "real scans": {
+     "strict": 0.3832923832923833,
+     "strict_ci": [
+      0.0,
+      0.958904109589041
+     ],
+     "lenient": 0.3832923832923833,
+     "lenient_ci": [
+      0.0,
+      0.958904109589041
+     ],
+     "n_correct": 78,
+     "n_pred": 78,
+     "n_gold": 329,
+     "docs": 3
+    }
+   },
+   "diff": {
+    "all documents": {
+     "strict": 0.014132626799205017,
+     "strict_ci": [
+      -0.2788047206697465,
+      0.29418803161009344
+     ],
+     "lenient": 0.15714454445900994,
+     "lenient_ci": [
+      -0.25795062044694195,
+      0.5156926728533704
+     ],
+     "n_correct": 291,
+     "n_pred": 409,
+     "n_gold": 514,
+     "docs": 10
+    },
+    "held-out documents": {
+     "strict": -0.06859530026109661,
+     "strict_ci": [
+      -0.43679724030940786,
+      0.3656874265569917
+     ],
+     "lenient": -0.06859530026109661,
+     "lenient_ci": [
+      -0.43679724030940786,
+      0.3656874265569917
+     ],
+     "n_correct": 137,
+     "n_pred": 155,
+     "n_gold": 228,
+     "docs": 6
+    },
+    "text layer": {
+     "strict": 0.12962962962962965,
+     "strict_ci": [
+      0.0,
+      0.5454545454545454
+     ],
+     "lenient": 0.12962962962962965,
+     "lenient_ci": [
+      0.0,
+      0.5454545454545454
+     ],
+     "n_correct": 122,
+     "n_pred": 122,
+     "n_gold": 122,
+     "docs": 4
+    },
+    "rendered pages": {
+     "strict": -0.5055555555555555,
+     "strict_ci": [
+      -1.0,
+      -0.30434782608695654
+     ],
+     "lenient": -0.41666666666666663,
+     "lenient_ci": [
+      -0.6,
+      -0.30434782608695654
+     ],
+     "n_correct": 20,
+     "n_pred": 27,
+     "n_gold": 63,
+     "docs": 3
+    },
+    "real scans": {
+     "strict": 0.12264989175006152,
+     "strict_ci": [
+      -0.4893388921977367,
+      0.5945273631840796
+     ],
+     "lenient": 0.3331762075395352,
+     "lenient_ci": [
+      -0.4893388921977367,
+      0.7595628415300546
+     ],
+     "n_correct": 149,
+     "n_pred": 260,
+     "n_gold": 329,
+     "docs": 3
+    }
+   }
   }
  },
  "third_route": {
