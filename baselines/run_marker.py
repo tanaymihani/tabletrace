@@ -4,8 +4,10 @@ Marker 2 moved OCR to a separate vision-model server (vLLM or llama.cpp), so thi
 1.x release, which runs its models in-process. Keeps each Table block's HTML and position, and
 the caption when Marker groups one with the table. Runs in its own environment:
     uv venv .venvs/marker --python 3.11
-    uv pip install --python .venvs/marker/bin/python -r baselines/requirements/marker.txt
+    uv pip install --python .venvs/marker/bin/python "marker-pdf==1.10.2"
     .venvs/marker/bin/python baselines/run_marker.py
+The reported run used the same code on a Kaggle CPU session (kaggle/marker_kaggle.py), because
+Marker's models don't fit next to everything else in 8 GB of memory.
 """
 
 from __future__ import annotations

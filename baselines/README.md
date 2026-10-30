@@ -46,8 +46,9 @@ interpretation, normalization and Hungarian matching. The results are in
 
 The GPU models run in float16 (T4s have no bfloat16), with the vision encoders kept in float32,
 greedy decoding, and a stop when a model starts repeating itself. Exact environments for the
-local tools are in `requirements/`. The saved outputs of every run are in `raw/`, one file per
-page, so the scoring can be rerun without any of the tools:
+local tools are in `requirements/`, and the Kaggle scripts install pinned versions themselves.
+The saved outputs of every run are in `raw/`, one file per page, so the scoring can be rerun
+without any of the tools:
 
 ```bash
 python -m tabletrace baselines          # writes reports/baselines.md, .json and the figure
