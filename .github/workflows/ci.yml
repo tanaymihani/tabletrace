@@ -1,0 +1,30 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - name: Install the pinned dependencies (CPU build of torch)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.lock --extra-index-url https://download.pytorch.org/whl/cpu
+          pip install --no-deps -e .
+      - name: Lint
+        run: ruff check .
+      - name: Unit tests
+        run: pytest
+      - name: Labels regenerate exactly from the transcriptions
+        run: |
+          python labels/transcriptions.py
+          git diff --exit-code labels/ground_truth.csv

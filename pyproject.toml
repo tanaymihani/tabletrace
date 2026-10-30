@@ -26,6 +26,7 @@ dependencies = [
     "transformers>=4.40",
     "timm>=0.9",
     "requests>=2.31",
+    "img2pdf>=0.5",
 ]
 
 [project.optional-dependencies]
