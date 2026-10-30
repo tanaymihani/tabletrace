@@ -29,17 +29,18 @@ can be traced back to a line in that file and from there to the page.
 
 ## Checks
 
-Three checks against independent sources cover 255 of the 514 values. None of them required
+Four checks against independent sources cover 278 of the 514 values. None of them required
 changing a label.
 
 | Check | Values covered | Result |
 |---|---|---|
 | LitXAlloy (Radical AI, LitXBench, 2026) curates the same seven journal papers. Matching is one-to-one on property and value within 1%. | 102 LitXAlloy values | All 102 agree, and all 74 LitXAlloy values whose source is a table are in these labels. The 6 LitXAlloy values that aren't here come from the text of the paper, not a table. See `reports/label_qa.md`. |
+| The MPEA dataset (Borg et al. 2020, *Scientific Data*) compiles the same seven papers too. Same matching rule. | 124 MPEA values | 113 agree, 23 of them labels LitXAlloy doesn't cover. The other 11 aren't in these tables: 5 compressive strengths and 4 whole-percent fracture strains for Chen 2014 (26, 11, 8 and 3, where Table 3 prints 25.62, 11.25, 7.5 and 2.5), and 2 values Yao 2016 gives in the text. See `reports/label_qa_mpea.md`. |
 | NASA TM X-3216 prints every UTS twice, in MN/m² and ksi. | 97 UTS values | 96 of 97 agree after converting. The one that doesn't (Ti-50V-1Si at 650 °C: 530 MN/m² next to 79 ksi) is wrong in the source. I confirmed it at 400 DPI and labeled it as printed. |
 | NASA TP-3288 Table 2 prints an "Averages" row for each group, so the individual values have to reproduce it. | 56 values | 13 of the 15 group averages match. The two that don't are mistakes in the source, confirmed at 450 DPI: the Ti-5Al-2.5Sn air UTS samples average 108.1 ksi (printed as 108.5, and as 108.4 in Table 4), and the Ti-6Al-4V air 1-inch elongations average 10.8% (printed as 17.4%). |
 
-`make labels` regenerates the CSV and reruns the two internal checks, and `make litx` reruns the
-LitXAlloy comparison.
+`make labels` regenerates the CSV and reruns the two internal checks, `make litx` reruns the
+LitXAlloy comparison and `make mpea` the MPEA one.
 
 The rest of the values (the patent, the elongation columns of TM X-3216, and Tables 3 and 4 of
 TP-3288) were only checked against the page image and the OCR layer in the PDF. `make review`

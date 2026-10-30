@@ -2,7 +2,7 @@
 PY ?= .venv/bin/python
 export HF_HUB_DISABLE_PROGRESS_BARS = 1
 
-.PHONY: all data model run eval test labels litx review ocr-model hf-release clean
+.PHONY: all data model run eval test labels litx mpea review ocr-model hf-release clean
 
 all: data model run eval
 
@@ -33,6 +33,10 @@ labels:
 ## cross-check the labels against LitXAlloy (writes labels/litxalloy_reference.csv, reports/label_qa.md)
 litx:
 	$(PY) scripts/build_litxalloy_reference.py
+
+## cross-check the labels against the MPEA dataset (writes reports/label_qa_mpea.md)
+mpea:
+	$(PY) scripts/check_mpea.py
 
 ## rebuild the fine-tuned Tesseract model from scratch (about 30 minutes on a laptop CPU)
 ocr-model:

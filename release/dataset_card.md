@@ -101,6 +101,7 @@ the page images.
 | Check | Values covered | Result |
 |---|---|---|
 | LitXAlloy curates the same seven journal papers. Matching is one-to-one on property and value within 1%. | 102 LitXAlloy values | all 102 agree, and all 74 LitXAlloy values whose source cites a table are in these labels |
+| The MPEA dataset (Borg et al. 2020) compiles the same seven papers | 124 MPEA values | 113 agree; the other 11 come from figures or text, or are fracture strains rounded to whole percent |
 | NASA TM X-3216 prints every UTS twice, in MN/m² and ksi | 97 values | 96 of 97 agree; the other is an error in the report itself (530 MN/m² next to 79 ksi), labeled as printed |
 | NASA TP-3288 prints an "Averages" row for each group | 56 values | 13 of 15 group averages reproduce; the other two are errors in the source, confirmed at 450 DPI |
 | A second, blind pass over 50 randomly chosen values | 50 values | see "Label noise" below |

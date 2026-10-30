@@ -22,8 +22,9 @@ Main results:
 - The review threshold targeted 10% error on auto-accepted values and got 6.2% on the held-out
   papers. When I re-ran the calibration over every way of splitting the papers, it held much less
   often (details below).
-- 514 labeled values across 10 documents. 255 of them were checked against an independent source,
-  including LitXAlloy (all 102 shared values agree).
+- 514 labeled values across 10 documents. 278 of them were checked against an independent source,
+  including LitXAlloy (all 102 shared values agree) and the MPEA dataset (113 of 124 agree; the
+  other 11 aren't in the tables).
 
 ## Pipeline
 
@@ -109,11 +110,14 @@ commit, NTRS, Google Patents) and checks each file's SHA-256.
 
 The labels are 514 values typed from the page images into [`labels/transcriptions.py`](labels/transcriptions.py)
 before any pipeline output existed, then expanded into `labels/ground_truth.csv`. The labeling rules
-and checks are in [labels/README.md](labels/README.md). Three checks against independent sources
-cover 255 of the values and didn't turn up any labeling mistakes:
+and checks are in [labels/README.md](labels/README.md). Four checks against independent sources
+cover 278 of the values and didn't turn up any labeling mistakes:
 
 - LitXAlloy: all 102 shared values agree, and all 74 LitXAlloy values whose source is a table are in
   my labels.
+- The MPEA dataset (Borg et al. 2020) covers the same seven papers: 113 of its 124 values agree. The
+  other 11 aren't in the tables (values from figures and text, and fracture strains rounded to whole
+  percent).
 - NASA TM X-3216 prints every strength twice, in MN/m² and ksi. 96 of the 97 pairs agree. The one
   that doesn't is an inconsistency in the report itself (530 MN/m² printed next to 79 ksi).
 - NASA TP-3288 prints group averages. 13 of the 15 recomputed averages match. The other two are
@@ -264,17 +268,19 @@ target (28.6% error among accepted values).
 - Detection wasn't tuned for patents, and structure recognition still loses some three-level headers.
 - It only reads tables. Values that only appear in plots or in the text are never read, which is why
   it finds 102 of LitXAlloy's 108 values (all 74 of the ones from tables).
-- Only 255 of the 514 labels could be checked against a second source. The patent and parts of the
-  NASA tables were only read once.
+- Only 278 of the 514 labels could be checked against a second source. A blind second pass over 50
+  random labels agreed on all 50 (an error rate of at most 5.8%), but the same person did both passes.
 
 ## What I would do next
 
-1. Run a vision-language model on the same table crops, have it return cells as JSON, score it with
-   the same Hungarian matcher, and add it as a third route in the confidence score.
-2. Fine-tune the structure model too, on synthetic ruled tables with known structure (the same idea
+1. Calibrate at the document level, with a bound over documents instead of values, and with more
+   documents. That's the fix for the 47%-of-splits problem, and more documents would also settle
+   whether a VLM's agreement belongs in the confidence score (the "boost" variant above).
+2. Use a VLM where TableTrace is weakest: as the reader for rendered and born-digital pages without
+   a usable text layer, keeping Table Transformer's cell boxes for provenance and TableTrace's
+   header and unit logic, which is where the VLMs fail on the NASA reports.
+3. Fine-tune the structure model too, on synthetic ruled tables with known structure (the same idea
    as the OCR training data), to fix three-level headers on scans.
-3. Calibrate at the document level, with a bound over documents instead of values, and use more
-   documents to calibrate.
 4. Train a header mapper on these labels and keep the rules as a fallback.
 5. Link values to processing history. LitXBench's main finding is that extraction pipelines tie
    measurements to compositions instead of to the processing that defines a material. The
@@ -301,7 +307,21 @@ laptop CPU. `requirements.lock` has the exact package versions behind the number
 exactly from the transcriptions.
 `make labels` regenerates the ground truth and reruns its consistency checks, `make litx` redoes the
 LitXAlloy cross-check, and `make review` builds a local page that shows every labeled table next to
-its labels.
+its labels. `python -m tabletrace baselines` rescores the saved outputs of the other tools, and
+[baselines/README.md](baselines/README.md) explains how to rerun them.
+
+## Try it
+
+```bash
+python -m tabletrace extract billinghurst1992 --page 14      # or any PDF path; --json for records
+pip install -e ".[app]" && streamlit run app/streamlit_app.py  # boxes every value on the page
+```
+
+![The extract command on a scanned NASA page](reports/figures/demo.gif)
+
+On this 1992 NASA scan, OCR loses the minus sign in `-423 °F` and reads a dagger footnote mark as a
+7 (`199.0†` becomes `199.07`). Both values land under the review threshold, with confidence 0.00
+and 0.40.
 
 ## Layout
 
@@ -326,10 +346,27 @@ src/tabletrace/
   confidence.py            per-value confidence
   calibrate.py             Learn-then-Test threshold, Clopper-Pearson bounds, all-splits check
   evaluate.py              Hungarian matching, P/R/F1, error taxonomy, CER/WER
+  baselines.py             other tools' tables through the same interpretation and scorer, bootstrap CIs
   pipeline.py, report.py, results.py, figures.py, cli.py
-reports/                   results.md, metrics.json, figures, label checks, the first test run
-tests/                     pytest
+baselines/                 runners for the other tools, their saved outputs (raw/), how they were run
+app/                       the Streamlit demo
+release/                   Hugging Face dataset and model cards (make hf-release builds the folders)
+reports/                   results.md, metrics.json, baselines.md, figures, label checks, the first test run
+tests/                     pytest, including a 1.5 KB PDF with clipped text (tests/data)
 ```
+
+## Changes since the first version
+
+The first public version is from September 29, 2026. Since then:
+
+- CI (ruff, the tests, and a check that the labels regenerate exactly), pinned dependencies in
+  `requirements.lock`, and the OCR model moved to Git LFS.
+- The hidden-text filter now tracks the clip (clipping paths and form boxes) instead of dropping
+  every character inside an embedded figure. Every extraction is unchanged; the hidden-character
+  count went from 9,202 to 9,183 because 19 visible figure labels are now kept, and the whole-page
+  OCR reference keeps them too (fine-tuned CER 6.8% became 6.9%).
+- The comparison with other tools, the VLM third-route experiment, a blind second labeling pass,
+  the `extract` command, the demo app and the Hugging Face release files.
 
 ## Licenses
 
