@@ -2,14 +2,18 @@
 PY ?= .venv/bin/python
 export HF_HUB_DISABLE_PROGRESS_BARS = 1
 
-.PHONY: all data run eval test labels litx review ocr-model clean
+.PHONY: all data model run eval test labels litx review ocr-model clean
 
-all: data run eval
+all: data model run eval
 
 ## download the ten documents (checksummed) and build the image-only PDFs
 data:
 	$(PY) scripts/download_papers.py
 	$(PY) scripts/make_image_only.py
+
+## fetch the fine-tuned Tesseract model if the clone only has its Git LFS pointer (SHA-256 checked)
+model:
+	$(PY) scripts/fetch_model.py
 
 ## run every experiment (stock OCR, fine-tuned OCR, text-layer oracle) into outputs/runs/
 run:

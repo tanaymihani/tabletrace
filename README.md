@@ -1,5 +1,7 @@
 # TableTrace
 
+[![ci](https://github.com/tanaymihani/tabletrace/actions/workflows/ci.yml/badge.svg)](https://github.com/tanaymihani/tabletrace/actions/workflows/ci.yml)
+
 Extracting property tables from scientific PDFs, including scanned ones, with a calibrated
 review step.
 
@@ -278,15 +280,20 @@ target (28.6% error among accepted values).
 Python 3.11+, Tesseract 5 (`brew install tesseract`), and about 2 GB of disk for the models.
 
 ```bash
-python -m venv .venv && .venv/bin/pip install -e ".[dev]"
+python -m venv .venv && .venv/bin/pip install -r requirements.lock && .venv/bin/pip install --no-deps -e .
 make data     # download the 10 documents (SHA-256 checked) and build the 3 image-only PDFs
+make model    # fetch the fine-tuned Tesseract model if git-lfs didn't (SHA-256 checked)
 make run      # stock OCR, fine-tuned OCR, text-layer oracle, hidden-text ablation -> outputs/runs/
 make eval     # reports/results.md, reports/metrics.json, reports/figures/
 make test     # unit tests
 ```
 
-The fine-tuned model is in the repo (`models/tessdata/eng_tt.traineddata`), so `make run` doesn't
-retrain it. `make ocr-model` rebuilds it from scratch, which takes about 35 minutes on a laptop CPU.
+The fine-tuned OCR model (`models/tessdata/eng_tt.traineddata`, 15 MB) is stored with Git LFS. If
+you cloned without git-lfs, `make model` downloads the real file and checks its SHA-256 (`make all`
+runs it too). `make ocr-model` rebuilds the model from scratch, which takes about 35 minutes on a
+laptop CPU. `requirements.lock` has the exact package versions behind the numbers in
+`reports/`, and CI installs from it, runs ruff and the tests, and checks that the labels regenerate
+exactly from the transcriptions.
 `make labels` regenerates the ground truth and reruns its consistency checks, `make litx` redoes the
 LitXAlloy cross-check, and `make review` builds a local page that shows every labeled table next to
 its labels.
@@ -296,9 +303,9 @@ its labels.
 ```
 papers.csv                 documents, licenses, pinned URLs, SHA-256, route, split, labeled tables
 labels/                    transcriptions.py (typed tables), ground_truth.csv, labeling rules and checks
-scripts/                   download, image-only rendering, LitXAlloy cross-check, label review page
+scripts/                   downloads (documents, OCR model), image-only rendering, LitXAlloy cross-check, label review page
 training/                  synthetic line generator and the Tesseract fine-tuning script
-models/tessdata/           eng_tt.traineddata, the fine-tuned OCR model
+models/tessdata/           eng_tt.traineddata, the fine-tuned OCR model (Git LFS)
 src/tabletrace/
   router.py                text layer vs OCR, per page
   render.py                pypdfium2 rendering

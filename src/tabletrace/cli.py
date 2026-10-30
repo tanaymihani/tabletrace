@@ -44,7 +44,7 @@ def cmd_run(args) -> int:
     for name in names:
         cfg = replace(Config(), **EXPERIMENTS[name])
         if cfg.ocr_lang != "eng" and not (ROOT / "models" / "tessdata" / f"{cfg.ocr_lang}.traineddata").exists():
-            print(f"skip {name}: models/tessdata/{cfg.ocr_lang}.traineddata not found (run training/finetune_tesseract.sh)")
+            print(f"skip {name}: models/tessdata/{cfg.ocr_lang}.traineddata not found (run `make model` to download it)")
             continue
         papers = [p.paper_id for p in load_papers()
                   if (name != "text_oracle" or p.route == "image_only") and (name != "no_ghost_filter" or p.route == "born_digital")]
