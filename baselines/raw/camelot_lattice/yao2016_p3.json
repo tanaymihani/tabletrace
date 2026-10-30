@@ -1,0 +1,12 @@
+{
+ "tool": "camelot_lattice",
+ "version": "2.0.0",
+ "paper_id": "yao2016",
+ "page": 3,
+ "seconds": 0.97,
+ "settings": {
+  "flavor": "lattice"
+ },
+ "tables": [],
+ "text": null
+}

@@ -1,0 +1,53 @@
+{
+ "tool": "camelot_lattice",
+ "version": "2.0.0",
+ "paper_id": "billinghurst1992",
+ "page": 14,
+ "seconds": 0.26,
+ "settings": {
+  "flavor": "lattice"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "Percent\nEL\nTest\nPercent\nNo.\nof\nMaterial\n_\nUTS\n(ksi)\nYS\n(k_i)\nR__AA\n1 i___0_n\n2\ni___n\nSamples\nTi-6A1-4V\nELI\n70\n°F\n129.1\n118.6\n15.2\n17.4\n7.8\n3\nTi-5A1-2.5Sn\nELI\n70\n°F\n108.5\n100.2\n24.6\n9.2\n9.0*\n3\nTi-6A1-4V\nELI\n-423\n°F\n212.2\n199.0?\n8.7\n5.6\n3.3\n5\nTi-5A1-2.5Sn\nELI\n-423\n°F\n185.0\n156.9t\n11.7\n7.6\n6.4*\n5"
+    ],
+    [
+     ""
+    ],
+    [
+     ""
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    60.23,
+    92.85,
+    567.29,
+    250.24
+   ]
+  },
+  {
+   "rows": [
+    [
+     "Ultimate\nTensile\nStrength\n(ksi)\nPercent\nReduction\nQf Area\nTested\nin Air\nTested\nin LH2\nTes_¢fl\nin Air\nTested\nin LH2\n(70\n°F)\n(-423\n°F)\n(70\n°F)\n(-423\n°F)\nTi-5A1-2.5Sn\nELI\n108.4\n185.0\n24.6\n11.7\nTi-6A1-4V\nELI\n129.1\n212.2\n15.2\n8.7"
+    ],
+    [
+     ""
+    ],
+    [
+     ""
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    58.55,
+    402.6,
+    565.13,
+    518.0
+   ]
+  }
+ ],
+ "text": null
+}

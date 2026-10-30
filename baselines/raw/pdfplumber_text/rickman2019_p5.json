@@ -1,0 +1,665 @@
+{
+ "tool": "pdfplumber_text",
+ "version": "0.11.10",
+ "paper_id": "rickman2019",
+ "page": 5,
+ "seconds": 0.17,
+ "settings": {
+  "vertical_strategy": "text",
+  "horizontal_strategy": "text"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "NATURECOMMUNICATIONS|https://doi.org/10.1038/s41467-019-10533-1",
+     "",
+     "",
+     "",
+     "",
+     "ARTICLE"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "the hardness criterion after many iterations. From these I",
+     "n summary, gi",
+     "ven the nu",
+     "mber of candid",
+     "ate all",
+     "oys considered"
+    ],
+    [
+     "simulations, we identified those alloys that are associated with h",
+     "ere and the in",
+     "herent scat",
+     "ter in the origi",
+     "nal dat",
+     "a, this analysis"
+    ],
+    [
+     "the largest fitness values as candidates for high-hardness alloys. p",
+     "rovides a con",
+     "venient me",
+     "ans to predict",
+     "alloys",
+     "with enhanced"
+    ],
+    [
+     "h",
+     "ardness with 9",
+     "0% confide",
+     "nce.",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Comparison with synthesized alloys. To assess the predictive",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "capabilityofourmethodology,wefabricatedandhardnesstested",
+     "Microstructural",
+     "and m",
+     "icrochemical",
+     "charact",
+     "erization. To"
+    ],
+    [
+     "sevencandidatealloysthatwereidentifiedaspromisingfromthe u",
+     "nderstandbett",
+     "ertheobser",
+     "vedplasticrespo",
+     "nseof",
+     "thesynthesized"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "aforementionedGA.GiventhattheGAproducesanextremelyfit a",
+     "lloys,themicro",
+     "structureo",
+     "fthesamplesw",
+     "ithcom",
+     "positionsCo\n33"
+    ],
+    [
+     "populationofhigh-hardnessalloysthatrepresentatoptimalityan",
+     "W Al Nb\n07 33 24",
+     "Cr and\n03",
+     "Ti W Nb\n39 04 31",
+     "Ta C\n04",
+     "o , the alloys\n22"
+    ],
+    [
+     "extremeextrapolationfromtheM=82dataset,weconservatively h",
+     "avingthehighe",
+     "standlowe",
+     "stHV(seeTabl",
+     "e2),re",
+     "spectively,were"
+    ],
+    [
+     "select from this population a subset of alloys whose predicted e",
+     "xamined using",
+     "scanning e",
+     "lectron microsc",
+     "opy (S",
+     "EM). Figures 5"
+    ],
+    [
+     "hardnessesaresomewhatbeyondtherangeoftheexistingdataset a",
+     "nd6depictthe",
+     "microstruc",
+     "tureofCo W\n33 0",
+     "Al\n7 33",
+     "Nb Cr using\n24 03"
+    ],
+    [
+     "(i.e.,havingfitnessvaluesthatareabout10–15%greaterthanthe s",
+     "econdary electr",
+     "on intensit",
+     "y, as well as th",
+     "e assoc",
+     "iated composi-"
+    ],
+    [
+     "maximum found with the multiple regression). Our view is that, t",
+     "ional maps of",
+     "the const",
+     "ituent element",
+     "s obtai",
+     "ned by X-ray"
+    ],
+    [
+     "used in this way, the GA systematically creates a large pool of e",
+     "nergy-dispersiv",
+     "e spectrosc",
+     "opy (EDS). It",
+     "can be",
+     "seen that the"
+    ],
+    [
+     "potentialcandidateshavingrelativelyhighhardnessesforarange m",
+     "icrostructurei",
+     "sdendritic",
+     "(whichisconsis",
+     "tentwi",
+     "thacastalloy),"
+    ],
+    [
+     "of fitness values that represents a conservative extrapolation of w",
+     "ith a relativel",
+     "y small vo",
+     "lume fraction",
+     "(13 vo",
+     "l. %) of inter-"
+    ],
+    [
+     "thedata.ParametertuningintheGAisthenperformedtocreate d",
+     "endritic phase.",
+     "The EDS",
+     "data show that",
+     "the de",
+     "ndritic phase is"
+    ],
+    [
+     "thislargepool.Thisextrapolationcanbetestedstepbystep,and e",
+     "nriched in Nb",
+     "and W. G",
+     "iven that there",
+     "is no",
+     "obvious parti-"
+    ],
+    [
+     "if desired, the new alloys discovered in this way may be then t",
+     "ioning of the N",
+     "b and W,",
+     "it is assumed t",
+     "hat the",
+     "y form a solid"
+    ],
+    [
+     "added to the existing data to bootstrap the extrapolation. The s",
+     "olution.Thisb",
+     "ehaviorwou",
+     "ldnotbeunex",
+     "pected",
+     "giventhatboth"
+    ],
+    [
+     "candidateHEalloysweresynthesizedbyarc-meltingcompressed N",
+     "b and W are",
+     "bcc and ex",
+     "hibit complete",
+     "solid s",
+     "olubility46. The"
+    ],
+    [
+     "pellets of elemental, high-purity powders (Sigma-Aldrich, purity S",
+     "EM also revea",
+     "ls that the",
+     "inter-dendritic",
+     "phase",
+     "exhibits a two-"
+    ],
+    [
+     "≥99.9%). (Powdered metals were used to limit the occurrence of p",
+     "hase, eutectic-l",
+     "ike morph",
+     "ology. Of the t",
+     "wo pha",
+     "ses, one is Nb"
+    ],
+    [
+     "macro-segregation of elements and to improve homogeneity. r",
+     "ich,whereasthe",
+     "othercont",
+     "ainshigherprop",
+     "ortion",
+     "sofAl,Co,and"
+    ],
+    [
+     "Also, arc-melted pellets were remelted four times to ensure C",
+     "r,withlittleN",
+     "b.Unlikefo",
+     "rthecaseofthe",
+     "dendri",
+     "tebody,itdoes"
+    ],
+    [
+     "homogeneity.) The resulting as-cast, solid pieces were then sub- n",
+     "ot appear that",
+     "there is str",
+     "ong preferential",
+     "associ",
+     "ation of the W"
+    ],
+    [
+     "jected to micro-hardness testing with a 100g load to determine w",
+     "ith the Nb-ric",
+     "h compone",
+     "nt.",
+     "",
+     ""
+    ],
+    [
+     "their respective Vicker’s HV, the values taken to be the mean of",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "20 independent tests per piece.",
+     "Table 2The V",
+     "icker’s hard",
+     "nessvalues (in",
+     "HV)f",
+     "orthe"
+    ],
+    [
+     "TheresultingscaledhardnessesarealsodisplayedinFig.3asa",
+     "synthesized all",
+     "oys",
+     "",
+     "",
+     ""
+    ],
+    [
+     "function of the canonical variate, V(1). It can be seen from the",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "fi",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "gure that about 5 out of 7 of the hardnesses are within the",
+     "Alloy",
+     "",
+     "Hardness(HV",
+     ")",
+     "Hardness(HV)"
+    ],
+    [
+     "pictured 90% prediction interval. The highest measured hard-",
+     "",
+     "",
+     "",
+     "",
+     "predicted"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "nesses were found for Co W Al Nb Cr (1084±37 HV)\n33 07 33 24 03",
+     "Co W Al N\n33 07 33",
+     "b Cr\n24 03",
+     "1084±37",
+     "",
+     "825"
+    ],
+    [
+     "and Ti Ni Ta Cr Co (1011±20 HV) that have\n18 24 12 22 24",
+     "Ti Ni Ta Cr\n18 24 12 2",
+     "Co\n2 24",
+     "1011±20",
+     "",
+     "677"
+    ],
+    [
+     "corresponding Pugh ductility ratios of P=0.38 and P=0.47,",
+     "Co W Al Mo\n6 9 36",
+     "Ni\n38 11",
+     "725±47",
+     "",
+     "618"
+    ],
+    [
+     "respectively (For comparison, the Vicker’s HV for alloys such as",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "Ni Co Ta T\n47 02 12",
+     "i Nb\n9 30",
+     "815±43",
+     "",
+     "702"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Ti-5Al,Ti-5V,and75Au-7Cu-13Ag-5Co(wt.%)are532.3,429.3",
+     "Ti Ni Nb Cr\n44 02 21",
+     "Co\n21 12",
+     "422±13",
+     "",
+     "656"
+    ],
+    [
+     "44,45",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "and 128, respectively ). Indeed, for each of the 7 candidate",
+     "Ti Nb Ta Cr\n32 9 01 1",
+     "Co\n9 39",
+     "856±29",
+     "",
+     "673"
+    ],
+    [
+     "alloys identified here, P<0.5. (However, for the hardest alloy a",
+     "Ti W Nb Ta\n39 04 31",
+     "Co\n04 22",
+     "277±12",
+     "",
+     "697"
+    ],
+    [
+     "close inspection of the hardness indentations did reveal some",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "degree of brittleness as cracking occurred near indentation",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "corners in addition to observable cooling cracks.) The HV for",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "the 7 synthesized alloys are summarized in the table below.",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "1.0",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "0.8 yt",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "ilibab",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "0.6 or",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "pevi",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "0.4 tal",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "umu",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "0.2 C",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "0.0",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "–4 –2 0 2 4",
+     "",
+     "",
+     "",
+     "",
+     "μ"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "10",
+     "m"
+    ],
+    [
+     "Fitness value",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Fig.4Geneticalgorithm(GA)fitnessdistribution.Thecumulative F",
+     "ig.5Micrograph",
+     "ofahardall",
+     "oy.Ascanningele",
+     "ctronm",
+     "icroscopic"
+    ],
+    [
+     "fi",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "distributionof tnessesbothatthebeginning(showninblue)oftheGA m",
+     "icrographinare",
+     "gionneara",
+     "microhardnessind",
+     "entinth",
+     "eCo W Al\n33 07 33"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "fi"
+    ],
+    [
+     "andafter1000generations(showninorange).Clearly,thealloy N",
+     "b Cr sample\n24 03",
+     "thatwassynt",
+     "hesizedbyarc-me",
+     "lting.Th",
+     "e gureevincesa"
+    ],
+    [
+     "distributionbettermatchesthehardnesscriterionaftermanyiterations d",
+     "endriticmicrostru",
+     "cturewithe",
+     "utectic-likeinter-d",
+     "endritic",
+     "regions"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "NATURECOMMUNICATIONS| (2019) 10:2618 |https://doi.org/10.1038/s41467-019-10533-",
+     "1|www.nature.com/",
+     "naturecommuni",
+     "cations",
+     "",
+     "5"
+    ]
+   ],
+   "bbox": [
+    43.6,
+    15.44,
+    551.66,
+    757.74
+   ],
+   "caption": null
+  }
+ ],
+ "text": null
+}

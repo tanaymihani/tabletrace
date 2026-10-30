@@ -113,9 +113,16 @@ def calibration_analysis(preds: list[dict], pred_status: list[str], alphas=(0.05
                         "confidence": conf[mask][order].tolist()}
     out["curves"] = curves
     # how well confidence separates right from wrong (AUROC)
-    pos, neg = conf[correct], conf[~correct]
-    if len(pos) and len(neg):
-        ranks = np.argsort(np.argsort(np.concatenate([pos, neg])))
-        auc = (ranks[: len(pos)].sum() - len(pos) * (len(pos) - 1) / 2) / (len(pos) * len(neg))
-        out["auroc"] = float(auc)
+    if correct.any() and (~correct).any():
+        out["auroc"] = auroc(conf, correct)
     return out
+
+
+def auroc(conf: np.ndarray, correct: np.ndarray) -> float:
+    """Mann-Whitney AUROC; tied confidences share their average rank."""
+    from scipy.stats import rankdata
+
+    n1, n0 = int(correct.sum()), int((~correct).sum())
+    if not n1 or not n0:
+        return float("nan")
+    return float((rankdata(conf)[correct].sum() - n1 * (n1 + 1) / 2) / (n1 * n0))

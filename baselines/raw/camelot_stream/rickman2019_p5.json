@@ -1,0 +1,331 @@
+{
+ "tool": "camelot_stream",
+ "version": "2.0.0",
+ "paper_id": "rickman2019",
+ "page": 5,
+ "seconds": 0.05,
+ "settings": {
+  "flavor": "stream"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "Also,\narc-melted\npellets were\nremelted\nfour\ntimes\nto\nensure",
+     "Cr, with little Nb. Unlike for the case of the dendrite body, it does"
+    ],
+    [
+     "homogeneity.) The resulting as-cast, solid pieces were then sub-",
+     "not appear that\nthere is strong preferential association of"
+    ],
+    [
+     "jected to micro-hardness\ntesting with a 100 g load to determine",
+     "with the Nb-rich component."
+    ],
+    [
+     "their respective Vicker’s HV,\nthe values taken to be the mean of",
+     ""
+    ],
+    [
+     "20 independent\ntests per piece.",
+     "Table 2 The Vicker’s hardness values (in HV) for the"
+    ],
+    [
+     "The resulting scaled hardnesses are also displayed in Fig. 3 as a",
+     "synthesized alloys"
+    ],
+    [
+     "It can be seen from the\nfunction of\nthe canonical variate, V(1).",
+     ""
+    ],
+    [
+     "ﬁgure\nthat\nabout 5 out of 7 of\nthe hardnesses\nare within the",
+     ""
+    ],
+    [
+     "",
+     "Alloy\nHardness (HV)\nHardness (HV)"
+    ],
+    [
+     "pictured 90% prediction interval. The highest measured hard-",
+     "predicted"
+    ],
+    [
+     "nesses were found for Co33 W07 Al33 Nb24 Cr03 (1084 ± 37 HV)",
+     ""
+    ],
+    [
+     "",
+     "1084 ± 37\n825\nCo33 W07 Al33 Nb24 Cr03"
+    ],
+    [
+     "(1011 ± 20 HV)\nthat\nhave\nand\nTi18 Ni24\nTa12\nCr22\nCo24",
+     ""
+    ],
+    [
+     "",
+     "Ti18 Ni24 Ta12 Cr22 Co24"
+    ],
+    [
+     "corresponding Pugh ductility\nratios\nof P = 0.38\nand P = 0.47,",
+     "725 ± 47\n618\nCo6 W9 Al36 Mo38 Ni11"
+    ],
+    [
+     "respectively (For comparison,\nthe Vicker’s HV for alloys such as",
+     "815 ± 43\n702\nNi47 Co02 Ta12 Ti9 Nb30"
+    ],
+    [
+     "Ti-5Al, Ti-5V, and 75Au-7Cu-13Ag-5Co (wt. %) are 532.3, 429.3",
+     "422 ± 13\n656\nTi44 Ni02 Nb21 Cr21 Co12"
+    ],
+    [
+     "",
+     "856 ± 29\n673"
+    ],
+    [
+     "Indeed,\nfor\neach of\nthe 7 candidate\nand 128,\nrespectively44,45).",
+     "Ti32 Nb9 Ta01 Cr19 Co39"
+    ],
+    [
+     "",
+     "277 ± 12\n697"
+    ],
+    [
+     "alloys\nidentiﬁed here, P < 0.5.\n(However,\nfor\nthe hardest alloy a",
+     "Ti39 W04 Nb31 Ta04 Co22"
+    ],
+    [
+     "close\ninspection of\nthe hardness\nindentations did reveal\nsome",
+     ""
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    33.6,
+    314.35,
+    526.59,
+    491.54
+   ]
+  },
+  {
+   "rows": [
+    [
+     "NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-019-10533-1\nARTICLE"
+    ],
+    [
+     "the\nhardness\ncriterion\nafter\nmany\niterations.\nFrom\nthese\nIn summary, given the number of\ncandidate\nalloys\nconsidered"
+    ],
+    [
+     "simulations, we\nidentiﬁed those\nalloys\nthat\nare\nassociated with\nhere and the\ninherent\nscatter\nin the original data,\nthis analysis"
+    ],
+    [
+     "the largest ﬁtness values as candidates for high-hardness alloys.\nprovides\na\nconvenient means\nto predict\nalloys with enhanced"
+    ],
+    [
+     "hardness with 90% conﬁdence."
+    ],
+    [
+     "Comparison with synthesized alloys. To assess\nthe predictive"
+    ],
+    [
+     "Microstructural\nand\nmicrochemical\ncharacterization.\nTo\ncapability of our methodology, we fabricated and hardness tested"
+    ],
+    [
+     "understand better the observed plastic response of the synthesized\nseven candidate alloys that were identiﬁed as promising from the"
+    ],
+    [
+     "alloys, the microstructure of the samples with compositions Co33\naforementioned GA. Given that the GA produces an extremely ﬁt"
+    ],
+    [
+     "the\nalloys\nW07 Al33 Nb24 Cr03\nand Ti39 W04 Nb31 Ta04 Co22,\npopulation of high-hardness alloys that represent at optimality an"
+    ],
+    [
+     "having the highest and lowest HV (see Table 2), respectively, were\nextreme extrapolation from the M = 82 dataset, we conservatively"
+    ],
+    [
+     "examined using scanning electron microscopy (SEM). Figures 5\nselect\nfrom this population a\nsubset of\nalloys whose predicted"
+    ],
+    [
+     "and 6 depict the microstructure of Co33 W07 Al33 Nb24 Cr03 using\nhardnesses are somewhat beyond the range of the existing dataset"
+    ],
+    [
+     "secondary electron intensity, as well as\nthe associated composi-\n(i.e., having ﬁtness values that are about 10–15% greater than the"
+    ],
+    [
+     "tional maps\nof\nthe\nconstituent\nelements\nobtained\nby X-ray\nmaximum found with the multiple regression). Our view is that,"
+    ],
+    [
+     "energy-dispersive\nspectroscopy\n(EDS).\nIt\ncan be\nseen that\nthe\nused in this way,\nthe GA systematically creates a large pool of"
+    ],
+    [
+     "microstructure is dendritic (which is consistent with a cast alloy),\npotential candidates having relatively high hardnesses for a range"
+    ],
+    [
+     "with\na\nrelatively\nsmall\nvolume\nfraction (13\nvol. %)\nof\ninter-\nof ﬁtness values\nthat\nrepresents a conservative\nextrapolation of"
+    ],
+    [
+     "dendritic phase. The EDS data show that\nthe dendritic phase is\nthe data. Parameter tuning in the GA is then performed to create"
+    ],
+    [
+     "enriched in Nb and W. Given that\nthere\nis no obvious parti-\nthis large pool. This extrapolation can be tested step by step, and"
+    ],
+    [
+     "tioning of\nthe Nb and W,\nit\nis assumed that\nthey form a solid\nif desired,\nthe new alloys discovered in this way may be\nthen"
+    ],
+    [
+     "solution. This behavior would not be unexpected given that both\nadded to the\nexisting data\nto bootstrap the\nextrapolation. The"
+    ],
+    [
+     "Nb and W are bcc and exhibit complete solid solubility46. The\ncandidate HE alloys were synthesized by arc-melting compressed"
+    ],
+    [
+     "SEM also reveals\nthat\nthe\ninter-dendritic phase exhibits a two-\npellets of elemental, high-purity powders (Sigma-Aldrich, purity"
+    ],
+    [
+     "phase,\neutectic-like morphology. Of\nthe\ntwo phases, one\nis Nb\n≥99.9%). (Powdered metals were used to limit\nthe occurrence of"
+    ],
+    [
+     "rich,whereas the other contains higher proportions of Al, Co, and\nmacro-segregation\nof\nelements\nand\nto\nimprove\nhomogeneity."
+    ],
+    [
+     "Cr, with little Nb. Unlike for the case of the dendrite body, it does\nAlso,\narc-melted\npellets were\nremelted\nfour\ntimes\nto\nensure"
+    ],
+    [
+     "not appear that\nthere is strong preferential association of\nthe W\nhomogeneity.) The resulting as-cast, solid pieces were then sub-"
+    ],
+    [
+     "with the Nb-rich component.\njected to micro-hardness\ntesting with a 100 g load to determine"
+    ],
+    [
+     "their respective Vicker’s HV,\nthe values taken to be the mean of"
+    ],
+    [
+     "20 independent\ntests per piece.\nTable 2 The Vicker’s hardness values (in HV) for the"
+    ],
+    [
+     "The resulting scaled hardnesses are also displayed in Fig. 3 as a\nsynthesized alloys"
+    ],
+    [
+     "It can be seen from the\nfunction of\nthe canonical variate, V(1)."
+    ],
+    [
+     "ﬁgure\nthat\nabout 5 out of 7 of\nthe hardnesses\nare within the"
+    ],
+    [
+     "Alloy\nHardness (HV)\nHardness (HV)"
+    ],
+    [
+     "pictured 90% prediction interval. The highest measured hard-\npredicted"
+    ],
+    [
+     "nesses were found for Co33 W07 Al33 Nb24 Cr03 (1084 ± 37 HV)"
+    ],
+    [
+     "1084 ± 37\n825\nCo33 W07 Al33 Nb24 Cr03"
+    ],
+    [
+     "(1011 ± 20 HV)\nthat\nhave\nand\nTi18 Ni24\nTa12\nCr22\nCo24"
+    ],
+    [
+     "Ti18 Ni24 Ta12 Cr22 Co24"
+    ],
+    [
+     "corresponding Pugh ductility\nratios\nof P = 0.38\nand P = 0.47,\n725 ± 47\n618\nCo6 W9 Al36 Mo38 Ni11"
+    ],
+    [
+     "815 ± 43\n702\nrespectively (For comparison,\nthe Vicker’s HV for alloys such as\nNi47 Co02 Ta12 Ti9 Nb30"
+    ],
+    [
+     "422 ± 13\n656\nTi44 Ni02 Nb21 Cr21 Co12\nTi-5Al, Ti-5V, and 75Au-7Cu-13Ag-5Co (wt. %) are 532.3, 429.3"
+    ],
+    [
+     "856 ± 29\n673"
+    ],
+    [
+     "Ti32 Nb9 Ta01 Cr19 Co39\nIndeed,\nfor\neach of\nthe 7 candidate\nand 128,\nrespectively44,45)."
+    ],
+    [
+     "277 ± 12\n697"
+    ],
+    [
+     "Ti39 W04 Nb31 Ta04 Co22\nalloys\nidentiﬁed here, P < 0.5.\n(However,\nfor\nthe hardest alloy a"
+    ],
+    [
+     "close\ninspection of\nthe hardness\nindentations did reveal\nsome"
+    ],
+    [
+     "degree\nof\nbrittleness\nas\ncracking\noccurred\nnear\nindentation"
+    ],
+    [
+     "corners\nin addition to observable\ncooling cracks.) The HV for"
+    ],
+    [
+     "the\n7\nsynthesized\nalloys\nare\nsummarized\nin\nthe\ntable\nbelow."
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    33.6,
+    -26.37,
+    561.69,
+    535.65
+   ]
+  },
+  {
+   "rows": [
+    [
+     "close",
+     ""
+    ],
+    [
+     "degree",
+     "of"
+    ],
+    [
+     "corners",
+     ""
+    ],
+    [
+     "7",
+     ""
+    ],
+    [
+     "1.0",
+     ""
+    ],
+    [
+     "0.8",
+     ""
+    ],
+    [
+     "0.6\nCumulativeprobability",
+     ""
+    ],
+    [
+     "0.4",
+     ""
+    ],
+    [
+     "0.2",
+     ""
+    ],
+    [
+     "0.0",
+     ""
+    ],
+    [
+     "",
+     "–4"
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    52.08,
+    491.51,
+    83.2,
+    683.73
+   ]
+  }
+ ],
+ "text": null
+}

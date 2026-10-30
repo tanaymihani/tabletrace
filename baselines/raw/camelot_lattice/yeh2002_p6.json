@@ -1,0 +1,12 @@
+{
+ "tool": "camelot_lattice",
+ "version": "2.0.0",
+ "paper_id": "yeh2002",
+ "page": 6,
+ "seconds": 0.27,
+ "settings": {
+  "flavor": "lattice"
+ },
+ "tables": [],
+ "text": null
+}

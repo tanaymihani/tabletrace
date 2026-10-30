@@ -1,0 +1,12 @@
+{
+ "tool": "pdfplumber",
+ "version": "0.11.10",
+ "paper_id": "billinghurst1992",
+ "page": 14,
+ "seconds": 0.01,
+ "settings": {
+  "table_settings": "default"
+ },
+ "tables": [],
+ "text": null
+}

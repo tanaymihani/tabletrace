@@ -1,0 +1,181 @@
+{
+ "tool": "grobid",
+ "version": "0.9.1",
+ "paper_id": "yao2016",
+ "page": 3,
+ "seconds": 27.81,
+ "settings": {
+  "endpoint": "processFulltextDocument",
+  "status": 200,
+  "device": "Kaggle CPU, 4 cores"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "Metal",
+     "Mo",
+     "Nb",
+     "Ta",
+     "V",
+     "MoNbTaV (Calc/Exp)"
+    ],
+    [
+     "a (Å)",
+     "3.1468",
+     "3.301",
+     "3.303",
+     "3.039",
+     "3.2036/3.208"
+    ],
+    [
+     "r (Å)",
+     "1.4",
+     "1.47",
+     "1.47",
+     "1.35",
+     "-"
+    ],
+    [
+     "T m (°C)",
+     "2623",
+     "2477",
+     "3017",
+     "1910",
+     "2528/-"
+    ],
+    [
+     "H v (MPa)",
+     "1530",
+     "1320",
+     "873",
+     "628",
+     "1097/4947"
+    ],
+    [
+     "σ 0.2 (MPa)",
+     "438",
+     "240",
+     "345",
+     "310",
+     "333/1525"
+    ],
+    [
+     "VEC",
+     "6",
+     "5",
+     "5",
+     "5",
+     "-"
+    ],
+    [
+     "∆χ",
+     "2.16",
+     "1.6",
+     "1.5",
+     "1.63",
+     "-"
+    ],
+    [
+     "G (GPa)",
+     "123",
+     "59.5",
+     "64.7",
+     "46.6",
+     "73.78/-"
+    ]
+   ],
+   "caption": "Table 1 . The",
+   "bbox": [
+    108.02,
+    531.09,
+    487.78,
+    700.61
+   ]
+  },
+  {
+   "rows": [
+    [
+     "Metal",
+     "Mo",
+     "Nb",
+     "Ta",
+     "V",
+     "MoNbTaV (Calc/Exp)"
+    ],
+    [
+     "a (Å)",
+     "3.1468",
+     "3.301 3.303 3.039",
+     "3.301 3.303 3.039",
+     "3.301 3.303 3.039",
+     "3.2036/3.208"
+    ],
+    [
+     "r (Å)",
+     "1.4",
+     "1.47",
+     "1.47",
+     "1.35",
+     "-"
+    ],
+    [
+     "T m ( ˝C)",
+     "2623",
+     "2477",
+     "3017 1910",
+     "3017 1910",
+     "2528/-"
+    ],
+    [
+     "H v (MPa)",
+     "1530",
+     "1320",
+     "873",
+     "628",
+     "1097/4947"
+    ],
+    [
+     "σ 0.2 (MPa)",
+     "438",
+     "240",
+     "345",
+     "310",
+     "333/1525"
+    ],
+    [
+     "VEC",
+     "6",
+     "5",
+     "5",
+     "5",
+     "-"
+    ],
+    [
+     "∆χ",
+     "2.16",
+     "1.6",
+     "1.5",
+     "1.63",
+     "-"
+    ],
+    [
+     "G (GPa)",
+     "123",
+     "59.5",
+     "64.7",
+     "46.6",
+     "73.78/-"
+    ]
+   ],
+   "caption": "Table 1 . The crystal lattice parameter (a), atomic radius (r), melting temperature (T m ), Vickers hardness (H v ), yield strength (σ 0.2 ), valence electron concentration (VEC), Pauling electronegativity difference (∆χ), and shear modulus (G) of pure metals are given. The calculated (Calc) and experimental (Exp) data for MoNbTaV alloy is also listed here.",
+   "bbox": [
+    97.5,
+    537.51,
+    498.38,
+    703.74
+   ]
+  }
+ ],
+ "text": null
+}

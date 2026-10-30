@@ -1,0 +1,12 @@
+{
+ "tool": "pdfplumber",
+ "version": "0.11.10",
+ "paper_id": "tseng2018",
+ "page": 11,
+ "seconds": 0.11,
+ "settings": {
+  "table_settings": "default"
+ },
+ "tables": [],
+ "text": null
+}

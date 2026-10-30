@@ -1,0 +1,361 @@
+{
+ "tool": "camelot_stream",
+ "version": "2.0.0",
+ "paper_id": "yeh2002",
+ "page": 5,
+ "seconds": 0.02,
+ "settings": {
+  "flavor": "stream"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "",
+     "",
+     "",
+     "",
+     "TABLE 3",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "Compositions and mole fractions of the high-entropy",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "multielement alloys",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Alloy",
+     "",
+     "",
+     "",
+     "Mole Fraction of Maior Element (%",
+     "",
+     "",
+     ""
+    ],
+    [
+     "No.",
+     "Iron",
+     "Cobalt",
+     "Nickel",
+     "Chromium  Vanadium",
+     "Titanium",
+     "Alumium",
+     "copper"
+    ],
+    [
+     "21,",
+     "16.6",
+     "18.4",
+     "22.9",
+     "22.8 \n19.3",
+     "",
+     "",
+     ""
+    ],
+    [
+     "22",
+     "21.9",
+     "14.1",
+     "17.3",
+     "16.1 \n14.7",
+     "15.9",
+     "",
+     ""
+    ],
+    [
+     "23",
+     "15.O",
+     "14.4",
+     "14.5",
+     "14.9 \n13.8",
+     "13.7",
+     "13.7",
+     ""
+    ],
+    [
+     "24",
+     "14.4",
+     "10.8",
+     "13.5",
+     "12.6 \n12.6",
+     "12.2",
+     "12.9",
+     "11.0"
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    52.16,
+    113.05,
+    334.28,
+    231.47
+   ]
+  },
+  {
+   "rows": [
+    [
+     "23 \n15.O \n14.4 \n14.5 \n14.9 \n13.8 \n13.7 \n13.7",
+     ""
+    ],
+    [
+     "24 \n14.4 \n10.8 \n13.5 \n12.6 \n12.6 \n12.2 \n12.9",
+     "11.0"
+    ],
+    [
+     "0028)",
+     "0030 \nTable 5 shows the effect of minor element, boron,"
+    ],
+    [
+     "",
+     "on the hardneSS value of a high-entropy alloy having iron,"
+    ],
+    [
+     "TABLE 4",
+     "cobalt,  nickel, chromium, Vanadium, and titanium in  the"
+    ],
+    [
+     "",
+     "Same mole fraction. It indicates that minor addition of boron"
+    ],
+    [
+     "The hardness values of the high-entropy multielement alloys",
+     ""
+    ],
+    [
+     "",
+     "has a remarkable improvement on hardness. The hardening"
+    ],
+    [
+     "Alloy No. 21 \nAlloy No. 22 \nAlloy No. 23 \nAlloy No. 24",
+     "effect becomes diminishing when the amount approaching"
+    ],
+    [
+     "",
+     "3.3%. This means a Suitable  amount of boron could be"
+    ],
+    [
+     "Hv571 \nHv1,049 \nHv,60 \nHv666",
+     ""
+    ],
+    [
+     "",
+     "effective and important if a higher hardneSS is desired."
+    ],
+    [
+     "",
+     "EXAMPLES 30 TO 34"
+    ],
+    [
+     "EXAMPLES 25 TO 29",
+     ""
+    ],
+    [
+     "",
+     "0031 \nManufacturing  operations  in  example  1  were"
+    ],
+    [
+     "0029 \nManufacturing  operations  in  example  1  were",
+     ""
+    ],
+    [
+     "repeated, but the compositional elements were changed. The",
+     "repeated, but the compositional elements were changed. The"
+    ],
+    [
+     "compositions of alloy tablets in examples 25 to 29 are alloy",
+     "compositions of alloy tablets in examples 30 to 34 are alloy"
+    ],
+    [
+     "No.25 to No.29 in Table 5, respectively.",
+     "No.30 to No.34 in Table 6, respectively."
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    49.76,
+    208.73,
+    523.68,
+    400.04
+   ]
+  },
+  {
+   "rows": [
+    [
+     "",
+     "",
+     "TABLE 5",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "Compositions and hardness values of high-entropy",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "multielement alloys",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "Minor",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "Element",
+     ""
+    ],
+    [
+     "Alloy",
+     "",
+     "Maior Elements (mole %",
+     "(mole %)",
+     "Hardness"
+    ],
+    [
+     "No.",
+     "Iron",
+     "Cobalt \nNickel \nChromium  Vanadium",
+     "Titanium \nBoron",
+     "(Hv)"
+    ],
+    [
+     "25",
+     "",
+     "All major elements are in the same mole fraction.",
+     "O",
+     "760"
+    ],
+    [
+     "26",
+     "",
+     "All major elements are in the same mole fraction.",
+     "0.4",
+     "88O"
+    ],
+    [
+     "27",
+     "",
+     "All major elements are in the same mole fraction.",
+     "O.8",
+     "98O"
+    ],
+    [
+     "28",
+     "",
+     "All major elements are in the same mole fraction.",
+     "1.7",
+     "1030"
+    ],
+    [
+     "29",
+     "",
+     "All major elements are in the same mole fraction.",
+     "3.3",
+     "1067"
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    52.16,
+    411.21,
+    348.04,
+    554.58
+   ]
+  },
+  {
+   "rows": [
+    [
+     "",
+     "Compositions and hardness values of high-entropy",
+     "",
+     ""
+    ],
+    [
+     "",
+     "multielement alloys",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "Minor",
+     ""
+    ],
+    [
+     "",
+     "",
+     "Element",
+     ""
+    ],
+    [
+     "Alloy",
+     "Major Elements (mole %)",
+     "(mole %)",
+     "Hardness"
+    ],
+    [
+     "No.",
+     "Iron \nCobalt \nNickel \nChromium  Aluminum",
+     "Silicon",
+     "(Hv)"
+    ],
+    [
+     "3O",
+     "All major elements are in the same mole fraction.",
+     "O",
+     "48O"
+    ],
+    [
+     "31",
+     "All major elements are in the same mole fraction.",
+     "O.3",
+     "500"
+    ],
+    [
+     "32",
+     "All major elements are in the same mole fraction.",
+     "O.8",
+     "52O"
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    246.08,
+    627.45,
+    517.72,
+    751.89
+   ]
+  }
+ ],
+ "text": null
+}

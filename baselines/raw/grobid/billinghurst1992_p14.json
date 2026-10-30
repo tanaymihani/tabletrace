@@ -1,0 +1,85 @@
+{
+ "tool": "grobid",
+ "version": "0.9.1",
+ "paper_id": "billinghurst1992",
+ "page": 14,
+ "seconds": 1.1,
+ "settings": {
+  "endpoint": "processFulltextDocument",
+  "status": 200,
+  "device": "Kaggle CPU, 4 cores"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "Percent EL"
+    ]
+   ],
+   "caption": "Table 3 . Summary of test results/average of tensile mechanical properties.",
+   "bbox": [
+    65.0,
+    72.85,
+    552.5,
+    285.95
+   ]
+  },
+  {
+   "rows": [
+    [
+     "",
+     "",
+     "Ultimate Tensile Strength (ksi)",
+     "Ultimate Tensile Strength (ksi)",
+     "Percent Reduction",
+     "Percent Reduction",
+     "Qf Area"
+    ],
+    [
+     "",
+     "",
+     "Tested in Air",
+     "Tested in LH2",
+     "Tes_¢fl in Air",
+     "Tested in LH2",
+     "Tested in LH2"
+    ],
+    [
+     "",
+     "",
+     "(70 °F)",
+     "(-423 °F)",
+     "(70 °F)",
+     "",
+     "(-423 °F)"
+    ],
+    [
+     "Ti-5A1-2.5Sn",
+     "ELI",
+     "108.4",
+     "185.0",
+     "24.6",
+     "",
+     "11.7"
+    ],
+    [
+     "Ti-6A1-4V",
+     "ELI",
+     "129.1",
+     "212.2",
+     "15.2",
+     "",
+     "8.7"
+    ]
+   ],
+   "caption": "Table 4 . Ultimate tensile strength (ksi)/percent reduction in area.",
+   "bbox": [
+    63.0,
+    382.85,
+    540.5,
+    512.95
+   ]
+  }
+ ],
+ "text": null
+}

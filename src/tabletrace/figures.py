@@ -198,3 +198,40 @@ def failure_crop(pdf: FsPath, page: int, bbox, out: FsPath, caption: str, pad: f
     canvas.paste(crop, (0, 0))
     ImageDraw.Draw(canvas).text((10, crop.height + 14), caption, fill=(82, 81, 78), font=font)
     canvas.save(out)
+
+
+def interval_panels(rows: list[str], panels: dict[str, list[tuple[float, float, float] | None]], out: FsPath,
+                    title: str, highlight: str = "TableTrace", xlabel: str = "Strict F1") -> None:
+    """One panel per page type: a point and its 95% interval for every system, best at the top.
+
+    The highlighted system keeps the first series color; every other system is neutral ink.
+    """
+    n = len(rows)
+    fig, axes = plt.subplots(1, len(panels), figsize=(2.35 * len(panels) + 2.2, 0.34 * n + 1.5), sharey=True)
+    axes = [axes] if len(panels) == 1 else list(axes)
+    for ax, (name, vals) in zip(axes, panels.items()):
+        _style(ax)
+        for i, (row, v) in enumerate(zip(rows, vals)):
+            y = n - 1 - i
+            if v is None:
+                ax.text(0.02, y, "not run", va="center", fontsize=7.5, color=MUTED)
+                continue
+            point, lo, hi = v
+            color = SERIES[0] if row == highlight else INK_2
+            ax.plot([lo, hi], [y, y], color=color, linewidth=2, solid_capstyle="round", alpha=0.55)
+            ax.plot([point], [y], "o", color=color, markersize=6.5, markeredgecolor=SURFACE, markeredgewidth=1.2)
+        ax.set_xlim(-0.03, 1.03)
+        ax.set_xticks([0, 0.5, 1.0])
+        ax.set_title(name, fontsize=9.5, loc="left", color=INK)
+        ax.set_xlabel(xlabel, fontsize=8.5)
+        ax.tick_params(axis="y", length=0)
+    axes[0].set_yticks(range(n))
+    axes[0].set_yticklabels(list(reversed(rows)), fontsize=8.5)
+    for lab in axes[0].get_yticklabels():
+        if lab.get_text() == highlight:
+            lab.set_color(INK)
+            lab.set_fontweight("bold")
+    fig.suptitle(title, x=0.01, ha="left", fontsize=11, color=INK)
+    fig.tight_layout()
+    fig.savefig(out, dpi=180)
+    plt.close(fig)

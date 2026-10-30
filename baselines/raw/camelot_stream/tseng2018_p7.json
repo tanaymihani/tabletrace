@@ -1,0 +1,182 @@
+{
+ "tool": "camelot_stream",
+ "version": "2.0.0",
+ "paper_id": "tseng2018",
+ "page": 7,
+ "seconds": 0.04,
+ "settings": {
+  "flavor": "stream"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "Table 3. The room temperature compressive yield strength and fracture strain of the Hf-Mo-Nb-Ta-Ti-Zr",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "alloy series.",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "HfMoNb",
+     "HfNbTa",
+     "HfMoTa",
+     "HfMoNb",
+     "HfMoNb",
+     "HfMoNb"
+    ],
+    [
+     "",
+     "TaTiZr",
+     "TiZr [25]",
+     "TiZr",
+     "TiZr",
+     "TaZr",
+     "TaTi"
+    ],
+    [
+     "Yield strength (MPa)",
+     "1512",
+     "929",
+     "1600",
+     "1351",
+     "1524",
+     "1369"
+    ],
+    [
+     "Fracture strain (%)",
+     "12",
+     "> 50",
+     "4",
+     "20",
+     "16",
+     "27"
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    96.69,
+    76.3,
+    498.08,
+    181.02
+   ]
+  },
+  {
+   "rows": [
+    [
+     "1200\n556\n92\n404\n301\n694\n699"
+    ],
+    [
+     "1200 \n556 \n92 \n404 \n301 \n694 \n699 \n1400\nN. A.\nN. A.\nN. A.\nN. A.\n278\n367"
+    ],
+    [
+     "1400 \nN. A. \nN. A. \nN. A. \nN. A. \n278 \n367"
+    ],
+    [
+     "The  melting  point  of  the  elements  in  the  alloy  affects  the  strength  performance  at  elevated"
+    ],
+    [
+     "The melting point of\nthe elements in the alloy affects the strength performance at elevated"
+    ],
+    [
+     "temperature. For instance, at 1200 °C, HfMoTaTiZr alloy and HfMoNbTiZr alloy which have lower"
+    ],
+    [
+     "temperature. For instance, at 1200 ◦C, HfMoTaTiZr alloy and HfMoNbTiZr alloy which have lower"
+    ],
+    [
+     "melting-point elements (Ta, Mo, Nb) have less strength; HfMoNbTaZr alloy and HfMoNbTaTi alloy"
+    ],
+    [
+     "melting-point elements (Ta, Mo, Nb) have less strength; HfMoNbTaZr alloy and HfMoNbTaTi alloy"
+    ],
+    [
+     "which have higher melting-point elements (Ti, Zr) have better strength. Moreover, all the alloys with"
+    ],
+    [
+     "which have higher melting-point elements (Ti, Zr) have better strength. Moreover, all the alloys with"
+    ],
+    [
+     "Mo  present  have  much  better  strength  than  HfNbTaTiZr  does.  Therefore,  Mo  makes  a  significant"
+    ],
+    [
+     "Mo present have much better strength than HfNbTaTiZr does. Therefore, Mo makes a signiﬁcant"
+    ],
+    [
+     "contribution to strength at elevated temperature."
+    ],
+    [
+     "contribution to strength at elevated temperature."
+    ],
+    [
+     "The  elevated  temperature  yield  strength  versus  temperature  of  Hf-Mo-Nb-Ta-Ti-Zr  alloys  is"
+    ],
+    [
+     "The elevated temperature yield strength versus temperature of Hf-Mo-Nb-Ta-Ti-Zr alloys is"
+    ],
+    [
+     "shown in Figure 4a. Except at 800 °C, the strength of the above mentioned Hf-Mo-Nb-Ta-Ti-Zr alloys"
+    ],
+    [
+     "shown in Figure 4a.\nExcept at 800 ◦C,\nthe strength of\nthe above mentioned Hf-Mo-Nb-Ta-Ti-Zr"
+    ],
+    [
+     "is better than the commercial nickel base superalloys, CMSX-4 and Inconel 718. Additionally, Hf-Mo-"
+    ],
+    [
+     "alloys is better than the commercial nickel base superalloys, CMSX-4 and Inconel 718. Additionally,"
+    ],
+    [
+     "Nb-Ta-Ti-Zr alloys also have better resistance to softening at elevated temperature. Figure 4b is the"
+    ],
+    [
+     "Hf-Mo-Nb-Ta-Ti-Zr alloys also have better resistance to softening at elevated temperature. Figure 4b"
+    ],
+    [
+     "specific  strength  of  Hf-Mo-Nb-Ta-Ti-Zr  alloys,  HfNbTaTiZr  alloy,  CMSX-4,  and  Inconel  718  at"
+    ],
+    [
+     "is the speciﬁc strength of Hf-Mo-Nb-Ta-Ti-Zr alloys, HfNbTaTiZr alloy, CMSX-4, and Inconel 718"
+    ],
+    [
+     "different temperatures. Below 900 °C, CMSX-4 and Inconel 718 perform better; at 1000 °C, Hf-Mo-"
+    ],
+    [
+     "at different\ntemperatures.\nBelow 900 ◦C, CMSX-4 and Inconel 718 perform better;\nat 1000 ◦C,"
+    ],
+    [
+     "Nb-Ta-Ti-Zr alloys, except for HfNbTaTiZr, are better than CMSX-4 and Inconel 718. At temperatures"
+    ],
+    [
+     "Hf-Mo-Nb-Ta-Ti-Zr alloys, except\nfor HfNbTaTiZr, are better than CMSX-4 and Inconel 718. At"
+    ],
+    [
+     "above 1200 °C, HfMoNbTaTi alloy has the highest specific strength."
+    ],
+    [
+     "temperatures above 1200 ◦C, HfMoNbTaTi alloy has the highest speciﬁc strength."
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    66.12,
+    275.29,
+    535.73,
+    491.48
+   ]
+  }
+ ],
+ "text": null
+}

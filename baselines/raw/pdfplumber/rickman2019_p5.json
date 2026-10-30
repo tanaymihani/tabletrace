@@ -1,0 +1,48 @@
+{
+ "tool": "pdfplumber",
+ "version": "0.11.10",
+ "paper_id": "rickman2019",
+ "page": 5,
+ "seconds": 0.07,
+ "settings": {
+  "table_settings": "default"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "Table 2The Vicker’s hardnessvalues (inHV)forthe\nsynthesized alloys"
+    ],
+    [
+     "Alloy Hardness(HV) Hardness(HV)\npredicted"
+    ],
+    [
+     "Co W Al Nb Cr 1084±37 825\n33 07 33 24 03\nTi Ni Ta Cr Co 1011±20 677\n18 24 12 22 24\nCo W Al Mo Ni 725±47 618\n6 9 36 38 11\nNi Co Ta Ti Nb 815±43 702\n47 02 12 9 30\nTi Ni Nb Cr Co 422±13 656\n44 02 21 21 12\nTi Nb Ta Cr Co 856±29 673\n32 9 01 19 39\nTi W Nb Ta Co 277±12 697\n39 04 31 04 22"
+    ]
+   ],
+   "bbox": [
+    303.9,
+    354.37,
+    551.37,
+    485.94
+   ],
+   "caption": null
+  },
+  {
+   "rows": [
+    [
+     "",
+     ""
+    ]
+   ],
+   "bbox": [
+    76.16,
+    541.71,
+    284.55,
+    669.54
+   ],
+   "caption": null
+  }
+ ],
+ "text": null
+}

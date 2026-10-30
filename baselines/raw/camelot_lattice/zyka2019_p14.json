@@ -1,0 +1,12 @@
+{
+ "tool": "camelot_lattice",
+ "version": "2.0.0",
+ "paper_id": "zyka2019",
+ "page": 14,
+ "seconds": 0.4,
+ "settings": {
+  "flavor": "lattice"
+ },
+ "tables": [],
+ "text": null
+}

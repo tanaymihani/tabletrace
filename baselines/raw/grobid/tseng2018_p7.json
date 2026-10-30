@@ -1,0 +1,118 @@
+{
+ "tool": "grobid",
+ "version": "0.9.1",
+ "paper_id": "tseng2018",
+ "page": 7,
+ "seconds": 1.49,
+ "settings": {
+  "endpoint": "processFulltextDocument",
+  "status": 200,
+  "device": "Kaggle CPU, 4 cores"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "",
+     "HfMoNb",
+     "HfNbTa",
+     "HfMoTa",
+     "HfMoNb",
+     "HfMoNb",
+     "HfMoNb"
+    ],
+    [
+     "",
+     "TaTiZr",
+     "TiZr [25]",
+     "TiZr",
+     "TiZr",
+     "TaZr",
+     "TaTi"
+    ],
+    [
+     "Yield strength (MPa)",
+     "1512",
+     "929",
+     "1600",
+     "1351",
+     "1524",
+     "1369"
+    ],
+    [
+     "Fracture strain (%)",
+     "12",
+     "> 50",
+     "4",
+     "20",
+     "16",
+     "27"
+    ]
+   ],
+   "caption": "Table 3 . The room temperature compressive yield strength and fracture strain of the Hf-Mo-Nb-Ta-Ti-Zr alloy series.",
+   "bbox": [
+    97.5,
+    90.76,
+    497.67,
+    171.02
+   ]
+  },
+  {
+   "rows": [
+    [
+     "Temperature ( • C)",
+     "HfMoNb TaTiZr",
+     "HfNbTa TiZr [25]",
+     "HfMoTa TiZr",
+     "HfMoNb TiZr",
+     "HfMoNb TaZr",
+     "HfMoNb TaTi"
+    ],
+    [
+     "800",
+     "1007",
+     "535",
+     "1045",
+     "829",
+     "1005",
+     "822"
+    ],
+    [
+     "1000",
+     "814",
+     "295",
+     "855",
+     "721",
+     "927",
+     "778"
+    ],
+    [
+     "1200",
+     "556",
+     "92",
+     "404",
+     "301",
+     "694",
+     "699"
+    ],
+    [
+     "1400",
+     "N. A.",
+     "N. A.",
+     "N. A.",
+     "N. A.",
+     "278",
+     "367"
+    ]
+   ],
+   "caption": "Table 4 . The elevated temperature compressive yield strength (MPa) of the Hf-Mo-Nb-Ta-Ti-Zr alloy series.",
+   "bbox": [
+    97.5,
+    190.17,
+    497.66,
+    292.44
+   ]
+  }
+ ],
+ "text": null
+}

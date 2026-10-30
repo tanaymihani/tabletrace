@@ -1,0 +1,14 @@
+{
+ "tool": "grobid",
+ "version": "0.9.1",
+ "paper_id": "haas2019",
+ "page": 6,
+ "seconds": 1.06,
+ "settings": {
+  "endpoint": "processFulltextDocument",
+  "status": 500,
+  "device": "Kaggle CPU, 4 cores"
+ },
+ "tables": [],
+ "text": null
+}

@@ -1,0 +1,76 @@
+{
+ "tool": "grobid",
+ "version": "0.9.1",
+ "paper_id": "rickman2019",
+ "page": 5,
+ "seconds": 1.32,
+ "settings": {
+  "endpoint": "processFulltextDocument",
+  "status": 200,
+  "device": "Kaggle CPU, 4 cores"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "Alloy",
+     "Hardness (HV)",
+     "Hardness (HV)"
+    ],
+    [
+     "",
+     "",
+     "predicted"
+    ],
+    [
+     "Co 33 W 07 Al 33 Nb 24 Cr 03",
+     "1084 ± 37",
+     "825"
+    ],
+    [
+     "Ti 18 Ni 24 Ta 12 Cr 22 Co 24",
+     "1011 ± 20",
+     "677"
+    ],
+    [
+     "Co 6 W 9 Al 36 Mo 38 Ni 11",
+     "725 ± 47",
+     "618"
+    ],
+    [
+     "Ni 47 Co 02 Ta 12 Ti 9 Nb 30",
+     "815 ± 43",
+     "702"
+    ],
+    [
+     "Ti 44 Ni 02 Nb 21 Cr 21 Co 12",
+     "422 ± 13",
+     "656"
+    ],
+    [
+     "Ti 32 Nb 9 Ta 01 Cr 19 Co 39",
+     "856 ± 29",
+     "673"
+    ],
+    [
+     "Ti 39 W 04 Nb 31 Ta 04 Co 22",
+     "277 ± 12",
+     "697"
+    ],
+    [
+     "",
+     "",
+     "10 μm"
+    ]
+   ],
+   "caption": "Table 2 The Vicker's hardness values (in HV) for the synthesized alloys",
+   "bbox": [
+    307.67,
+    362.2,
+    547.18,
+    684.41
+   ]
+  }
+ ],
+ "text": null
+}

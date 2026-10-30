@@ -1,0 +1,430 @@
+{
+ "tool": "camelot_stream",
+ "version": "2.0.0",
+ "paper_id": "zyka2019",
+ "page": 4,
+ "seconds": 0.03,
+ "settings": {
+  "flavor": "stream"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "",
+     "Table 2. Important high entropy alloy (HEA) related parameters if investigated alloys calculated using",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "data from Table 1.",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "VEC",
+     "∆Hmix",
+     "δ",
+     "",
+     "Tm [K]",
+     "Ω",
+     "",
+     "Smix",
+     "",
+     "Smix",
+     ""
+    ],
+    [
+     "",
+     "[kJ/mol]",
+     "[%]",
+     "",
+     "",
+     "",
+     "",
+     "[J/(mol K)]",
+     "",
+     "[R*J/(mol K)]",
+     ""
+    ],
+    [
+     "HfNbTaTiZr\n4.4",
+     "2.72",
+     "5.51",
+     "",
+     "2514.20",
+     "12.37",
+     "",
+     "13.38",
+     "",
+     "1.61",
+     "HEA"
+    ],
+    [
+     "NbTaTiZr\n4.5",
+     "2.50",
+     "5.26",
+     "",
+     "2519.00",
+     "11.61",
+     "",
+     "11.53",
+     "",
+     "1.39",
+     "MEA"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "NbTaTi\n4.662",
+     "Entropy 2018, 20, x FOR PEER REVIEW   \n1.33",
+     "1.31",
+     "",
+     "2647.68",
+     "18.17",
+     "",
+     "9.13",
+     "",
+     "4  of  18 \n1.10",
+     "MEA"
+    ],
+    [
+     "TaTiZr\n4.329",
+     "1.77",
+     "5.43",
+     "",
+     "2442.56",
+     "12.57",
+     "",
+     "9.13",
+     "",
+     "1.10",
+     "MEA"
+    ],
+    [
+     "NbTaTi",
+     "4.662",
+     "1.33",
+     "1.31",
+     "2647.68",
+     "18.17",
+     "9.13",
+     "",
+     "1.10",
+     "MEA",
+     ""
+    ],
+    [
+     "NbTiZr\n4.329",
+     "2.66",
+     "5.43",
+     "",
+     "2266.73",
+     "7.78",
+     "",
+     "9.13",
+     "",
+     "1.10",
+     "MEA"
+    ],
+    [
+     "TaTiZr",
+     "4.329",
+     "1.77",
+     "5.43",
+     "2442.56",
+     "12.57",
+     "9.13",
+     "",
+     "1.10",
+     "MEA",
+     ""
+    ],
+    [
+     "4.625\nNb1.5TaTiZr0.5",
+     "2.13",
+     "4.20",
+     "",
+     "2596.00",
+     "13.42",
+     "",
+     "10.98",
+     "",
+     "1.32",
+     "MEA"
+    ],
+    [
+     "NbTiZr",
+     "4.329",
+     "2.66",
+     "5.43",
+     "2266.73",
+     "7.78",
+     "9.13",
+     "",
+     "1.10",
+     "MEA",
+     ""
+    ],
+    [
+     "Nb0.5TaTiZr1.5",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Nb1,5TaTiZr0,5",
+     "4.625",
+     "2.13",
+     "4.20",
+     "2596.00",
+     "13.42",
+     "10.98",
+     "",
+     "1.32",
+     "MEA",
+     ""
+    ],
+    [
+     "Nb0,5TaTiZr1,5",
+     "4.375",
+     "2.38",
+     "5.67",
+     "2442.00",
+     "11.29",
+     "10.98",
+     "",
+     "1.32",
+     "MEA",
+     ""
+    ],
+    [
+     "3.2. Mechanical Properties",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    75.48,
+    81.44,
+    518.91,
+    252.4
+   ]
+  },
+  {
+   "rows": [
+    [
+     "Figure 1. Tensile curves of investigated alloys at room temperature. Curves for brittle alloys TaTiZr,",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "Nb1.5TaTiZr0.5 and Nb0.5TaTiZr1.5 were shifted horizontally to make them visible.",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Nb1.5TaTiZr0.5 and Nb0.5TaTiZr1.5 were shifted horizontally to make them visible.",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "Table 3. Room temperature mechanical properties of the alloys studied.",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "Table 3. Room temperature mechanical properties of the alloys studied.",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Alloy",
+     "Rp0,2 [MPa] \nRm [MPa]",
+     "A [%]",
+     "E [GPa]",
+     "HV30"
+    ],
+    [
+     "Alloy",
+     "Rm [MPa]\nRp0.2 [MPa]",
+     "A [%]",
+     "E [GPa]",
+     "HV30"
+    ],
+    [
+     "HfNbTaTiZr",
+     "1155 \n1212",
+     "12.3",
+     "59",
+     "359"
+    ],
+    [
+     "NbTaTiZr",
+     "1144 \n1205",
+     "6.4",
+     "98",
+     "358"
+    ],
+    [
+     "HfNbTaTiZr",
+     "1155\n1212",
+     "12.3",
+     "59",
+     "359"
+    ],
+    [
+     "NbTaTi",
+     "620 \n683",
+     "18.5",
+     "143",
+     "246"
+    ],
+    [
+     "NbTaTiZr",
+     "1144\n1205",
+     "6.4",
+     "98",
+     "358"
+    ],
+    [
+     "TaTiZr",
+     "- \n284",
+     "0",
+     "157",
+     "485"
+    ],
+    [
+     "NbTaTi",
+     "620\n683",
+     "18.5",
+     "143",
+     "246"
+    ],
+    [
+     "NbTiZr",
+     "956 \n991",
+     "14.2",
+     "88",
+     "295"
+    ],
+    [
+     "TaTiZr",
+     "-\n284",
+     "0",
+     "157",
+     "485"
+    ],
+    [
+     "Nb1,5TaTiZr0,5",
+     "822 \n852",
+     "0.33",
+     "127",
+     "294"
+    ],
+    [
+     "NbTiZr",
+     "956\n991",
+     "14.2",
+     "88",
+     "295"
+    ],
+    [
+     "Nb0,5TaTiZr1,5",
+     "- \n843",
+     "0",
+     "93",
+     "489"
+    ],
+    [
+     "Nb1.5TaTiZr0.5",
+     "822\n852",
+     "0.33",
+     "127",
+     "294"
+    ],
+    [
+     "",
+     "The 5 element HEA HfNbTaTiZr alloy has the best tensile properties among the alloys studied,",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Nb0.5TaTiZr1.5",
+     "-\n843",
+     "0",
+     "93",
+     "489"
+    ],
+    [
+     "",
+     "both regarding the strength and elongation. The 4 element NbTaTiZr alloy has similar strength and",
+     "",
+     "",
+     ""
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    118.39,
+    559.32,
+    487.57,
+    711.7
+   ]
+  }
+ ],
+ "text": null
+}

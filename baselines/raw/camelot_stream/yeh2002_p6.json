@@ -1,0 +1,211 @@
+{
+ "tool": "camelot_stream",
+ "version": "2.0.0",
+ "paper_id": "yeh2002",
+ "page": 6,
+ "seconds": 0.03,
+ "settings": {
+  "flavor": "stream"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "TABLE 6-continued",
+     ""
+    ],
+    [
+     "Compositions and hardness values of high-entropy",
+     ""
+    ],
+    [
+     "multielement alloys",
+     ""
+    ],
+    [
+     "Minor",
+     ""
+    ],
+    [
+     "Element",
+     ""
+    ],
+    [
+     "Alloy \nMaior Elements (mole % \n(mole %)",
+     "Hardness"
+    ],
+    [
+     "No. \nIron \nCobalt \nNickel \nChromium  Aluminum \nSilicon",
+     "(Hv)"
+    ],
+    [
+     "33 \nAll major elements are in the same mole fraction. \n18",
+     "540"
+    ],
+    [
+     "34 \nAll major elements are in the same mole fraction. \n3.5",
+     "570"
+    ],
+    [
+     "0.032 \nTable 6 shows the effect of minor element, silicon,",
+     "be fabricated into tools, molds, and Structural components"
+    ],
+    [
+     "on the hardneSS Value of a high-entropy alloy having iron,",
+     "for low and high temperature applications by the precision"
+    ],
+    [
+     "cobalt, nickel, chromium, and aluminum \nthe same mole",
+     "casting method.  Both machining and heat-treatment cost"
+    ],
+    [
+     "R It indicates that \nt \naddits \nof s \nhas",
+     "could be saved and no worry about temper Softening even at"
+    ],
+    [
+     "moderate improvement on hardness. Since Silicon  might",
+     "1,000  C. are  needed. They can also be fabricated as a"
+    ],
+    [
+     "also improve the fluidity and corrosion resistance, a Suitable",
+     ""
+    ],
+    [
+     "- \n-",
+     "coating layer on the Surface of Structural components by"
+    ],
+    [
+     "amount of Silicon could be beneficial in Several respects.",
+     ""
+    ],
+    [
+     "",
+     "electric plasma or flame Spraying for the purposes of fric"
+    ],
+    [
+     "EXAMPLES 35 TO 39",
+     "tion, heat, and corrosion resistances."
+    ],
+    [
+     "0033. \nManufacturing  operations  in  example  1  were",
+     "0036. \nFrom the foregoing description, one skilled in the"
+    ],
+    [
+     "repeated, but the compositional elements were changed. The",
+     "art can easily ascertain the essential characteristics of this"
+    ],
+    [
+     "compositions of alloy tablets in examples 35 to 39 are alloy",
+     "invention, and without departing from the Scope thereof, can"
+    ],
+    [
+     "No.35 to No.39 in Table 7, respectively.",
+     "make various changes and modifications of the invention to"
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    49.76,
+    104.27,
+    523.72,
+    375.64
+   ]
+  },
+  {
+   "rows": [
+    [
+     "",
+     "",
+     "TABLE 7",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "Compositions and hardness values of high-entropy",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "multielement alloys",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "Minor",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "Element",
+     ""
+    ],
+    [
+     "Alloy",
+     "",
+     "Maior Elements (mole %",
+     "(mole %)",
+     "Hardness"
+    ],
+    [
+     "No.",
+     "Iron",
+     "Cobalt \nNickel \nChromium  Aluminum  Titanium",
+     "Copper",
+     "(Hv)"
+    ],
+    [
+     "3O",
+     "",
+     "All major elements are in the same mole fraction.",
+     "O",
+     "760"
+    ],
+    [
+     "31",
+     "",
+     "All major elements are in the same mole fraction.",
+     "0.4",
+     "750"
+    ],
+    [
+     "32",
+     "",
+     "All major elements are in the same mole fraction.",
+     "O.8",
+     "730"
+    ],
+    [
+     "33",
+     "",
+     "All major elements are in the same mole fraction.",
+     "1.6",
+     "690"
+    ],
+    [
+     "34",
+     "",
+     "All major elements are in the same mole fraction.",
+     "3.2",
+     "630"
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    52.16,
+    376.91,
+    348.04,
+    529.64
+   ]
+  }
+ ],
+ "text": null
+}

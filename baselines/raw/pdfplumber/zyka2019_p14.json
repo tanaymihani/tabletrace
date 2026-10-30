@@ -1,0 +1,12 @@
+{
+ "tool": "pdfplumber",
+ "version": "0.11.10",
+ "paper_id": "zyka2019",
+ "page": 14,
+ "seconds": 0.05,
+ "settings": {
+  "table_settings": "default"
+ },
+ "tables": [],
+ "text": null
+}

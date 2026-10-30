@@ -1,0 +1,231 @@
+{
+ "tool": "grobid",
+ "version": "0.9.1",
+ "paper_id": "yeh2002",
+ "page": 5,
+ "seconds": 1.17,
+ "settings": {
+  "endpoint": "processFulltextDocument",
+  "status": 200,
+  "device": "Kaggle CPU, 4 cores"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "EXAMPLES 30 TO 34"
+    ],
+    [
+     "",
+     "",
+     "",
+     "0031 Manufacturing operations in example 1 were",
+     "0031 Manufacturing operations in example 1 were",
+     "0031 Manufacturing operations in example 1 were"
+    ],
+    [
+     "",
+     "",
+     "",
+     "repeated, but the compositional elements were changed. The",
+     "repeated, but the compositional elements were changed. The",
+     "repeated, but the compositional elements were changed. The"
+    ],
+    [
+     "",
+     "",
+     "",
+     "compositions of alloy tablets in examples 30 to 34 are alloy",
+     "compositions of alloy tablets in examples 30 to 34 are alloy",
+     "compositions of alloy tablets in examples 30 to 34 are alloy"
+    ],
+    [
+     "",
+     "",
+     "",
+     "No.30 to No.34 in Table 6, respectively.",
+     "No.30 to No.34 in Table 6, respectively.",
+     "No.30 to No.34 in Table 6, respectively."
+    ],
+    [
+     "",
+     "",
+     "Compositions and hardness values of high-entropy",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "multielement alloys",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "Minor",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "Element",
+     ""
+    ],
+    [
+     "Alloy",
+     "",
+     "Maior Elements (mole %",
+     "(mole %) Hardness",
+     "(mole %) Hardness"
+    ],
+    [
+     "No.",
+     "Iron",
+     "Cobalt Nickel Chromium Vanadium Titanium",
+     "Boron",
+     "(Hv)"
+    ],
+    [
+     "25",
+     "",
+     "All major elements are in the same mole fraction.",
+     "O",
+     "760"
+    ],
+    [
+     "26",
+     "",
+     "All major elements are in the same mole fraction.",
+     "0.4",
+     "88O"
+    ],
+    [
+     "27",
+     "",
+     "All major elements are in the same mole fraction.",
+     "O.8",
+     "98O"
+    ],
+    [
+     "28",
+     "",
+     "All major elements are in the same mole fraction.",
+     "1.7",
+     "1030"
+    ],
+    [
+     "29",
+     "",
+     "All major elements are in the same mole fraction.",
+     "3.3",
+     "1067"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "TABLE 6"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "Compositions and hardness values of high-entropy",
+     "Compositions and hardness values of high-entropy"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "multielement alloys"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "Minor"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "Element"
+    ],
+    [
+     "",
+     "",
+     "Alloy",
+     "",
+     "Major Elements (mole %)",
+     "Major Elements (mole %)",
+     "(mole %) Hardness"
+    ],
+    [
+     "",
+     "",
+     "No.",
+     "Iron",
+     "Cobalt",
+     "Nickel Chromium Aluminum Silicon",
+     "(Hv)"
+    ],
+    [
+     "",
+     "",
+     "3O",
+     "All major elements are in the same mole fraction.",
+     "All major elements are in the same mole fraction.",
+     "All major elements are in the same mole fraction.",
+     "O",
+     "48O"
+    ],
+    [
+     "",
+     "",
+     "31",
+     "All major elements are in the same mole fraction.",
+     "All major elements are in the same mole fraction.",
+     "All major elements are in the same mole fraction.",
+     "O.3",
+     "500"
+    ],
+    [
+     "",
+     "",
+     "32",
+     "All major elements are in the same mole fraction.",
+     "All major elements are in the same mole fraction.",
+     "All major elements are in the same mole fraction.",
+     "O.8",
+     "52O"
+    ]
+   ],
+   "caption": "TABLE 5 Same mole fraction. It indicates that minor addition of boron has a remarkable improvement on hardness. The hardening effect becomes diminishing when the amount approaching 3.3%. This means a Suitable amount of boron could be effective and important if a higher hardneSS is desired.",
+   "bbox": [
+    62.16,
+    278.84,
+    509.04,
+    741.89
+   ]
+  }
+ ],
+ "text": null
+}

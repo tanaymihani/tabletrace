@@ -1,0 +1,13 @@
+{
+ "tool": "nougat",
+ "version": "facebook/nougat-base",
+ "paper_id": "billinghurst1992",
+ "page": 14,
+ "seconds": 8.54,
+ "settings": {
+  "image": "1600 px longest side, resized by the processor",
+  "max_new_tokens": 3584
+ },
+ "tables": [],
+ "text": "\n\n\\begin{table}\n\\begin{tabular}{|l c c c c c|} \\hline  & \\multicolumn{2}{c}{Ultimate Tensile Strength (ksi)} & \\multicolumn{2}{c|}{Percent Reduction of Area} \\\\ \\cline{2-6} Alloy & Tested in Air & Tested in LH\\({}_{2}\\) & Tested in Air & Tested in LH\\({}_{2}\\) \\\\  & (70 °F) & (–423 °F) & (70 °F) & (–423 °F) \\\\ Ti-5Al-2.5Sn ELI & 108.4 & 185.0 & 24.6 & 11.7 \\\\ Ti-6Al-4V ELI & 129.1 & 212.2 & 15.2 & 8.7 \\\\ \\hline \\end{tabular}\n\\end{table}\nTable 4: Ultimate tensile strength (ksi)/percent reduction in area.\n\n\\begin{table}\n\\begin{tabular}{|l c c c c c c|} \\hline  & \\multicolumn{2}{c}{Percent EL} \\\\ \\cline{3-8}  & \\multicolumn{1}{c}{Test} & & & Percent & & No. of \\\\ Material & Temp. & UTS (ksi) & YS (ksi) & RA & 1 in & 2 in & Samples \\\\ Ti-6Al-4V ELI & 70 °F & 129.1 & 118.6 & 15.2 & 17.4 & 7.8 & 3 \\\\ Ti-5Al-2.5Sn ELI & 70 °F & 108.5 & 100.2 & 24.6 & 9.2 & 9.0* & 3 \\\\ Ti-6Al-4V ELI & –423 °F & 212.2 & 199.0† & 8.7 & 5.6 & 3.3 & 5 \\\\ Ti-5Al-2.5Sn ELI & –423 °F & 185.0 & 156.9† & 11.7 & 7.6 & 6.4* & 5 \\\\ \\hline \\end{tabular}\n\n*Samples broke outside 1-in gauge marks.\n\n†YS value for one sample only.\n\n\\end{table}\nTable 3: Summary of test results/average of tensile mechanical properties.\n\n"
+}

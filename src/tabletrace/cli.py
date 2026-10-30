@@ -7,6 +7,7 @@ import os
 import subprocess
 import sys
 from dataclasses import replace
+from pathlib import Path
 
 from .paths import ROOT, load_papers
 
@@ -62,6 +63,76 @@ def cmd_eval(args) -> int:
     return 0
 
 
+def cmd_extract(args) -> int:
+    """Extract one page and print every record with where it came from and whether it needs review."""
+    import json
+    from types import SimpleNamespace
+
+    from .confidence import score_values
+    from .paths import load_papers
+    from .pipeline import Config, PaperResult, process_page
+
+    known = {p.paper_id: p for p in load_papers()}
+    if args.pdf in known:
+        paper = known[args.pdf]
+    else:
+        path = Path(args.pdf).resolve()
+        paper = SimpleNamespace(paper_id=path.stem, input_pdf=path, raw_pdf=path)
+    cfg = Config(ocr_lang="eng_tt" if (ROOT / "models" / "tessdata" / "eng_tt.traineddata").exists() else "eng")
+    threshold = args.threshold
+    if threshold is None:
+        metrics = ROOT / "reports" / "metrics.json"
+        threshold = json.loads(metrics.read_text())["calibration"]["alphas"]["0.1"]["threshold"] if metrics.exists() else 0.85
+    res = PaperResult(paper.paper_id)
+    process_page(paper, args.page, cfg, res)
+    route = res.routes[-1]
+    has_second = {paper.paper_id} if route["route"] == "text_layer" or route["vendor_ocr"] else set()
+    score_values(res.values, res.secondary, has_second)
+    if args.json:
+        for v in res.values:
+            print(json.dumps({**v.model_dump(mode="json", exclude={"features"}), "review": v.confidence < threshold}))
+        return 0
+    print(f"page {args.page}: {route['reason']} -> {route['route'].replace('_', ' ')} route")
+    for t in res.tables:
+        print(f"table {t.table_index if t.table_index > 0 else '?'} at {tuple(round(x) for x in t.bbox)}: "
+              f"{t.n_values} values ({t.orientation})")
+    for v in res.values:
+        temp = f" @ {v.test_temperature_c:g} C" if v.test_temperature_c is not None else ""
+        flag = "REVIEW" if v.confidence < threshold else "accept"
+        print(f"  {v.material[:22]:22s} {v.property.value:17s} {v.value:8.1f} {v.unit:3s}{temp:11s} "
+              f"cell {v.row},{v.col}  printed {v.raw_text!r:12s} conf {v.confidence:.2f}  {flag}")
+    flagged = sum(v.confidence < threshold for v in res.values)
+    print(f"{len(res.values)} values, {flagged} sent to review (threshold {threshold:.2f}), {len(res.quarantine)} quarantined")
+    return 0
+
+
+def cmd_baselines(args) -> int:
+    from .baselines import available_tools, evaluate_all, third_route, write_report
+
+    tools = args.tools or available_tools()
+    res = evaluate_all(tools, n_boot=args.n_boot)
+    third = None
+    if "olmocr2" in tools and (ROOT / "outputs" / "runs" / "finetuned" / "extractions.jsonl").exists():
+        third = third_route("olmocr2")
+    write_report(res, intro=BASELINES_INTRO, third=third)
+    print(f"scored {len(tools)} tools: reports/baselines.md, reports/baselines.json, reports/figures/baselines.png")
+    return 0
+
+
+BASELINES_INTRO = [
+    "# Other tools on the same labels",
+    "",
+    "Every system gets the 16 labeled pages that TableTrace reads, and its tables go through",
+    "TableTrace's interpretation, normalization and Hungarian matching, so these numbers measure",
+    "finding tables and reading their cells. See baselines/README.md for how each tool was run.",
+    "Intervals come from resampling the 10 documents with replacement (10,000 times), so a",
+    "document counts once however many labels it has. The \"records\" rows skip TableTrace's",
+    "interpretation: the model returns material, property, value and unit itself, and only the",
+    "unit conversion is shared.",
+    "",
+]
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="tabletrace", description=__doc__)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -70,6 +141,14 @@ def main(argv: list[str] | None = None) -> int:
     r.add_argument("experiments", nargs="*", help=f"any of {', '.join(EXPERIMENTS)} (default: all)")
     e = sub.add_parser("eval", help="score the saved runs and write reports/")
     e.add_argument("--alpha", type=float, default=0.10)
+    x = sub.add_parser("extract", help="extract one page and print its records with provenance")
+    x.add_argument("pdf", help="a PDF path, or a paper_id from papers.csv")
+    x.add_argument("--page", type=int, required=True, help="1-based page number")
+    x.add_argument("--json", action="store_true", help="one JSON record per line")
+    x.add_argument("--threshold", type=float, default=None, help="review threshold (default: the calibrated one)")
+    b = sub.add_parser("baselines", help="score the saved outputs of other tools (baselines/raw/) against the labels")
+    b.add_argument("tools", nargs="*", help="tool folders in baselines/raw (default: all)")
+    b.add_argument("--n-boot", type=int, default=10000)
     a = sub.add_parser("all", help="data, run, eval")
     a.add_argument("--alpha", type=float, default=0.10)
     args = ap.parse_args(argv)
@@ -79,6 +158,10 @@ def main(argv: list[str] | None = None) -> int:
         return cmd_run(args)
     if args.cmd == "eval":
         return cmd_eval(args)
+    if args.cmd == "extract":
+        return cmd_extract(args)
+    if args.cmd == "baselines":
+        return cmd_baselines(args)
     if args.cmd == "all":
         args.experiments = None
         return cmd_data(args) or cmd_run(args) or cmd_eval(args)

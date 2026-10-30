@@ -1,0 +1,13 @@
+{
+ "tool": "nougat",
+ "version": "facebook/nougat-base",
+ "paper_id": "zyka2019",
+ "page": 4,
+ "seconds": 4.42,
+ "settings": {
+  "image": "1600 px longest side, resized by the processor",
+  "max_new_tokens": 3584
+ },
+ "tables": [],
+ "text": "\n\n### Mechanical Properties\n\nTensile curves of investigated alloys performed at room temperature are shown in Figure 1. Results of tensile tests performed and hardness measurements performed at room temperature are given in Table 3.\n\nThe 5 element HEA HfNbTaTiZr alloy has the best tensile properties among the alloys studied, both regarding the strength and elongation. The 4 element NbTaTiZr alloy has similar strength and hardness as HfNbTaTiZr but elongation is reduced to 6.4%. The NbTaTi has low strength, half of that for HfNbTaTiZr but the highest elongation. The NbTiZr alloy has strength values below 1000 MPa\n\n\\begin{table}\n\\begin{tabular}{c c c c c c c c} \\hline  & **VEC** & **ΔHmix** & **δ** & **Tm [K]** & **ΔH** & **Smix** & **Smix** \\\\  & & **[k]/mol]** & **[\\%]** & & & **[j/(mol K])** & **[R\\({}^{*}\\)]/(mol K]** & \\\\ \\hline HfNbTaTiZr & 4.4 & 2.72 & 5.51 & 2514.20 & 12.37 & 13.38 & 1.61 & HEA \\\\ NbTaTiZr & 4.5 & 2.50 & 5.26 & 2519.00 & 11.61 & 11.53 & 1.39 & MEA \\\\ NbTaTi & 4.662 & 1.33 & 1.31 & 2647.68 & 18.17 & 9.13 & 1.10 & MEA \\\\ TaTiZr & 4.329 & 1.77 & 5.43 & 2442.56 & 12.57 & 9.13 & 1.10 & MEA \\\\ NbTiZr & 4.329 & 2.66 & 5.43 & 2266.73 & 7.78 & 9.13 & 1.10 & MEA \\\\ Nb\\({}_{1.5}\\)TaTiZr\\({}_{0.5}\\) & 4.625 & 2.13 & 4.20 & 2596.00 & 13.42 & 10.98 & 1.32 & MEA \\\\ Nb\\({}_{0.5}\\)TaTiZr\\({}_{1.5}\\) & 4.375 & 2.38 & 5.67 & 2442.00 & 11.29 & 10.98 & 1.32 & MEA \\\\ \\hline \\end{tabular}\n\\end{table}\nTable 2: Important high entropy alloy (HEA) related parameters if investigated alloys calculated using data from Table 1.\n\nFigure 1: Tensile curves of investigated alloys at room temperature. Curves for brittle alloys TaTiZr, Nb\\({}_{1.5}\\)TaTiZr\\({}_{0.5}\\) and Nb\\({}_{0.5}\\)TaTiZr\\({}_{1.5}\\) were shifted horizontally to make them visible.\n\n\\begin{table}\n\\begin{tabular}{c c c c c} \\hline \\hline\n* & 284 & 0 & 157 & 485 \\\\ NbTiZr & 956 & 991 & 14.2 & 88 & 295 \\\\ Nb\\({}_{1.5}\\)TaTiZr\\({}_{0.5}\\) & 822 & 852 & 0.33 & 127 & 294 \\\\ Nb\\({}_{0.5}\\)TaTiZr\\({}_{1.5}\\) &\n- & 843 & 0 & 93 & 489 \\\\ \\hline \\hline \\end{tabular}\n\\end{table}\nTable 3: Room temperature mechanical properties of the alloys studied.\n"
+}

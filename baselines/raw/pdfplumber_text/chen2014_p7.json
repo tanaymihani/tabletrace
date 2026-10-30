@@ -1,0 +1,13 @@
+{
+ "tool": "pdfplumber_text",
+ "version": "0.11.10",
+ "paper_id": "chen2014",
+ "page": 7,
+ "seconds": 0.0,
+ "settings": {
+  "vertical_strategy": "text",
+  "horizontal_strategy": "text"
+ },
+ "tables": [],
+ "text": null
+}

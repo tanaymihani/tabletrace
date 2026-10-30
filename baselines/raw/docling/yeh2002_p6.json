@@ -1,0 +1,444 @@
+{
+ "tool": "docling",
+ "version": "2.145.0",
+ "paper_id": "yeh2002",
+ "page": 6,
+ "seconds": 16.21,
+ "settings": {
+  "pipeline": "default PdfPipelineOptions"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "",
+     "Compositions and hardness values of high-entropy multielement alloys",
+     "Compositions and hardness values of high-entropy multielement alloys",
+     "Hardness"
+    ],
+    [
+     "Alloy",
+     "Major Elements (mole %)",
+     "Minor Element (mole %)",
+     ""
+    ],
+    [
+     "No.",
+     "Iron Cobalt Nickel",
+     "Chromium Aluminum Silicon",
+     "(Hv)"
+    ],
+    [
+     "33",
+     "All major elements are in the same mole fraction.",
+     "1.8",
+     "540"
+    ],
+    [
+     "34",
+     "All major elements are in the same mole fraction.",
+     "3.5",
+     "570"
+    ]
+   ],
+   "cell_boxes": [
+    [
+     null,
+     [
+      115.67,
+      134.67,
+      262.33,
+      151.33
+     ],
+     [
+      115.67,
+      134.67,
+      262.33,
+      151.33
+     ],
+     [
+      285.67,
+      174.67,
+      315.0,
+      183.67
+     ]
+    ],
+    [
+     [
+      63.67,
+      173.33,
+      83.33,
+      185.33
+     ],
+     [
+      130.0,
+      175.33,
+      206.0,
+      183.0
+     ],
+     [
+      251.67,
+      158.33,
+      280.67,
+      184.0
+     ],
+     null
+    ],
+    [
+     [
+      66.0,
+      190.0,
+      81.0,
+      200.33
+     ],
+     [
+      93.67,
+      190.33,
+      182.33,
+      199.67
+     ],
+     [
+      178.0,
+      189.67,
+      277.33,
+      200.0
+     ],
+     [
+      292.33,
+      190.0,
+      309.33,
+      201.33
+     ]
+    ],
+    [
+     [
+      68.0,
+      205.0,
+      79.33,
+      214.33
+     ],
+     [
+      95.67,
+      205.67,
+      240.33,
+      214.33
+     ],
+     [
+      259.33,
+      205.0,
+      272.33,
+      214.33
+     ],
+     [
+      293.67,
+      205.0,
+      307.67,
+      214.33
+     ]
+    ],
+    [
+     [
+      68.0,
+      213.0,
+      79.33,
+      222.33
+     ],
+     [
+      95.33,
+      213.67,
+      240.33,
+      222.33
+     ],
+     [
+      259.0,
+      213.0,
+      272.33,
+      222.33
+     ],
+     [
+      293.0,
+      212.33,
+      308.0,
+      222.67
+     ]
+    ]
+   ],
+   "header_rows": null,
+   "caption": "TABLE 6-continued",
+   "bbox": [
+    58.83,
+    129.1,
+    318.11,
+    227.31
+   ]
+  },
+  {
+   "rows": [
+    [
+     "",
+     "",
+     "Compositions and hardness values of high-entropy multielement alloys",
+     "Compositions and hardness values of high-entropy multielement alloys",
+     ""
+    ],
+    [
+     "Major Elements (mole %) No. Iron Cobalt",
+     "Alloy",
+     "",
+     "Minor Element (mole %) Nickel Chromium Aluminum Titanium Copper",
+     "Hardness (Hv)"
+    ],
+    [
+     "30",
+     "All major elements are in the same mole fraction.",
+     "All major elements are in the same mole fraction.",
+     "0",
+     "760"
+    ],
+    [
+     "31",
+     "All major elements are in the same mole fraction.",
+     "All major elements are in the same mole fraction.",
+     "0.4",
+     "750"
+    ],
+    [
+     "32",
+     "All major elements are in the same mole fraction.",
+     "All major elements are in the same mole fraction.",
+     "0.8",
+     "730"
+    ],
+    [
+     "33",
+     "All major elements are in the same mole fraction.",
+     "All major elements are in the same mole fraction.",
+     "1.6",
+     "690"
+    ],
+    [
+     "34",
+     "All major elements are in the same mole fraction.",
+     "All major elements are in the same mole fraction.",
+     "3.2",
+     "630"
+    ]
+   ],
+   "cell_boxes": [
+    [
+     null,
+     null,
+     [
+      126.33,
+      407.0,
+      272.67,
+      423.33
+     ],
+     [
+      126.33,
+      407.0,
+      272.67,
+      423.33
+     ],
+     null
+    ],
+    [
+     [
+      62.67,
+      447.33,
+      213.0,
+      473.0
+     ],
+     [
+      60.33,
+      446.67,
+      80.67,
+      457.67
+     ],
+     null,
+     [
+      138.33,
+      430.67,
+      301.67,
+      473.67
+     ],
+     [
+      306.33,
+      447.33,
+      336.0,
+      474.0
+     ]
+    ],
+    [
+     [
+      64.33,
+      477.33,
+      75.67,
+      487.33
+     ],
+     [
+      102.33,
+      477.67,
+      247.33,
+      487.0
+     ],
+     [
+      102.33,
+      477.67,
+      247.33,
+      487.0
+     ],
+     [
+      280.67,
+      477.67,
+      288.0,
+      486.33
+     ],
+     [
+      314.33,
+      477.0,
+      329.33,
+      487.33
+     ]
+    ],
+    [
+     [
+      64.67,
+      484.67,
+      74.67,
+      495.33
+     ],
+     [
+      102.33,
+      486.0,
+      247.33,
+      495.0
+     ],
+     [
+      102.33,
+      486.0,
+      247.33,
+      495.0
+     ],
+     [
+      280.33,
+      485.67,
+      293.67,
+      495.0
+     ],
+     [
+      314.67,
+      485.67,
+      329.0,
+      495.0
+     ]
+    ],
+    [
+     [
+      65.0,
+      494.0,
+      75.33,
+      502.67
+     ],
+     [
+      102.67,
+      494.33,
+      247.67,
+      503.0
+     ],
+     [
+      102.67,
+      494.33,
+      247.67,
+      503.0
+     ],
+     [
+      280.33,
+      493.67,
+      293.33,
+      503.0
+     ],
+     [
+      314.67,
+      493.67,
+      329.0,
+      502.67
+     ]
+    ],
+    [
+     [
+      64.33,
+      501.67,
+      75.67,
+      511.33
+     ],
+     [
+      103.0,
+      503.0,
+      247.33,
+      510.67
+     ],
+     [
+      103.0,
+      503.0,
+      247.33,
+      510.67
+     ],
+     [
+      280.33,
+      501.67,
+      293.33,
+      511.0
+     ],
+     [
+      315.0,
+      501.67,
+      329.0,
+      511.0
+     ]
+    ],
+    [
+     [
+      64.33,
+      509.67,
+      75.67,
+      519.0
+     ],
+     [
+      102.67,
+      510.33,
+      247.67,
+      519.0
+     ],
+     [
+      102.67,
+      510.33,
+      247.67,
+      519.0
+     ],
+     [
+      280.33,
+      509.67,
+      293.67,
+      519.67
+     ],
+     [
+      314.67,
+      509.67,
+      329.0,
+      519.0
+     ]
+    ]
+   ],
+   "header_rows": null,
+   "caption": "TABLE 7",
+   "bbox": [
+    58.88,
+    401.32,
+    339.08,
+    523.73
+   ]
+  }
+ ],
+ "text": null
+}

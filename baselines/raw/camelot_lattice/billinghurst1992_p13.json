@@ -1,0 +1,12 @@
+{
+ "tool": "camelot_lattice",
+ "version": "2.0.0",
+ "paper_id": "billinghurst1992",
+ "page": 13,
+ "seconds": 0.27,
+ "settings": {
+  "flavor": "lattice"
+ },
+ "tables": [],
+ "text": null
+}

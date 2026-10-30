@@ -1,0 +1,727 @@
+{
+ "tool": "camelot_stream",
+ "version": "2.0.0",
+ "paper_id": "yeh2002",
+ "page": 3,
+ "seconds": 0.03,
+ "settings": {
+  "flavor": "stream"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "for air Sealing, the chamber is vacuumed and filled with pure",
+     ""
+    ],
+    [
+     "argon. This process is  repeated for Several times before",
+     ""
+    ],
+    [
+     "",
+     "TABLE 1."
+    ],
+    [
+     "arc-melting Starts. After the  melt Solidifies in the copper",
+     ""
+    ],
+    [
+     "mold, it is reversed and arc-melted again. In order to assure",
+     "Compositional elements and Hv hardnesses of the high-entropy"
+    ],
+    [
+     "that all metallic elements melt and are uniformly mixed Such",
+     "multielement alloys"
+    ],
+    [
+     "melting operations are repeated for Several times. Finally,",
+     ""
+    ],
+    [
+     "",
+     "Hardness (HV)"
+    ],
+    [
+     "after the mold is cooled, the alloy ingot is taken out.",
+     ""
+    ],
+    [
+     "",
+     "(1000° C. heat"
+    ],
+    [
+     "0.017. \nThe  high-entropy  multielement  alloys  of  the",
+     "Compositional elements (all \nHardness \ntreatment for"
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "present invention are made of multiple major metallic ele",
+     "elements are in the same mole \n(Hv) \n12 hr and"
+    ],
+    [
+     "",
+     "Alloy  fraction except boron, \n(as-cast \ncooling in the"
+    ],
+    [
+     "ments by various Synthesis methods. Their chemical com",
+     ""
+    ],
+    [
+     "",
+     "Number which is 3%) \nstate) \nfurnace)"
+    ],
+    [
+     "positions contain essentially five to eleven major metallic",
+     ""
+    ],
+    [
+     "elements, and the  mole  fraction  of each  major metallic",
+     "1 \nCopper, titanium,vanadium, \n590 \n6OO"
+    ],
+    [
+     "element in the alloys is between 5% and 30%. The major",
+     "2 \nAluminum, titanium, \n8OO \n790"
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "metallic elements in the alloy can be beryllium, magnesium,",
+     "vanadium, iron, nickel,"
+    ],
+    [
+     "",
+     "Zirconium"
+    ],
+    [
+     "aluminum, Scandium, titanium, Vanadium, chromium, man",
+     ""
+    ],
+    [
+     "",
+     "3 \nMolybdenum, titanium, \n740 \n760"
+    ],
+    [
+     "ganese, iron, cobalt, nickel, copper, Zinc, yttrium, Zirconium,",
+     ""
+    ],
+    [
+     "",
+     "vanadium, iron, nickel,"
+    ],
+    [
+     "niobium, molybdenum, ruthenium, rhodium, palladium, Sil",
+     "Zirconium"
+    ],
+    [
+     "ver, hafnium, tantalum, tungsten, platinum, gold, lanthanum,",
+     "4 \nCopper, titanium, vanadium, \n62O \n62O"
+    ],
+    [
+     "cerium, praseodymium, neodymium, Samarium, europium,",
+     "iron, nickel, Zirconium, 3%"
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "gadolinium, terbium, and So on.",
+     "boron"
+    ],
+    [
+     "",
+     "5 \nAluminum, titanium, \n78O \n790"
+    ],
+    [
+     "0.018 \nBeside  the  major  metallic  element  mentioned",
+     "vanadium, iron, nickel,"
+    ],
+    [
+     "above, Some other minor elements, each is less than 3.5 mole",
+     "zirconium, 3% boron"
+    ],
+    [
+     "",
+     "6 \nCopper, titanium, vanadium, \n630 \n62O"
+    ],
+    [
+     "%, could be added into the high-entropy multielement alloys",
+     ""
+    ],
+    [
+     "",
+     "iron, nickel, Zirconium, cobalt"
+    ],
+    [
+     "of the present invention. The minor elements can be metallic",
+     ""
+    ],
+    [
+     "",
+     "7 \nAluminum, titanium, \n790 \n8OO"
+    ],
+    [
+     "or nonmetallic. The minor metallic elements can be Selected",
+     ""
+    ],
+    [
+     "",
+     "vanadium, iron, nickel,"
+    ],
+    [
+     "from the  metallic  group  of lithium,  beryllium,  Sodium,",
+     "Zirconium, cobalt"
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "magnesium,  aluminum,  Scandium,  titanium,  Vanadium,",
+     "8 \nMolybdenum, titanium, \n790 \n790"
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "chromium, manganese, iron, cobalt,  nickel, copper, Zinc,",
+     "vanadium, iron, nickel,"
+    ],
+    [
+     "",
+     "Zirconium, cobalt"
+    ],
+    [
+     "gallium, germanium, Strontium,  yttrium,  Zirconium, nio",
+     ""
+    ],
+    [
+     "",
+     "9 \nCopper, titanium, vanadium, \n670 \n690"
+    ],
+    [
+     "bium, molybdenum, ruthenium, rhodium, palladium, Silver,",
+     ""
+    ],
+    [
+     "",
+     "iron, nickel, Zirconium, cobalt,"
+    ],
+    [
+     "cadmium, indium, tin, antimony, hafnium, tantalum, tung",
+     "3% boron"
+    ],
+    [
+     "Sten,  platinum, gold,  lead,  bismuth, lanthanum, cerium,",
+     "10 \nAluminum, titanium, \n78O \n790"
+    ],
+    [
+     "praseodymium, neodymium, Samarium, europium, gado",
+     "vanadium, iron, nickel,"
+    ],
+    [
+     "linium and terbium. The minor nonmetallic elements can be",
+     "zirconium, cobalt, 3% boron"
+    ],
+    [
+     "",
+     "11 \nCopper, titanium, vanadium, \n68O \n68O"
+    ],
+    [
+     "Selected  from the  nonmetallic  group  of carbon,  boron,",
+     ""
+    ],
+    [
+     "",
+     "iron, nickel, Zirconium, cobalt,"
+    ],
+    [
+     "Silicon, phosphorus, Sulfur, hydrogen, oxygen and nitrogen.",
+     "chromium"
+    ],
+    [
+     "",
+     "12 \nAluminum, titanium, \n78O \n890"
+    ],
+    [
+     "EXAMPLES 1",
+     ""
+    ],
+    [
+     "",
+     "vanadium, iron, nickel,"
+    ],
+    [
+     "0.019 \nRaw materials of copper, titanium, vanadium, iron,",
+     "Zirconium, cobalt, chromium"
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    49.52,
+    369.06,
+    516.22,
+    744.17
+   ]
+  },
+  {
+   "rows": [
+    [
+     "US 2002/0159914 A1",
+     "Oct. 31, 2002"
+    ],
+    [
+     "from Hv450 to Hv900, depending on the chemical",
+     "number, to be 17.3 g, 13.0 g, 13.9 g, 15.2g, 16.0 g, and 24.8"
+    ],
+    [
+     "composition. The hardneSS level  is  similar  to  or",
+     "g,  respectively, So that  a total  weight about 100 g was"
+    ],
+    [
+     "higher than that of a fully quenching-hardened car",
+     "obtained. The metallic elements were Stacked up in a water"
+    ],
+    [
+     "bon steel or alloy steel.",
+     "cooled copper mold inside  an arc-melting furnace  with"
+    ],
+    [
+     "",
+     "increasing melting point. Then the top lid of the furnace was"
+    ],
+    [
+     "0014 \n2. Very high in heat resistance: after a thermal",
+     ""
+    ],
+    [
+     "",
+     "put on, and vacuum was created for about 5 min. When the"
+    ],
+    [
+     "treatment at 1,000  C. for 12 hours and subsequent",
+     ""
+    ],
+    [
+     "",
+     "chamber pressure decreased to 0.01 atm, pure argon was"
+    ],
+    [
+     "cooling in a furnace, the alloy could remain their",
+     ""
+    ],
+    [
+     "",
+     "introduced to raise the pressure up to about 0.2 atm. After"
+    ],
+    [
+     "high hardness level and do not show the effect of",
+     ""
+    ],
+    [
+     "temper Softening.",
+     "another repetition of the above operation, the melting was"
+    ],
+    [
+     "",
+     "started. The melting current was 500 Amps. After each time"
+    ],
+    [
+     "0015 \n3.  Very high in  corrosion resistance:  when",
+     ""
+    ],
+    [
+     "",
+     "the  materials  melted and then  solidified,  the  alloy  was"
+    ],
+    [
+     "Soaked in  high-concentration  Solution  of Sulfuric",
+     ""
+    ],
+    [
+     "",
+     "reversed and the electric  arc was turned on again. Such"
+    ],
+    [
+     "acid, hydrochloric acid, or nitric acid, the alloy could",
+     ""
+    ],
+    [
+     "",
+     "operations were repeated Several times to assure that all"
+    ],
+    [
+     "exhibit an excellent corrosive resistance.",
+     ""
+    ],
+    [
+     "",
+     "metallic elements are uniformly mixed. Finally, the Solidi"
+    ],
+    [
+     "DETAILED DESCRIPTION OF THE",
+     "fied round tablet with a diameter of 5 cm was taken out for"
+    ],
+    [
+     "PREFERRED EMBODIMENTS",
+     "analysis. Its composition is the alloy No. 1 as shown in Table"
+    ],
+    [
+     "",
+     "1. Furthermore, a portion of the alloy tablet was cut off for"
+    ],
+    [
+     "0016. \nThe  high-entropy  multielement  alloys  of  the",
+     ""
+    ],
+    [
+     "",
+     "heat treatment. It was put in an air furnace of 1,000  C. for"
+    ],
+    [
+     "present invention can be manufactured by using the follow",
+     ""
+    ],
+    [
+     "",
+     "12 hours,  and  then  cooled  in  the  furnace  to  obtain  a"
+    ],
+    [
+     "ing Synthesis methods: resistance melting, induction melt",
+     ""
+    ],
+    [
+     "",
+     "heat-treated State. The properties for both the as-cast and"
+    ],
+    [
+     "ing, electric  arc  melting,  rapid Solidification,  mechanical",
+     ""
+    ],
+    [
+     "",
+     "heat-treated States were measured."
+    ],
+    [
+     "alloying,  and powder metallurgy, etc.  The technologies",
+     ""
+    ],
+    [
+     "involved in these methods are not mentioned here Since they",
+     ""
+    ],
+    [
+     "",
+     "EXAMPLES 2 TO 20"
+    ],
+    [
+     "are well known. Here only electric arc melting and casting",
+     ""
+    ],
+    [
+     "is illustrated for an example. In arc melting, raw materials of",
+     ""
+    ],
+    [
+     "",
+     "0020 \nManufacturing  operations  in  example  1  were"
+    ],
+    [
+     "various elements are  first  Stacked up in  a  water-cooled",
+     ""
+    ],
+    [
+     "",
+     "repeated, but the compositional elements were changed. The"
+    ],
+    [
+     "copper mold inside a melting furnace with increasing melt",
+     ""
+    ],
+    [
+     "",
+     "compositions of alloy tablets in examples 2 to 20 are alloy"
+    ],
+    [
+     "ing point. Then, after putting on the top cover of the furnace",
+     ""
+    ],
+    [
+     "",
+     "No.2 to No.20 in Table 1, respectively."
+    ],
+    [
+     "for air Sealing, the chamber is vacuumed and filled with pure",
+     ""
+    ],
+    [
+     "argon. This process is  repeated for Several times before",
+     ""
+    ],
+    [
+     "",
+     "TABLE 1."
+    ],
+    [
+     "arc-melting Starts. After the  melt Solidifies in the copper",
+     ""
+    ],
+    [
+     "mold, it is reversed and arc-melted again. In order to assure",
+     "Compositional elements and Hv hardnesses of the high-entropy"
+    ],
+    [
+     "that all metallic elements melt and are uniformly mixed Such",
+     "multielement alloys"
+    ],
+    [
+     "melting operations are repeated for Several times. Finally,",
+     ""
+    ],
+    [
+     "",
+     "Hardness (HV)"
+    ],
+    [
+     "after the mold is cooled, the alloy ingot is taken out.",
+     ""
+    ],
+    [
+     "",
+     "(1000° C. heat"
+    ],
+    [
+     "0.017. \nThe  high-entropy  multielement  alloys  of  the",
+     "Compositional elements (all \nHardness \ntreatment for"
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "present invention are made of multiple major metallic ele",
+     "elements are in the same mole \n(Hv) \n12 hr and"
+    ],
+    [
+     "",
+     "Alloy  fraction except boron, \n(as-cast \ncooling in the"
+    ],
+    [
+     "ments by various Synthesis methods. Their chemical com",
+     ""
+    ],
+    [
+     "",
+     "Number which is 3%) \nstate) \nfurnace)"
+    ],
+    [
+     "positions contain essentially five to eleven major metallic",
+     ""
+    ],
+    [
+     "elements, and the  mole  fraction  of each  major metallic",
+     "1 \nCopper, titanium,vanadium, \n590 \n6OO"
+    ],
+    [
+     "element in the alloys is between 5% and 30%. The major",
+     "2 \nAluminum, titanium, \n8OO \n790"
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "metallic elements in the alloy can be beryllium, magnesium,",
+     "vanadium, iron, nickel,"
+    ],
+    [
+     "",
+     "Zirconium"
+    ],
+    [
+     "aluminum, Scandium, titanium, Vanadium, chromium, man",
+     ""
+    ],
+    [
+     "",
+     "3 \nMolybdenum, titanium, \n740 \n760"
+    ],
+    [
+     "ganese, iron, cobalt, nickel, copper, Zinc, yttrium, Zirconium,",
+     ""
+    ],
+    [
+     "",
+     "vanadium, iron, nickel,"
+    ],
+    [
+     "niobium, molybdenum, ruthenium, rhodium, palladium, Sil",
+     "Zirconium"
+    ],
+    [
+     "ver, hafnium, tantalum, tungsten, platinum, gold, lanthanum,",
+     "4 \nCopper, titanium, vanadium, \n62O \n62O"
+    ],
+    [
+     "cerium, praseodymium, neodymium, Samarium, europium,",
+     "iron, nickel, Zirconium, 3%"
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "gadolinium, terbium, and So on.",
+     "boron"
+    ],
+    [
+     "",
+     "5 \nAluminum, titanium, \n78O \n790"
+    ],
+    [
+     "0.018 \nBeside  the  major  metallic  element  mentioned",
+     "vanadium, iron, nickel,"
+    ],
+    [
+     "above, Some other minor elements, each is less than 3.5 mole",
+     "zirconium, 3% boron"
+    ],
+    [
+     "",
+     "6 \nCopper, titanium, vanadium, \n630 \n62O"
+    ],
+    [
+     "%, could be added into the high-entropy multielement alloys",
+     ""
+    ],
+    [
+     "",
+     "iron, nickel, Zirconium, cobalt"
+    ],
+    [
+     "of the present invention. The minor elements can be metallic",
+     ""
+    ],
+    [
+     "",
+     "7 \nAluminum, titanium, \n790 \n8OO"
+    ],
+    [
+     "or nonmetallic. The minor metallic elements can be Selected",
+     ""
+    ],
+    [
+     "",
+     "vanadium, iron, nickel,"
+    ],
+    [
+     "from the  metallic  group  of lithium,  beryllium,  Sodium,",
+     "Zirconium, cobalt"
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "magnesium,  aluminum,  Scandium,  titanium,  Vanadium,",
+     "8 \nMolybdenum, titanium, \n790 \n790"
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "chromium, manganese, iron, cobalt,  nickel, copper, Zinc,",
+     "vanadium, iron, nickel,"
+    ],
+    [
+     "",
+     "Zirconium, cobalt"
+    ],
+    [
+     "gallium, germanium, Strontium,  yttrium,  Zirconium, nio",
+     ""
+    ],
+    [
+     "",
+     "9 \nCopper, titanium, vanadium, \n670 \n690"
+    ],
+    [
+     "bium, molybdenum, ruthenium, rhodium, palladium, Silver,",
+     ""
+    ],
+    [
+     "",
+     "iron, nickel, Zirconium, cobalt,"
+    ],
+    [
+     "cadmium, indium, tin, antimony, hafnium, tantalum, tung",
+     "3% boron"
+    ],
+    [
+     "Sten,  platinum, gold,  lead,  bismuth, lanthanum, cerium,",
+     "10 \nAluminum, titanium, \n78O \n790"
+    ],
+    [
+     "praseodymium, neodymium, Samarium, europium, gado",
+     "vanadium, iron, nickel,"
+    ],
+    [
+     "linium and terbium. The minor nonmetallic elements can be",
+     "zirconium, cobalt, 3% boron"
+    ],
+    [
+     "",
+     "11 \nCopper, titanium, vanadium, \n68O \n68O"
+    ],
+    [
+     "Selected  from the  nonmetallic  group  of carbon,  boron,",
+     ""
+    ],
+    [
+     "",
+     "iron, nickel, Zirconium, cobalt,"
+    ],
+    [
+     "Silicon, phosphorus, Sulfur, hydrogen, oxygen and nitrogen.",
+     "chromium"
+    ],
+    [
+     "",
+     "12 \nAluminum, titanium, \n78O \n890"
+    ],
+    [
+     "EXAMPLES 1",
+     ""
+    ],
+    [
+     "",
+     "vanadium, iron, nickel,"
+    ],
+    [
+     "0.019 \nRaw materials of copper, titanium, vanadium, iron,",
+     "Zirconium, cobalt, chromium"
+    ],
+    [
+     "nickel,  and Zirconium  were  weighed at  the  same mole",
+     ""
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    49.52,
+    52.64,
+    523.92,
+    763.28
+   ]
+  }
+ ],
+ "text": null
+}

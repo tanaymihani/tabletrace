@@ -1,0 +1,14 @@
+{
+ "tool": "grobid",
+ "version": "0.9.1",
+ "paper_id": "chen2014",
+ "page": 7,
+ "seconds": 1.26,
+ "settings": {
+  "endpoint": "processFulltextDocument",
+  "status": 500,
+  "device": "Kaggle CPU, 4 cores"
+ },
+ "tables": [],
+ "text": null
+}

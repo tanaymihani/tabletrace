@@ -1,0 +1,739 @@
+{
+ "tool": "pdfplumber_text",
+ "version": "0.11.10",
+ "paper_id": "tseng2018",
+ "page": 11,
+ "seconds": 0.23,
+ "settings": {
+  "vertical_strategy": "text",
+  "horizontal_strategy": "text"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "Entropy 2018, 20, x",
+     "",
+     "",
+     "",
+     "11 of 13"
+    ],
+    [
+     "Gm(GPa)",
+     "∆σ(MPa) σm",
+     "(MPa) σc(",
+     "MPa) σ 0.2(MPa",
+     ") G (GPa)\ncal"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "HfMoHNfbNTabTTiaZTriZr 55 4",
+     "3 1669 938",
+     "260 225 19",
+     "291163 1952192 [2",
+     "6] 4132"
+    ],
+    [
+     "HfNbTaTiZr 43",
+     "938",
+     "225 11",
+     "63 929[26]",
+     "32"
+    ],
+    [
+     "HfMoTaTiZr 6\nHfMoTaTiZr 60",
+     "0 1918\n1918",
+     "264\n264 21",
+     "2182 160\n82 1600",
+     "0 41\n41"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "HfMHoNfMbToiZNrbTiZr 53 5",
+     "3 1683 1683",
+     "278 278 19",
+     "611961 1351135",
+     "1 3333"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "HfMHoNfMbToaNZrbTaZr 58 5",
+     "8 1948 1948",
+     "273 273 22",
+     "212221 1521452",
+     "4 3737"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "HfMoNbTaTi 60\nHfMoNbTaTi 6",
+     "1610\n0 1610",
+     "256 18\n256",
+     "66 1369\n1866 136",
+     "41\n9 41"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "(a)",
+     "",
+     "",
+     "(b)",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "∆",
+     "",
+     ""
+    ],
+    [
+     "FFiigguurree 55.. TThhee ttrreenndd ooff HHff--M",
+     "Moo--NNbb--TTaa--TTi-iZ-Zrra allloloy",
+     "ys seerrieiess::( (aa)) ∆σσ,, σσmm",
+     ",, σσ cc,, aanndd σσ 0.2, ,aanndd (b(b) )",
+     "GG m manadn dGG cal. ."
+    ],
+    [
+     "",
+     "",
+     "",
+     "0.2",
+     "cal"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     ". Conclusions\n5. Conclusions",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "The equiatomic HfMoN\nThe equiatomic HfMoN",
+     "bTaTiZr alloy wa\nbTaTiZr alloy w",
+     "s chosen to ana\nas chosen to an",
+     "lyze the effect of\nalyze the effect o",
+     "each constituent\nf each constituent"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "lemental by the subtractio\nelemental by the subtracti",
+     "n method and,\non method and,",
+     "thus, HfMoNb\nthus, HfMoNb",
+     "TaTiZr, HfNbTaTi\nTaTiZr, HfNbTaT",
+     "Zr, HfMoTaTiZr,\niZr, HfMoTaTiZr,"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "fMoNbTiZr, HfMoNbTaZr,\nHfMoNbTiZr, HfMoNbTaZr",
+     "and HfMoNbTaT\n, and HfMoNbTaT",
+     "i were studied.\ni were studied.",
+     "Among these allo\nAmong these alloys",
+     "ys, HfMoNbTaTi\n, HfMoNbTaTi has"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "asthebestmechanicalperfor\nthe best mechanical perform",
+     "mance,thatis,27\nance, that is, 27%",
+     "%compressives\ncompressive s",
+     "trainatroomtemp\ntrain at room temp",
+     "eratureandyield\nerature and yield"
+    ],
+    [
+     "◦",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "trength367MPaat1400 C.\nstrength 367 MPa at 1400 °C.",
+     "HfMoNbTaTihas\nHfMoNbTaTi has",
+     "greatpotentialfo\ngreat potential f",
+     "relevated-tempera\nor elevated-temper",
+     "tureapplications.\nature applications."
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "sthealloysystemdoesnotc\nAs the alloy system does not",
+     "ontainveryexpens\ncontain very expe",
+     "iveelementssuc\nnsive elements su",
+     "hasReandRu,iti\nch as Re and Ru, it",
+     "scostcompetitive\nis cost competitive"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "or high-temperature applica\nfor high-temperature applic",
+     "tions like Nb-Hf-\nations like Nb-Hf",
+     "Ti alloys in spac\n-Ti alloys in sp",
+     "e vehicles. Furthe\nace vehicles. Furth",
+     "r modification of\ner modification of"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "ompositionand/oranti-oxid\ncomposition and/or anti-oxid",
+     "ationcoatingsar\nation coatings are",
+     "estillrequiredf\nstill required for",
+     "orhigh-temperatu\nhigh-temperature",
+     "reapplicationsin\napplications in the"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "heair.\nair.",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Accordingtotheexperim\nAccording to the expe",
+     "entresults,theeffe\nriment results, th",
+     "ctsofMo,Nb,Ta\ne effects of Mo",
+     ",Ti,andZronmec\n, Nb, Ta, Ti, and",
+     "hanicalproperties\nZr on mechanical"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "f equiatomic Hf-Mo-Nb-Ta-\nproperties of equiatomic Hf",
+     "Ti-Zr alloys were\n-Mo-Nb-Ta-Ti-Zr",
+     "described. For\nalloys were des",
+     "higher room-temp\ncribed. For higher",
+     "erature strength,\nroom-temperature"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "ne should add an element\nstrength, one should add an e",
+     "which interacts f\nlement which inte",
+     "requently with\nracts frequently",
+     "the alloy, such as\nwith the alloy, suc",
+     "Mo. For higher\nh as Mo. For higher"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "levated-temperature strengt\nelevated-temperature strengt",
+     "h, one should ad\nh, one should add",
+     "d the elements\nthe elements wh",
+     "which possess hig\nich possess high m",
+     "h melting points,\nelting points, such"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "uch as Mo, Nb, or Ta. One s\nas Mo, Nb, or Ta. One should",
+     "hould add more\nadd more Nb for",
+     "Nb for higher d\nhigher ductility",
+     "uctility. With Ti or\n. With Ti or Zr add",
+     "Zr addition, the\nition, the elevated-"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "levated-temperaturestrengt\ntemperature strength and th",
+     "handthedensity\ne density decrease",
+     "decreases. Allt\ns. All these elem",
+     "heseelementaleffe\nental effects could",
+     "ctscouldalsobe\nalso be applied to"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "ppliedtoallotherRHEAssy\nall other RHEAs systems, bu",
+     "stems,butmorere\nt more research is",
+     "searchisrequire\nrequired to conf",
+     "dtoconfirmthisp\nirm this premise.",
+     "remise."
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Thesolidsolutionphasef\nThe solid solution phas",
+     "ormationruleand\ne formation rule",
+     "thesolidsolutio\nand the solid sol",
+     "nstrengtheningeffe\nution strengthenin",
+     "ctofRHEAshave\ng effect of RHEAs"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "eendiscussed. Thehighentr\nhave been discussed. The hi",
+     "opyeffectofthepr\ngh entropy effect",
+     "esentalloysissi\nof the present",
+     "gnificantinenhanc\nalloys is significan",
+     "ingtheformation\nt in enhancing the"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "formation of a solid solutio",
+     "n. The shear mod",
+     "ulus of RHEAs",
+     "is smaller than th",
+     "at predicted from"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "mixture rule by about 30%. T",
+     "his reduction is at",
+     "tributable to sev",
+     "ere lattice distortio",
+     "n."
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Author Contributions: K.-K.T.",
+     "did the writing-ori",
+     "ginal draft prepa",
+     "ration, writing-revie",
+     "w & editing, formal"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "analysis, and the investigation.",
+     "C.-C.J. did the met",
+     "hodology and the",
+     "data curation. S.T.",
+     "and H.-C.C. did the"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "writing-original draft preparati",
+     "on. C.-W.T. and J.-",
+     "W.Y. did the writi",
+     "ng-review & editing,",
+     "supervision, project"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "administration, and funding acq",
+     "uisition.",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Funding: This work was financi",
+     "ally supported by th",
+     "e “High Entropy",
+     "Materials Center” fro",
+     "m the Featured Areas"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Research Center Program with",
+     "in the framework o",
+     "f the Higher Edu",
+     "cation Sprout Projec",
+     "t by the Ministry of"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Education (MOE) and from th",
+     "e Project MOST 10",
+     "7-3017-F-007-003",
+     "by Ministry of Scie",
+     "nce and Technology"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "(MOST) in Taiwan.",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Acknowledgments: The author",
+     "s acknowledged Dr.",
+     "Woei-Ren Wang (",
+     "Industrial Technolog",
+     "y Research Institute,"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Tainan, Taiwan), who provided",
+     "all the high temper",
+     "ature compressive",
+     "test with Gleeble 350",
+     "0."
+    ]
+   ],
+   "bbox": [
+    81.81,
+    210.01,
+    524.22,
+    933.64
+   ],
+   "caption": null
+  }
+ ],
+ "text": null
+}

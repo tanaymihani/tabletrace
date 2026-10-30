@@ -90,12 +90,18 @@ def cross_field_flags(values: list[ExtractedValue]) -> set[int]:
     return bad
 
 
-def score_values(values: list[ExtractedValue], secondary: list[ExtractedValue], has_second_route: set[str]) -> None:
+def score_values(values: list[ExtractedValue], secondary: list[ExtractedValue], has_second_route: set[str],
+                 third: list[ExtractedValue] | None = None, third_mode: str = "penalize") -> None:
     """Fill value.confidence and value.features in place.
 
     has_second_route: paper ids for which a second route ran on the same pages.
+    third: values read independently by a vision-language model from the page image (off by default).
+    third_mode "penalize": a disagreement or a missing counterpart costs what it costs for a second
+    OCR reading. "boost": agreement closes half the gap to 1, and nothing else changes. Neither
+    beat the score without the VLM on the calibration papers (reports/baselines.md).
     """
     agreement = route_agreement(values, secondary)
+    vlm = route_agreement(values, third) if third is not None else {}
     yield_flags = cross_field_flags(values)
     for i, v in enumerate(values):
         f = v.features
@@ -123,10 +129,19 @@ def score_values(values: list[ExtractedValue], secondary: list[ExtractedValue], 
             f["agreement"] = 0.0
         else:
             f["agreement"] = 1.0
+        if third is not None:
+            b = vlm[i]
+            f["vlm_agreement"] = 0.5 if b is None else b
+            if third_mode == "penalize" and b is None:
+                c *= WEIGHTS["no_counterpart_ocr"]
+            elif third_mode == "penalize" and b == 0.0:
+                c *= WEIGHTS["disagree_ocr"]
         if f.get("unit_agreement") == 0.0:
             c *= WEIGHTS["unit_disagree"]
         if f.get("repaired"):
             c *= WEIGHTS["repaired"]
         if f.get("caption_property"):
             c *= WEIGHTS["caption_property"]
+        if third is not None and third_mode == "boost" and vlm[i] == 1.0:
+            c += (1.0 - c) / 2
         v.confidence = max(0.0, min(1.0, c))

@@ -1,0 +1,301 @@
+{
+ "tool": "pdfplumber_text",
+ "version": "0.11.10",
+ "paper_id": "zyka2019",
+ "page": 14,
+ "seconds": 0.1,
+ "settings": {
+  "vertical_strategy": "text",
+  "horizontal_strategy": "text"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "Entropy2019,21,114 14of17"
+    ],
+    [
+     ""
+    ],
+    [
+     "two BCC phases and HCP was detected in a HfNbTaTiZr specimen annealed at 500 ◦C for 100 h."
+    ],
+    [
+     ""
+    ],
+    [
+     "OncontraryweobservedonlyasingleBCCphaseinas-caststate."
+    ],
+    [
+     ""
+    ],
+    [
+     "System HfNbTaTi, similar to our NbTaTiZr alloy was calculated by CAPLHAD method [36]."
+    ],
+    [
+     ""
+    ],
+    [
+     "AlsocombinationofBCC+HCPphaseswasfoundtobestableatroomtemperaturetheBCC2phase"
+    ],
+    [
+     "appearedbetween750◦Cand1000◦C."
+    ],
+    [
+     ""
+    ],
+    [
+     "InRef.[25]equimolarNbTaTiZrwasmodifiedbyaddingTiandremovingTaandresultssimilar"
+    ],
+    [
+     ""
+    ],
+    [
+     "tothepresentworkwereobserved. Theelongationtofailureincreasedwithrisingtitaniumcontent."
+    ],
+    [
+     ""
+    ],
+    [
+     "Dendriticsegregationcamefromsolidifying,segregationofTaandZrandintergranularprecipitates"
+    ],
+    [
+     "wereformedafter1200◦C/8hannealing. ButonlysingleBCCphasewasfoundintheas-caststate."
+    ],
+    [
+     ""
+    ],
+    [
+     "StabilizingofBCCphasebyreductionofTacontentandrisingTicontentwasproposed[25]. Aclear"
+    ],
+    [
+     "correlationbetweenstrengthorelongationandthemisfitparameterδwereestablished. Itisprobably"
+    ],
+    [
+     ""
+    ],
+    [
+     "duetosinglephasemicrostructure."
+    ],
+    [
+     ""
+    ],
+    [
+     "Table7showscomparisonoftensilepropertiesofthealloysstudiedinthepresentworkwith"
+    ],
+    [
+     ""
+    ],
+    [
+     "MEAs reported in literature. There is a good agreement in ultimate tensile strength of NbTaTiZr"
+    ],
+    [
+     ""
+    ],
+    [
+     "alloybutreferredrupturestrengthishigherandelongationmuchlowerthanincasealloystudiedin"
+    ],
+    [
+     ""
+    ],
+    [
+     "thiswork."
+    ],
+    [
+     ""
+    ],
+    [
+     "Elongation,Acalc.,basedontantalumandzirconiumcombinedcontentusingequationfrom"
+    ],
+    [
+     ""
+    ],
+    [
+     "Figure8awascalculated. ThereisagoodcorrelationinhigherTicontentsincaseofalloysreferred."
+    ],
+    [
+     ""
+    ],
+    [
+     "But there is important difference in lower Ti content, although single phase solid solution for all"
+    ],
+    [
+     ""
+    ],
+    [
+     "compositionswasreported[25]."
+    ],
+    [
+     ""
+    ],
+    [
+     "Table7.Tensilepropertiesofpresentandreportedmediumentropyalloys(MEAs)[25]."
+    ],
+    [
+     ""
+    ],
+    [
+     ""
+    ],
+    [
+     "Alloy Ta+Zr HV30 Rp [MPa] Rm[MPa] A[%] Acalc.[%] Ref.\n0.2"
+    ],
+    [
+     ""
+    ],
+    [
+     "HfNbTaTiZr 0.4 359 1155 1212 12.3 12.51 [Thiswork]"
+    ],
+    [
+     "NbTaTiZr 0.5 358 1144 1205 6.4 7.33 [Thiswork]"
+    ],
+    [
+     "NbTaTi 0.333 246 620 683 18.5 15.98 [Thiswork]"
+    ],
+    [
+     "TaTiZr 0.666 485 - 284 0 −1.26 [Thiswork]"
+    ],
+    [
+     "NbTiZr 0.333 295 956 991 14.2 15.98 [Thiswork]"
+    ],
+    [
+     ""
+    ],
+    [
+     "Nb TaTiZr 0.375 294 822 852 0.33 13.81 [Thiswork]\n1.5 0.5"
+    ],
+    [
+     ""
+    ],
+    [
+     "Nb TaTiZr 0.625 489 - 843 0 0.86 [Thiswork]\n0.5 1.5"
+    ],
+    [
+     "NbTaTiZr 0.5 - *1190 *1190 *0 7.33 [25]"
+    ],
+    [
+     ""
+    ],
+    [
+     "NbTa Ti Zr 0.45 - *1100 *1110 *1 9.92 [25]\n0.8 1.2"
+    ],
+    [
+     ""
+    ],
+    [
+     "NbTa Ti Zr 0.4 - *1030 *1070 *2.5 12.51 [25]\n0.6 1.4"
+    ],
+    [
+     ""
+    ],
+    [
+     "NbTa Ti Zr 0.35 - 910 1040 18 15.10 [25]\n0.4 1.6"
+    ],
+    [
+     ""
+    ],
+    [
+     "NbTa Ti Zr 0.3 - 790 920 22 17.69 [25]\n0.2 1.8"
+    ],
+    [
+     ""
+    ],
+    [
+     "*Valuesestimatedfromthefigure[25]"
+    ],
+    [
+     ""
+    ],
+    [
+     "This difference corresponds with important change in elongation with Ti fraction. No clear"
+    ],
+    [
+     ""
+    ],
+    [
+     "explanation of this phenomenon was given [25]. Comparing experimental details of the present"
+    ],
+    [
+     ""
+    ],
+    [
+     "study with Ref. [25] one can recognize that dimensions of ingots were different. Ingots of alloys"
+    ],
+    [
+     ""
+    ],
+    [
+     "studiedinthepresentworkwerelargerandtherebysolidifiesandcoolsslowerthaningotsinRef.[25]."
+    ],
+    [
+     ""
+    ],
+    [
+     "ThereforeNbTaTiZralloycontaining100%oftheBCC1phasereportedinRef.[25]waslikelydueto"
+    ],
+    [
+     ""
+    ],
+    [
+     "highercoolingrate;whileinthepresentworkthesamealloyexhibitsamixtureofBCC1andBCC2"
+    ],
+    [
+     ""
+    ],
+    [
+     "phases,seeTable4. OnthecontraryinRef.[25]theNbTaTiZrisreferredasbrittle,wemeasured6.4%"
+    ],
+    [
+     ""
+    ],
+    [
+     "elongation,seeTable3,however,fracturemechanismhaschangedfromtransgranularwithductile"
+    ],
+    [
+     ""
+    ],
+    [
+     "dimplestointergranular,seeFigure2. Differentinterstitialselementcontentmaycausethedifference"
+    ],
+    [
+     ""
+    ],
+    [
+     "indeformationofnominallysamealloy."
+    ],
+    [
+     ""
+    ],
+    [
+     "In this study we use the same furnace and the same size of ingots in case of all investigated"
+    ],
+    [
+     ""
+    ],
+    [
+     "alloys. Therefore it is solely the effect of Ta + Zr content what affects the stability of the BCC1"
+    ],
+    [
+     ""
+    ],
+    [
+     "phase. Thecoolingratewashighenoughtoproduce100%BCC1microstructureincaseof5element"
+    ],
+    [
+     ""
+    ],
+    [
+     "HfNbTaTiZralloybutnotinthe4elementalloyNbTaTiZr."
+    ]
+   ],
+   "bbox": [
+    76.12,
+    57.09,
+    520.48,
+    757.91
+   ],
+   "caption": null
+  }
+ ],
+ "text": null
+}

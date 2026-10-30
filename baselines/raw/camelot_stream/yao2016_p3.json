@@ -1,0 +1,156 @@
+{
+ "tool": "camelot_stream",
+ "version": "2.0.0",
+ "paper_id": "yao2016",
+ "page": 3,
+ "seconds": 0.03,
+ "settings": {
+  "flavor": "stream"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "Table 1. The crystal lattice parameter (a), atomic radius (r), melting temperature (Tm), Vickers hardness",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "hardness (Hv), yield strength (σ0.2), valence electron concentration (VEC), Pauling electronegativity",
+     "",
+     ""
+    ],
+    [
+     "(Hv), yield strength (σ0.2), valence electron concentration (VEC), Pauling electronegativity difference",
+     "",
+     "",
+     ""
+    ],
+    [
+     "difference  (∆χ),  and  shear  modulus",
+     "(G)  of  pure  metals  are  given.  The  calculated  (Calc)  and",
+     "",
+     ""
+    ],
+    [
+     "(∆χ), and shear modulus (G) of pure metals are given. The calculated (Calc) and experimental (Exp)",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "experimental (Exp) data for MoNbTaV alloy is also listed here.",
+     "",
+     ""
+    ],
+    [
+     "data for MoNbTaV alloy is also listed here.",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Metal \nMo \nNb",
+     "Ta",
+     "V",
+     "MoNbTaV (Calc/Exp)"
+    ],
+    [
+     "Metal\nMo\nNb\na  (Å) \n3.1468 \n3.301",
+     "Ta\n3.303",
+     "V\n3.039",
+     "MoNbTaV (Calc/Exp)\n3.2036/3.208"
+    ],
+    [
+     "r  (Å) \n1.4 \n1.47",
+     "1.47",
+     "1.35",
+     "–"
+    ],
+    [
+     "3.1468\n3.301\na (Å)",
+     "3.303",
+     "3.039",
+     "3.2036/3.208"
+    ],
+    [
+     "2623 \n2477 \n1.4\n1.47\nTm  (°C) \nr (Å)",
+     "3017 \n1.47",
+     "1910 \n1.35",
+     "2528/– \n–"
+    ],
+    [
+     "2623\n2477\n1530 \n1320 \nTm (˝C)\nHv  (MPa)",
+     "3017\n873",
+     "1910\n628",
+     "2528/–\n1097/4947"
+    ],
+    [
+     "1530\n1320\nHv (MPa)",
+     "873",
+     "628",
+     "1097/4947"
+    ],
+    [
+     "438 \n240 \nσ0.2  (MPa)",
+     "345",
+     "310",
+     "333/1525"
+    ],
+    [
+     "438\n240\nσ0.2 (MPa)",
+     "345",
+     "310",
+     "333/1525"
+    ],
+    [
+     "VEC \n6 \n5",
+     "5",
+     "5",
+     "–"
+    ],
+    [
+     "VEC\n6\n5",
+     "5",
+     "5",
+     "–"
+    ],
+    [
+     "∆χ \n2.16 \n1.6",
+     "1.5",
+     "1.63",
+     "–"
+    ],
+    [
+     "2.16\n1.6\n∆χ",
+     "1.5",
+     "1.63",
+     "–"
+    ],
+    [
+     "G (GPa) \n123 \n59.5",
+     "64.7",
+     "46.6",
+     "73.78/–"
+    ],
+    [
+     "G (GPa)\n123\n59.5",
+     "64.7",
+     "46.6",
+     "73.78/–"
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    123.55,
+    539.81,
+    473.12,
+    713.74
+   ]
+  }
+ ],
+ "text": null
+}

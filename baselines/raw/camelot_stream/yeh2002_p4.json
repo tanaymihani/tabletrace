@@ -1,0 +1,374 @@
+{
+ "tool": "camelot_stream",
+ "version": "2.0.0",
+ "paper_id": "yeh2002",
+ "page": 4,
+ "seconds": 0.03,
+ "settings": {
+  "flavor": "stream"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "US 2002/0159914 A1",
+     "",
+     "",
+     "",
+     "Oct. 31, 2002"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "alloys  in  the  present  invention  almost show no temper"
+    ],
+    [
+     "",
+     "",
+     "TABLE 1-continued",
+     "",
+     "softening at  1000  C.,  and possess a  much better  heat"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "resistance than carbon Steels and alloy Steels."
+    ],
+    [
+     "",
+     "Compositional elements and Hv hardnesses of the high-entropy",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "multielement alloys",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "0024. \nAcid Resistance Test"
+    ],
+    [
+     "",
+     "",
+     "",
+     "Hardness (HV)",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "0025 \nThe multielement alloys of the present invention"
+    ],
+    [
+     "",
+     "",
+     "",
+     "(1000° C. heat",
+     ""
+    ],
+    [
+     "",
+     "Compositional elements (all",
+     "Hardness",
+     "treatment for",
+     "were cut and weighed to obtain 2 g of granules, and the"
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "elements are in the same mole",
+     "(Hv)",
+     "12 hr and",
+     "granules were Soaked in hydrochloric acid, Sulfuric acid, or"
+    ],
+    [
+     "Alloy  fraction except boron,",
+     "",
+     "(as-cast",
+     "cooling in the",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "nitric acid at concentrations of 1M or 0.01M for 24 hours."
+    ],
+    [
+     "Number which is 3%)",
+     "",
+     "state)",
+     "furnace)",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "The reactions between alloy tablets and various acid Solu"
+    ],
+    [
+     "3",
+     "Molybdenum, titanium,",
+     "850",
+     "850",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "tions and the tablet weight loss were observed to determine"
+    ],
+    [
+     "",
+     "vanadium, iron, nickel,",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "the acid resistance. The results are shown in Table 2."
+    ],
+    [
+     "",
+     "Zirconium, cobalt, chromium",
+     "",
+     "",
+     ""
+    ],
+    [
+     "4",
+     "Copper, titanium, vanadium,",
+     "720",
+     "720",
+     ""
+    ],
+    [
+     "",
+     "iron, nickel, zirconium, cobalt,",
+     "",
+     "",
+     "TABLE 2"
+    ],
+    [
+     "",
+     "chromium, 3% boron",
+     "",
+     "",
+     ""
+    ],
+    [
+     "5",
+     "Aluminum, titanium,",
+     "840",
+     "870",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "Acid resistance of the high-entropy multielement alloys to"
+    ],
+    [
+     "",
+     "vanadium, iron, nickel,",
+     "",
+     "",
+     "common acid solutions"
+    ],
+    [
+     "",
+     "Zirconium, cobalt, chromium,",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "3% boron",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     "HCl solution \nH5SO solution \nHNO3 solution"
+    ],
+    [
+     "6",
+     "Copper, titanium, vanadium,",
+     "670",
+     "630",
+     ""
+    ],
+    [
+     "",
+     "iron, nickel, zirconium, cobalt,",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "chromium, palladium",
+     "",
+     "",
+     ""
+    ],
+    [
+     "7",
+     "Aluminum, titanium,",
+     "78O",
+     "8OO",
+     ""
+    ],
+    [
+     "",
+     "vanadium, iron, nickel,",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "Zirconium, cobalt, chromium,",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "palladium",
+     "",
+     "",
+     ""
+    ],
+    [
+     "8",
+     "Molybdenum, titanium,",
+     "830",
+     "82O",
+     ""
+    ],
+    [
+     "",
+     "vanadium, iron, nickel,",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "Zirconium, cobalt, chromium,",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "palladium",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "9",
+     "Copper, titanium, vanadium, \niron, nickel, zirconium, cobalt,",
+     "700",
+     "630",
+     "1. 8"
+    ],
+    [
+     "",
+     "chromium, palladium, 3%",
+     "",
+     "",
+     "11"
+    ],
+    [
+     "",
+     "boron",
+     "",
+     "",
+     ""
+    ],
+    [
+     "20",
+     "Aluminum, titanium,",
+     "840",
+     "840",
+     ""
+    ],
+    [
+     "",
+     "vanadium, iron, nickel,",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "Zirconium, cobalt, chromium,",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "palladium, 3% boron",
+     "",
+     "",
+     ""
+    ]
+   ],
+   "caption": null,
+   "bbox": [
+    52.4,
+    52.5,
+    523.6,
+    456.71
+   ]
+  }
+ ],
+ "text": null
+}

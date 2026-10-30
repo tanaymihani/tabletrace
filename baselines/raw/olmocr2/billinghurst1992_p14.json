@@ -1,0 +1,16 @@
+{
+ "tool": "olmocr2",
+ "version": "allenai/olmOCR-2-7B-1025",
+ "paper_id": "billinghurst1992",
+ "page": 14,
+ "seconds": 267.32,
+ "settings": {
+  "prompt": "Attached is one page of a document that you must process. Just return the plain text representation of this document as if you were reading it naturally. Convert equations to LateX and tables to HTML.\nIf there are any figures or charts, label them with the following markdown syntax ![Alt text describing the contents of the figure](page_startx_starty_width_height.png)\nReturn your output as markdown, with a front matter section on top specifying values for the primary_language, is_rotation_valid, rotation_correction, is_table, and is_diagram parameters.",
+  "image": "img_olmocr",
+  "max_new_tokens": 6000,
+  "decoding": "greedy, float16, T4 x2",
+  "note": "olmOCR's own prompt and 1288 px render, greedy instead of temperature 0.1"
+ },
+ "tables": [],
+ "text": "---\nprimary_language: en\nis_rotation_valid: True\nrotation_correction: 0\nis_table: False\nis_diagram: False\n---\nTable 3. Summary of test results/average of tensile mechanical properties.\n\n<table>\n  <tr>\n    <th rowspan=\"2\">Material</th>\n    <th rowspan=\"2\">Test Temp.</th>\n    <th rowspan=\"2\">UTS (ksi)</th>\n    <th rowspan=\"2\">YS (ksi)</th>\n    <th rowspan=\"2\">Percent RA</th>\n    <th colspan=\"2\">Percent EL</th>\n    <th rowspan=\"2\">No. of Samples</th>\n  </tr>\n  <tr>\n    <th>1 in</th>\n    <th>2 in</th>\n  </tr>\n  <tr>\n    <td>Ti-6Al-4V ELI</td>\n    <td>70 °F</td>\n    <td>129.1</td>\n    <td>118.6</td>\n    <td>15.2</td>\n    <td>17.4</td>\n    <td>7.8</td>\n    <td>3</td>\n  </tr>\n  <tr>\n    <td>Ti-5Al-2.5Sn ELI</td>\n    <td>70 °F</td>\n    <td>108.5</td>\n    <td>100.2</td>\n    <td>24.6</td>\n    <td>9.2</td>\n    <td>9.0*</td>\n    <td>3</td>\n  </tr>\n  <tr>\n    <td>Ti-6Al-4V ELI</td>\n    <td>−423 °F</td>\n    <td>212.2</td>\n    <td>199.0†</td>\n    <td>8.7</td>\n    <td>5.6</td>\n    <td>3.3</td>\n    <td>5</td>\n  </tr>\n  <tr>\n    <td>Ti-5Al-2.5Sn ELI</td>\n    <td>−423 °F</td>\n    <td>185.0</td>\n    <td>156.9†</td>\n    <td>11.7</td>\n    <td>7.6</td>\n    <td>6.4*</td>\n    <td>5</td>\n  </tr>\n</table>\n\n*Samples broke outside 1-in gauge marks.\n†YS value for one sample only.\n\nTable 4. Ultimate tensile strength (ksi)/percent reduction in area.\n\n<table>\n  <tr>\n    <th rowspan=\"2\">Alloy</th>\n    <th colspan=\"2\">Ultimate Tensile Strength (ksi)</th>\n    <th colspan=\"2\">Percent Reduction of Area</th>\n  </tr>\n  <tr>\n    <th>Tested in Air<br>(70 °F)</th>\n    <th>Tested in LH<sub>2</sub><br>(−423 °F)</th>\n    <th>Tested in Air<br>(70 °F)</th>\n    <th>Tested in LH<sub>2</sub><br>(−423 °F)</th>\n  </tr>\n  <tr>\n    <td>Ti-5Al-2.5Sn ELI</td>\n    <td>108.4</td>\n    <td>185.0</td>\n    <td>24.6</td>\n    <td>11.7</td>\n  </tr>\n  <tr>\n    <td>Ti-6Al-4V ELI</td>\n    <td>129.1</td>\n    <td>212.2</td>\n    <td>15.2</td>\n    <td>8.7</td>\n  </tr>\n</table>"
+}

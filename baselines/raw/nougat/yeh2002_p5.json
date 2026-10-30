@@ -1,0 +1,13 @@
+{
+ "tool": "nougat",
+ "version": "facebook/nougat-base",
+ "paper_id": "yeh2002",
+ "page": 5,
+ "seconds": 8.39,
+ "settings": {
+  "image": "1600 px longest side, resized by the processor",
+  "max_new_tokens": 3584
+ },
+ "tables": [],
+ "text": "US 2002/0159914 A1 Oct. 31, 2002\n\nTABLE 3\n\n"
+}

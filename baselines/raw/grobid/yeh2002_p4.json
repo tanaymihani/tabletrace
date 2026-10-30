@@ -1,0 +1,91 @@
+{
+ "tool": "grobid",
+ "version": "0.9.1",
+ "paper_id": "yeh2002",
+ "page": 4,
+ "seconds": 1.27,
+ "settings": {
+  "endpoint": "processFulltextDocument",
+  "status": 200,
+  "device": "Kaggle CPU, 4 cores"
+ },
+ "tables": [
+  {
+   "rows": [
+    [
+     "common acid solutions",
+     "common acid solutions",
+     ""
+    ],
+    [
+     "HCl solution",
+     "H5SO solution",
+     "HNO3 solution"
+    ],
+    [
+     "1. 8",
+     "",
+     ""
+    ],
+    [
+     "11",
+     "",
+     ""
+    ],
+    [
+     "1. 9",
+     "",
+     ""
+    ],
+    [
+     "2 O",
+     "",
+     ""
+    ],
+    [
+     "X: no reaction, no color change, and no weight loss",
+     "X: no reaction, no color change, and no weight loss",
+     ""
+    ],
+    [
+     "A: small reaction, slight color change, and almost no weight loss",
+     "A: small reaction, slight color change, and almost no weight loss",
+     "A: small reaction, slight color change, and almost no weight loss"
+    ],
+    [
+     "0026 Table 2 shows that without any surface treatments,",
+     "0026 Table 2 shows that without any surface treatments,",
+     "0026 Table 2 shows that without any surface treatments,"
+    ],
+    [
+     "the high-entropy multielement alloys of the present inven",
+     "the high-entropy multielement alloys of the present inven",
+     "the high-entropy multielement alloys of the present inven"
+    ],
+    [
+     "tion provide very high acid resistance. On the contrary,",
+     "tion provide very high acid resistance. On the contrary,",
+     "tion provide very high acid resistance. On the contrary,"
+    ],
+    [
+     "carbon Steels or alloy Steels do not provide Such high acid",
+     "carbon Steels or alloy Steels do not provide Such high acid",
+     "carbon Steels or alloy Steels do not provide Such high acid"
+    ],
+    [
+     "resistance.",
+     "",
+     ""
+    ]
+   ],
+   "caption": "TABLE 2 Acid resistance of the high-entropy multielement alloys to",
+   "bbox": [
+    293.28,
+    248.34,
+    509.04,
+    575.59
+   ]
+  }
+ ],
+ "text": null
+}
