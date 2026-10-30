@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-labelledby="t d">
+  <title id="t">TableTrace pipeline</title>
+  <desc id="d">A PDF page is routed to its text layer, with clipped text removed, or to a fine-tuned Tesseract OCR. Table Transformer finds tables, rows, columns and spans. The grid is interpreted, numbers and units are normalized, records are validated and scored, and a calibrated threshold sends low-confidence values to a person.</desc>
+  <style>
+    .bg { fill: #fcfcfb; }
+    .box { fill: #ffffff; stroke: #c3c2b7; stroke-width: 1.5; }
+    .key { fill: #eaf2fc; stroke: #2a78d6; stroke-width: 2; }
+    .h { font: 600 15px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #0b0b0b; }
+    .s { font: 13px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #52514e; }
+    .lab { font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #898781; }
+    .row { font: 600 12px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #898781; letter-spacing: 0.06em; }
+    .ln { stroke: #898781; stroke-width: 1.75; fill: none; }
+    .ah { fill: #898781; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #161615; }
+      .box { fill: #1f1f1e; stroke: #4a4945; }
+      .key { fill: #13283f; stroke: #5b9be6; }
+      .h { fill: #f2f1ee; }
+      .s { fill: #bdbbb5; }
+      .lab, .row { fill: #93918b; }
+      .ln { stroke: #7d7b76; }
+      .ah { fill: #7d7b76; }
+    }
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="ah"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1200" height="430" rx="16"/>
+
+  <text class="row" x="40" y="38">READ THE PAGE</text>
+
+  <rect class="box" x="40" y="96" width="130" height="64" rx="10"/>
+  <text class="h" x="105" y="126" text-anchor="middle">PDF page</text>
+  <text class="s" x="105" y="146" text-anchor="middle">paper, patent, scan</text>
+
+  <rect class="box" x="214" y="96" width="140" height="64" rx="10"/>
+  <text class="h" x="284" y="126" text-anchor="middle">Page router</text>
+  <text class="s" x="284" y="146" text-anchor="middle">text layer or pixels?</text>
+
+  <rect class="key" x="400" y="52" width="250" height="64" rx="10"/>
+  <text class="h" x="525" y="80" text-anchor="middle">Text layer</text>
+  <text class="s" x="525" y="100" text-anchor="middle">drop text the clip hides, rebuild words</text>
+
+  <rect class="key" x="400" y="140" width="250" height="64" rx="10"/>
+  <text class="h" x="525" y="168" text-anchor="middle">OCR</text>
+  <text class="s" x="525" y="188" text-anchor="middle">Tesseract fine-tuned for ± σ ε µ</text>
+
+  <rect class="box" x="700" y="96" width="220" height="64" rx="10"/>
+  <text class="h" x="810" y="126" text-anchor="middle">Table Transformer</text>
+  <text class="s" x="810" y="146" text-anchor="middle">tables, rows, columns, spans</text>
+
+  <rect class="box" x="966" y="96" width="194" height="64" rx="10"/>
+  <text class="h" x="1063" y="126" text-anchor="middle">Words into cells</text>
+  <text class="s" x="1063" y="146" text-anchor="middle">split merged rows</text>
+
+  <path class="ln" d="M170 128 H210" marker-end="url(#a)"/>
+  <path class="ln" d="M354 128 H374 V84 H396" marker-end="url(#a)"/>
+  <path class="ln" d="M374 128 V172 H396" marker-end="url(#a)"/>
+  <text class="lab" x="380" y="78" text-anchor="end">born-digital</text>
+  <text class="lab" x="380" y="190" text-anchor="end">scan, image</text>
+  <path class="ln" d="M650 84 H675 V128 H696" marker-end="url(#a)"/>
+  <path class="ln" d="M650 172 H675 V128"/>
+  <path class="ln" d="M920 128 H962" marker-end="url(#a)"/>
+
+  <path class="ln" d="M1063 160 V222 H120 V258" marker-end="url(#a)"/>
+
+  <text class="row" x="150" y="248">TURN CELLS INTO RECORDS</text>
+
+  <rect class="box" x="40" y="262" width="168" height="72" rx="10"/>
+  <text class="h" x="124" y="292" text-anchor="middle">Interpret</text>
+  <text class="s" x="124" y="312" text-anchor="middle">headers, orientation,</text>
+  <text class="s" x="124" y="326" text-anchor="middle">conditions, dual units</text>
+
+  <rect class="box" x="246" y="262" width="168" height="72" rx="10"/>
+  <text class="h" x="330" y="292" text-anchor="middle">Normalize</text>
+  <text class="s" x="330" y="312" text-anchor="middle">numbers, ±, ranges,</text>
+  <text class="s" x="330" y="326" text-anchor="middle">units with pint</text>
+
+  <rect class="box" x="452" y="262" width="168" height="72" rx="10"/>
+  <text class="h" x="536" y="292" text-anchor="middle">Validate</text>
+  <text class="s" x="536" y="312" text-anchor="middle">Pydantic: unit, range,</text>
+  <text class="s" x="536" y="326" text-anchor="middle">sample name</text>
+
+  <rect class="box" x="658" y="262" width="168" height="72" rx="10"/>
+  <text class="h" x="742" y="292" text-anchor="middle">Confidence</text>
+  <text class="s" x="742" y="312" text-anchor="middle">OCR, header match,</text>
+  <text class="s" x="742" y="326" text-anchor="middle">second route, checks</text>
+
+  <rect class="key" x="864" y="262" width="150" height="72" rx="10"/>
+  <text class="h" x="939" y="292" text-anchor="middle">Review threshold</text>
+  <text class="s" x="939" y="312" text-anchor="middle">calibrated with</text>
+  <text class="s" x="939" y="326" text-anchor="middle">Learn-then-Test</text>
+
+  <rect class="box" x="1052" y="248" width="108" height="44" rx="10"/>
+  <text class="h" x="1106" y="275" text-anchor="middle">Accepted</text>
+  <rect class="box" x="1052" y="306" width="108" height="44" rx="10"/>
+  <text class="h" x="1106" y="333" text-anchor="middle">Person</text>
+
+  <path class="ln" d="M208 298 H242" marker-end="url(#a)"/>
+  <path class="ln" d="M414 298 H448" marker-end="url(#a)"/>
+  <path class="ln" d="M620 298 H654" marker-end="url(#a)"/>
+  <path class="ln" d="M826 298 H860" marker-end="url(#a)"/>
+  <path class="ln" d="M1014 298 H1030 V270 H1048" marker-end="url(#a)"/>
+  <path class="ln" d="M1030 298 V328 H1048" marker-end="url(#a)"/>
+  <path class="ln" d="M536 334 V372" marker-end="url(#a)"/>
+  <text class="s" x="536" y="392" text-anchor="middle">quarantine, with the reason</text>
+  <text class="lab" x="40" y="410">Every record keeps its page, table, row, column and cell box.</text>
+</svg>
