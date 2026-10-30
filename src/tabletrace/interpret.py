@@ -474,6 +474,9 @@ def _infer_dual_units(prop_cols, body, decimal_comma) -> dict[int, int]:
     return pairs
 
 
+_FORMULA = re.compile(r"^(?:[A-Z][a-z]?(?:\d+(?:\.\d+)?)?)+$")  # element symbols with optional amounts
+
+
 def _read_transposed(ctx: _Context, body, row_matches, col_info, n_cols) -> None:
     for r, row in enumerate(body):
         m = row_matches[r]
@@ -485,7 +488,10 @@ def _read_transposed(ctx: _Context, body, row_matches, col_info, n_cols) -> None
                 continue
             info = col_info[c]
             header = row[0]
-            label = info.path.split(" | ")[-1] if info.path else ""
+            parts = [x for x in info.path.split(" | ") if x] if info.path else []
+            label = parts[-1] if parts else ""
+            if len(parts) >= 2 and all(_FORMULA.match(re.sub(r"\s*\[[\d,\s–-]+\]|\s", "", x)) for x in parts[-2:]):
+                label = parts[-2] + label  # a sample name broken over two header rows ("HfMoNb" over "TaTiZr [25]")
             pair_names = re.search(r"\(\s*([A-Za-z.]+)\s*/\s*([A-Za-z.]+)\s*\)", label)
             if pair_names:  # "MoNbTaV (Calc/Exp)"
                 header = f"{row[0]} {pair_names.group(0)}"

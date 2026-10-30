@@ -56,6 +56,12 @@ python -m tabletrace baselines          # writes reports/baselines.md, .json and
 To rerun a tool, prepare the pages (`python baselines/prepare_pages.py` after `make data`), then
 run its script. The Kaggle scripts read a private dataset made by `kaggle/prepare_upload.py`.
 
+One change to TableTrace's interpretation came out of this. Some tools write a two-line column
+header as two header rows (Nougat writes `HfMoNb` above `TaTiZr`), and a transposed table took
+its sample name from the last header row only. A name split over two rows is now joined back when
+both halves are element formulas. TableTrace's own extractions are byte-identical with and without
+the change, in all four experiments.
+
 ## Things to know when reading the numbers
 
 - Several tools read the hidden duplicate tables in four of the MDPI papers too: pdfplumber,
