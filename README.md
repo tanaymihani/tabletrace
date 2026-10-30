@@ -17,12 +17,12 @@ Main results:
   0.506.
 - Against other tools on the same pages, labels and scorer, it's clearly ahead of GROBID, Camelot
   and pdfplumber, ahead of Docling on the point estimate (0.715 vs 0.452, but the interval for the
-  difference crosses zero), and level with the vision-language models. Qwen2.5-VL-7B,
-  transcribing tables that then go through TableTrace's interpretation, gets 0.784 there (paired
-  difference -0.07, interval -0.44 to +0.37). The VLMs read rendered journal pages far better than
-  Tesseract (0.950 vs 0.444) but return no location for a value, miss whole tables, and lose the
-  three-level header of the 1975 NASA report. Asked to produce the records itself, the same model
-  gets 0.288. ([comparison](#compared-with-other-tools))
+  difference crosses zero), and behind the best vision-language models on the point estimate but
+  not by more than the noise. Qwen3-VL-8B, transcribing tables that then go through TableTrace's
+  interpretation, gets 0.874 on held-out documents (paired difference -0.16, interval -0.44 to
+  +0.25) and Qwen2.5-VL-7B 0.784. The VLMs return no location for a value, miss whole tables
+  (both get nothing from the 1975 NASA report, where TableTrace gets 0.42), and asked to produce
+  the records themselves, Qwen2.5-VL gets 0.288. ([comparison](#compared-with-other-tools))
 - Four of the five MDPI papers hide a shifted duplicate of their tables in the text layer, inside a
   clipped form. Reading the raw text layer only gets 0.758; pdfplumber, Camelot and Docling all
   read the hidden copy. Tracking the clip gets 1.000.
@@ -107,6 +107,7 @@ from resampling the documents:
 | System | Held-out documents | Text-layer pages | Rendered pages | Real scans | Location it gives a value |
 |---|---|---|---|---|---|
 | **TableTrace** | **0.715** [0.50, 0.91] | 1.000 | 0.444 | 0.506 | cell box |
+| Qwen3-VL 8B, tables | 0.874 [0.51, 1.00] | 1.000 | 0.466 | 0.569 | page only |
 | Qwen2.5-VL 7B, tables | 0.784 [0.49, 0.96] | 0.870 | 0.950 | 0.383 | page only |
 | olmOCR-2 7B | 0.662 [0.49, 0.97] | 0.943 | 0.700 | 0.258 | page only |
 | Nougat base | 0.662 [0.33, 0.92] | 0.492 | 0.764 | 0.269 | page only |
@@ -120,9 +121,10 @@ from resampling the documents:
 
 What the numbers say, with ten documents behind them:
 
-- **No tool is ahead of TableTrace on held-out documents by more than the noise**, and TableTrace is
-  ahead of GROBID, Camelot and pdfplumber by more than the noise (paired intervals above zero). The
-  differences from Qwen2.5-VL, olmOCR-2, Nougat and Docling have intervals that cross zero.
+- **No tool is ahead of TableTrace on held-out documents by more than the noise**, though Qwen3-VL
+  comes closest (0.874; paired interval for the difference -0.44 to +0.25) and is perfect on six of
+  the ten documents. TableTrace is ahead of GROBID, Camelot and pdfplumber by more than the noise.
+  The differences from the VLMs, Nougat and Docling have intervals that cross zero.
 - **The VLMs are the better readers of rendered pages.** On the three journal papers rendered to
   images, Qwen2.5-VL gets 0.950 and TableTrace 0.444 (paired interval for the difference -1.00 to
   -0.30). They read `±`, σ, ε and subscripts that Tesseract mangles. Every one of Qwen's 229
@@ -143,7 +145,7 @@ What the numbers say, with ten documents behind them:
   alloy name on the Sanchez page.
 
 Not in the table: Marker 1.10 didn't finish on a Kaggle CPU machine in the time I had, and
-Qwen3-VL-8B failed to load on the Kaggle GPUs; both runners are in `baselines/`.
+Qwen3-VL only ran the table prompt, not the records one; both runners are in `baselines/`.
 Adding a VLM's reading to TableTrace's confidence score as a third route didn't beat the score
 without it on the calibration papers, so it stays off. All of it, including how each tool was run,
 is in [reports/baselines.md](reports/baselines.md) and [baselines/README.md](baselines/README.md).

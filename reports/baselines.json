@@ -1850,6 +1850,184 @@
      "docs": 3
     }
    }
+  },
+  "qwen3vl_tables": {
+   "version": "Qwen/Qwen3-VL-8B-Instruct",
+   "provenance": "page",
+   "tables": 25,
+   "pages": 16,
+   "seconds_per_page": 169.62000000000003,
+   "settings": {
+    "prompt": "Transcribe every table on this page.\n\nFor each table, first write its caption on its own line exactly as printed (for example \"Table 3. Mechanical properties of ...\"), then the table as one HTML <table>. Use <th> for header cells, and colspan or rowspan for merged cells. Copy each cell exactly as printed, including \u00b1, units, footnote marks and words such as NA. Write subscripts inline (Nb1.5TaTiZr0.5). Don't add, compute, convert or summarize anything. If there is no table on the page, answer NO TABLES.",
+    "image": "img_page",
+    "max_new_tokens": 8192,
+    "decoding": "greedy, float16, T4 x2"
+   },
+   "quarantined": 10,
+   "sets": {
+    "all documents": {
+     "strict": 0.6820388349514563,
+     "strict_ci": [
+      0.3100405103035115,
+      0.983957219251337
+     ],
+     "lenient": 0.7111650485436893,
+     "lenient_ci": [
+      0.3378839590443686,
+      1.0
+     ],
+     "n_correct": 281,
+     "n_pred": 310,
+     "n_gold": 514,
+     "docs": 10
+    },
+    "held-out documents": {
+     "strict": 0.874439461883408,
+     "strict_ci": [
+      0.5137614678899083,
+      1.0
+     ],
+     "lenient": 0.9013452914798207,
+     "lenient_ci": [
+      0.5849056603773585,
+      1.0
+     ],
+     "n_correct": 195,
+     "n_pred": 218,
+     "n_gold": 228,
+     "docs": 6
+    },
+    "text layer": {
+     "strict": 1.0,
+     "strict_ci": [
+      1.0,
+      1.0
+     ],
+     "lenient": 1.0,
+     "lenient_ci": [
+      1.0,
+      1.0
+     ],
+     "n_correct": 122,
+     "n_pred": 122,
+     "n_gold": 122,
+     "docs": 4
+    },
+    "rendered pages": {
+     "strict": 0.46551724137931033,
+     "strict_ci": [
+      0.0,
+      1.0
+     ],
+     "lenient": 0.6206896551724138,
+     "lenient_ci": [
+      0.12,
+      1.0
+     ],
+     "n_correct": 27,
+     "n_pred": 53,
+     "n_gold": 63,
+     "docs": 3
+    },
+    "real scans": {
+     "strict": 0.5689655172413793,
+     "strict_ci": [
+      0.0,
+      1.0
+     ],
+     "lenient": 0.5818965517241379,
+     "lenient_ci": [
+      0.0,
+      1.0
+     ],
+     "n_correct": 132,
+     "n_pred": 135,
+     "n_gold": 329,
+     "docs": 3
+    }
+   },
+   "diff": {
+    "all documents": {
+     "strict": -0.051486288905952526,
+     "strict_ci": [
+      -0.29528203285490345,
+      0.20902321491712794
+     ],
+     "lenient": 0.0623994151616194,
+     "lenient_ci": [
+      -0.3090646582519648,
+      0.4257918924734791
+     ],
+     "n_correct": 291,
+     "n_pred": 409,
+     "n_gold": 514,
+     "docs": 10
+    },
+    "held-out documents": {
+     "strict": -0.15903476214450463,
+     "strict_ci": [
+      -0.4351349008047544,
+      0.2542016806722689
+     ],
+     "lenient": -0.18594059174091726,
+     "lenient_ci": [
+      -0.4455155236421247,
+      0.1893220338983051
+     ],
+     "n_correct": 137,
+     "n_pred": 155,
+     "n_gold": 228,
+     "docs": 6
+    },
+    "text layer": {
+     "strict": 0.0,
+     "strict_ci": [
+      0.0,
+      0.0
+     ],
+     "lenient": 0.0,
+     "lenient_ci": [
+      0.0,
+      0.0
+     ],
+     "n_correct": 122,
+     "n_pred": 122,
+     "n_gold": 122,
+     "docs": 4
+    },
+    "rendered pages": {
+     "strict": -0.02107279693486591,
+     "strict_ci": [
+      -0.6666666666666667,
+      0.6956521739130435
+     ],
+     "lenient": -0.08735632183908049,
+     "lenient_ci": [
+      -0.6666666666666667,
+      0.5756521739130435
+     ],
+     "n_correct": 20,
+     "n_pred": 27,
+     "n_gold": 63,
+     "docs": 3
+    },
+    "real scans": {
+     "strict": -0.06302324219893451,
+     "strict_ci": [
+      -0.5304347826086957,
+      0.4207650273224044
+     ],
+     "lenient": 0.1345720391077806,
+     "lenient_ci": [
+      -0.5304347826086957,
+      0.7595628415300546
+     ],
+     "n_correct": 149,
+     "n_pred": 260,
+     "n_gold": 329,
+     "docs": 3
+    }
+   }
   }
  },
  "third_route": {

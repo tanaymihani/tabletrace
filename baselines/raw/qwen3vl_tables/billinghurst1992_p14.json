@@ -1,0 +1,15 @@
+{
+ "tool": "qwen3vl_tables",
+ "version": "Qwen/Qwen3-VL-8B-Instruct",
+ "paper_id": "billinghurst1992",
+ "page": 14,
+ "seconds": 428.73,
+ "settings": {
+  "prompt": "Transcribe every table on this page.\n\nFor each table, first write its caption on its own line exactly as printed (for example \"Table 3. Mechanical properties of ...\"), then the table as one HTML <table>. Use <th> for header cells, and colspan or rowspan for merged cells. Copy each cell exactly as printed, including ±, units, footnote marks and words such as NA. Write subscripts inline (Nb1.5TaTiZr0.5). Don't add, compute, convert or summarize anything. If there is no table on the page, answer NO TABLES.",
+  "image": "img_page",
+  "max_new_tokens": 8192,
+  "decoding": "greedy, float16, T4 x2"
+ },
+ "tables": [],
+ "text": "Table 3. Summary of test results/average of tensile mechanical properties.\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr>\n      <th>Material</th>\n      <th>Test Temp.</th>\n      <th>UTS (ksi)</th>\n      <th>YS (ksi)</th>\n      <th>Percent RA</th>\n      <th colspan=\"2\">Percent EL</th>\n      <th>No. of Samples</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th>1 in</th>\n      <th>2 in</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Ti-6Al-4V ELI</td>\n      <td>70 °F</td>\n      <td>129.1</td>\n      <td>118.6</td>\n      <td>15.2</td>\n      <td>17.4</td>\n      <td>7.8</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Ti-5Al-2.5Sn ELI</td>\n      <td>70 °F</td>\n      <td>108.5</td>\n      <td>100.2</td>\n      <td>24.6</td>\n      <td>9.2</td>\n      <td>9.0*</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Ti-6Al-4V ELI</td>\n      <td>−423 °F</td>\n      <td>212.2</td>\n      <td>199.0†</td>\n      <td>8.7</td>\n      <td>5.6</td>\n      <td>3.3</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Ti-5Al-2.5Sn ELI</td>\n      <td>−423 °F</td>\n      <td>185.0</td>\n      <td>156.9†</td>\n      <td>11.7</td>\n      <td>7.6</td>\n      <td>6.4*</td>\n      <td>5</td>\n    </tr>\n  </tbody>\n</table>\n*Samples broke outside 1-in gauge marks.\n†YS value for one sample only.\n\nTable 4. Ultimate tensile strength (ksi)/percent reduction in area.\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr>\n      <th>Alloy</th>\n      <th colspan=\"2\">Ultimate Tensile Strength (ksi)</th>\n      <th colspan=\"2\">Percent Reduction of Area</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>Tested in Air (70 °F)</th>\n      <th>Tested in LH<sub>2</sub> (−423 °F)</th>\n      <th>Tested in Air (70 °F)</th>\n      <th>Tested in LH<sub>2</sub> (−423 °F)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Ti-5Al-2.5Sn ELI</td>\n      <td>108.4</td>\n      <td>185.0</td>\n      <td>24.6</td>\n      <td>11.7</td>\n    </tr>\n    <tr>\n      <td>Ti-6Al-4V ELI</td>\n      <td>129.1</td>\n      <td>212.2</td>\n      <td>15.2</td>\n      <td>8.7</td>\n    </tr>\n  </tbody>\n</table>"
+}

@@ -68,8 +68,8 @@ the change, in all four experiments.
 - **Marker 1.10** was still running on its Kaggle CPU session after about five hours, so it isn't
   in the results. `kaggle/marker_kaggle.py` and `run_marker.py` are ready to rerun it, ideally on a
   GPU session.
-- **Qwen3-VL-8B** failed while loading on the 2 x T4 machine, after Qwen2.5-VL had finished. It's
-  still listed in `kaggle/vlm_baselines.py`.
+- **Qwen3-VL-8B** ran the table prompt only, in a session of its own (the first attempt ran out of
+  GPU memory because Qwen2.5-VL was still loaded). The records prompt wasn't run for it.
 
 ## Things to know when reading the numbers
 

@@ -1,0 +1,15 @@
+{
+ "tool": "qwen3vl_tables",
+ "version": "Qwen/Qwen3-VL-8B-Instruct",
+ "paper_id": "sanchez2019",
+ "page": 9,
+ "seconds": 78.76,
+ "settings": {
+  "prompt": "Transcribe every table on this page.\n\nFor each table, first write its caption on its own line exactly as printed (for example \"Table 3. Mechanical properties of ...\"), then the table as one HTML <table>. Use <th> for header cells, and colspan or rowspan for merged cells. Copy each cell exactly as printed, including ±, units, footnote marks and words such as NA. Write subscripts inline (Nb1.5TaTiZr0.5). Don't add, compute, convert or summarize anything. If there is no table on the page, answer NO TABLES.",
+  "image": "img_page",
+  "max_new_tokens": 8192,
+  "decoding": "greedy, float16, T4 x2"
+ },
+ "tables": [],
+ "text": "Table 3. Density (ρ) and compressive mechanical properties of the manufactured alloys at RT.\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr>\n      <th>Alloy</th>\n      <th>ρ (g/cm³)</th>\n      <th>σ<sub>y</sub> (MPa)</th>\n      <th>σ<sub>max</sub> (MPa)</th>\n      <th>ε<sub>max</sub> (%)</th>\n      <th>E (GPa)</th>\n      <th>σ<sub>max</sub>/ρ</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Al<sub>65</sub>Cu<sub>5</sub>Fe<sub>2</sub>Mg<sub>5</sub>Si<sub>15</sub>Zn<sub>5</sub></td>\n      <td>3.08</td>\n      <td>422 ± 75</td>\n      <td>482 ± 98</td>\n      <td>1</td>\n      <td>88.7 ± 04</td>\n      <td>156</td>\n    </tr>\n    <tr>\n      <td>Al<sub>65</sub>Cu<sub>5</sub>Mg<sub>5</sub>Ni<sub>15</sub>Si<sub>15</sub>Zn<sub>5</sub></td>\n      <td>3.15</td>\n      <td>534 ± 04</td>\n      <td>574 ± 32</td>\n      <td>1</td>\n      <td>107.8 ± 17</td>\n      <td>182</td>\n    </tr>\n    <tr>\n      <td>Al<sub>70</sub>Cr<sub>5</sub>Cu<sub>5</sub>Mg<sub>5</sub>Si<sub>10</sub>Zn<sub>5</sub></td>\n      <td>3.06</td>\n      <td>490 ± 18</td>\n      <td>608 ± 30</td>\n      <td>6</td>\n      <td>78.4 ± 03</td>\n      <td>199</td>\n    </tr>\n    <tr>\n      <td>Al<sub>70</sub>Cu<sub>5</sub>Mg<sub>5</sub>Mn<sub>5</sub>Si<sub>10</sub>Zn<sub>5</sub></td>\n      <td>2.98</td>\n      <td>622 ± 15</td>\n      <td>644 ± 13</td>\n      <td>2</td>\n      <td>114.1 ± 02</td>\n      <td>216</td>\n    </tr>\n    <tr>\n      <td>Al<sub>70</sub>Cu<sub>5</sub>Mg<sub>5</sub>Si<sub>10</sub>Zn<sub>5</sub>Zr<sub>5</sub></td>\n      <td>3.06</td>\n      <td>565 ± 79</td>\n      <td>633 ± 42</td>\n      <td>4</td>\n      <td>105.1 ± 27</td>\n      <td>207</td>\n    </tr>\n  </tbody>\n</table>"
+}

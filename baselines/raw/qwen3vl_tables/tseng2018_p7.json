@@ -1,0 +1,15 @@
+{
+ "tool": "qwen3vl_tables",
+ "version": "Qwen/Qwen3-VL-8B-Instruct",
+ "paper_id": "tseng2018",
+ "page": 7,
+ "seconds": 93.24,
+ "settings": {
+  "prompt": "Transcribe every table on this page.\n\nFor each table, first write its caption on its own line exactly as printed (for example \"Table 3. Mechanical properties of ...\"), then the table as one HTML <table>. Use <th> for header cells, and colspan or rowspan for merged cells. Copy each cell exactly as printed, including ±, units, footnote marks and words such as NA. Write subscripts inline (Nb1.5TaTiZr0.5). Don't add, compute, convert or summarize anything. If there is no table on the page, answer NO TABLES.",
+  "image": "img_page",
+  "max_new_tokens": 8192,
+  "decoding": "greedy, float16, T4 x2"
+ },
+ "tables": [],
+ "text": "Table 3. The room temperature compressive yield strength and fracture strain of the Hf-Mo-Nb-Ta-Ti-Zr alloy series.\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr>\n      <th></th>\n      <th>HfMoNb TaTiZr</th>\n      <th>HfNbTa TiZr [25]</th>\n      <th>HfMoTa TiZr</th>\n      <th>HfMoNb TiZr</th>\n      <th>HfMoNb TaZr</th>\n      <th>HfMoNb TaTi</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Yield strength (MPa)</td>\n      <td>1512</td>\n      <td>929</td>\n      <td>1600</td>\n      <td>1351</td>\n      <td>1524</td>\n      <td>1369</td>\n    </tr>\n    <tr>\n      <td>Fracture strain (%)</td>\n      <td>12</td>\n      <td>&gt; 50</td>\n      <td>4</td>\n      <td>20</td>\n      <td>16</td>\n      <td>27</td>\n    </tr>\n  </tbody>\n</table>\n\nTable 4. The elevated temperature compressive yield strength (MPa) of the Hf-Mo-Nb-Ta-Ti-Zr alloy series.\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr>\n      <th>Temperature (°C)</th>\n      <th>HfMoNb TaTiZr</th>\n      <th>HfNbTa TiZr [25]</th>\n      <th>HfMoTa TiZr</th>\n      <th>HfMoNb TiZr</th>\n      <th>HfMoNb TaZr</th>\n      <th>HfMoNb TaTi</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>800</td>\n      <td>1007</td>\n      <td>535</td>\n      <td>1045</td>\n      <td>829</td>\n      <td>1005</td>\n      <td>822</td>\n    </tr>\n    <tr>\n      <td>1000</td>\n      <td>814</td>\n      <td>295</td>\n      <td>855</td>\n      <td>721</td>\n      <td>927</td>\n      <td>778</td>\n    </tr>\n    <tr>\n      <td>1200</td>\n      <td>556</td>\n      <td>92</td>\n      <td>404</td>\n      <td>301</td>\n      <td>694</td>\n      <td>699</td>\n    </tr>\n    <tr>\n      <td>1400</td>\n      <td>N. A.</td>\n      <td>N. A.</td>\n      <td>N. A.</td>\n      <td>N. A.</td>\n      <td>278</td>\n      <td>367</td>\n    </tr>\n  </tbody>\n</table>"
+}

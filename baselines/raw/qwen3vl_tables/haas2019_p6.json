@@ -1,0 +1,15 @@
+{
+ "tool": "qwen3vl_tables",
+ "version": "Qwen/Qwen3-VL-8B-Instruct",
+ "paper_id": "haas2019",
+ "page": 6,
+ "seconds": 77.75,
+ "settings": {
+  "prompt": "Transcribe every table on this page.\n\nFor each table, first write its caption on its own line exactly as printed (for example \"Table 3. Mechanical properties of ...\"), then the table as one HTML <table>. Use <th> for header cells, and colspan or rowspan for merged cells. Copy each cell exactly as printed, including ±, units, footnote marks and words such as NA. Write subscripts inline (Nb1.5TaTiZr0.5). Don't add, compute, convert or summarize anything. If there is no table on the page, answer NO TABLES.",
+  "image": "img_page",
+  "max_new_tokens": 8192,
+  "decoding": "greedy, float16, T4 x2"
+ },
+ "tables": [],
+ "text": "Table 2. Ultimate tensile strength (UTS) and strain to failure (εf) at different temperature levels for the conventionally cast (CC) state and the directionally solidified (DS) state.\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr>\n      <th colspan=\"2\">UTS in MPa</th>\n      <th colspan=\"2\">YS in MPa</th>\n      <th colspan=\"2\">εf in %</th>\n    </tr>\n    <tr>\n      <th>CC</th>\n      <th>DS</th>\n      <th>CC</th>\n      <th>DS</th>\n      <th>CC</th>\n      <th>DS</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>~23 °C</td>\n      <td>696 ± 33</td>\n      <td>1197 ± 6</td>\n      <td>520 ± 19</td>\n      <td>627 ± 9</td>\n      <td>49 ± 0</td>\n      <td>27 ± 1</td>\n    </tr>\n    <tr>\n      <td>600 °C</td>\n      <td>561 ± 50</td>\n      <td>1006 ± 16</td>\n      <td>470 ± 8</td>\n      <td>594 ± 3</td>\n      <td>11 ± 8</td>\n      <td>12 ± 2</td>\n    </tr>\n    <tr>\n      <td>700 °C</td>\n      <td>560 ± 27</td>\n      <td>840 ± 1</td>\n      <td>461 ± 10</td>\n      <td>547 ± 42</td>\n      <td>9 ± 4</td>\n      <td>17 ± 5</td>\n    </tr>\n    <tr>\n      <td>800 °C</td>\n      <td>536 ± 7</td>\n      <td>575 ± 7</td>\n      <td>445 ± 2</td>\n      <td>399 ± 1</td>\n      <td>6 ± 4</td>\n      <td>20 ± 4</td>\n    </tr>\n    <tr>\n      <td>900 °C</td>\n      <td>312 ± 6</td>\n      <td>319 ± 1</td>\n      <td>219 ± 6</td>\n      <td>243 ± 2</td>\n      <td>8 ± 6</td>\n      <td>34 ± 1</td>\n    </tr>\n  </tbody>\n</table>"
+}
