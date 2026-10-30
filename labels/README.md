@@ -51,6 +51,6 @@ independent read of those tables would be the most useful thing to do next for l
 - **Hidden duplicate tables.** Four of the five MDPI papers (all except Chen 2014) embed a whole page
   of the author's manuscript as a Form XObject so a vector figure can be reused. The viewer clips it
   to the figure, but text extractors ignore the clipping, so the text layer has a second copy of the
-  table shifted down by one row. `tables_text.py` drops characters that sit inside embedded figures.
+  table shifted down by one row. `tables_text.py` drops the characters drawn outside the clip.
 - **Typos.** Table 7 in US20020159914A1 reuses the alloy numbers 30 to 34 from Table 6, while the
   text calls them 35 to 39. The labels keep the printed numbers.

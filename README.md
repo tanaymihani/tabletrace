@@ -76,7 +76,7 @@ labels of each.
 | Real scans, OCR layer that comes in the PDF vs TableTrace OCR | F1 0.265 vs 0.506 |
 | Text layer with vs without the hidden-text filter | F1 1.000 vs 0.758 |
 | OCR on table regions of the image-only papers, stock vs fine-tuned Tesseract | CER 27.9% vs 18.8% (WER 52.0% vs 29.6%) |
-| OCR on whole pages of the same papers, stock vs fine-tuned | CER 7.5% vs 6.8% |
+| OCR on whole pages of the same papers, stock vs fine-tuned | CER 7.5% vs 6.9% |
 | LitXAlloy values that come from tables, found in the 7 journal papers | 74 of 74 |
 
 It all runs on my laptop CPU (an 8 GB M2). After the OCR cache is built, the ten documents take
@@ -165,8 +165,13 @@ papers embed a full page of the author's manuscript as a Form XObject, just to r
 figure. The PDF viewer clips it to the figure area. pdfminer (and so pdfplumber) and pdfium's text
 API ignore the clipping, so the text layer ends up with a second copy of every table on that page,
 shifted down by one row. Plain pdfplumber reads `HfNbTaTiZr 1155` as `NHbfTNabTTiZarT 11550 .2`.
-Dropping the characters inside embedded figures fixes it completely. That's 9,202 hidden characters
-on the labeled pages of three papers. Without that filter, text-layer F1 drops from 1.000 to 0.758.
+Interpreting each page a second time with the clip tracked (clipping paths and form boxes, kept as
+rectangles), and dropping the characters drawn outside it, fixes it completely. That's 9,183 hidden
+characters on the labeled pages of three papers. Without that filter, text-layer F1 drops from
+1.000 to 0.758. Docling's own PDF parser has the same problem, and
+pdfminer also reads a form's `/BBox` as x, y, width, height when it builds figure boxes, so a
+figure whose box doesn't start at the origin comes out too big. The two-page test file in
+`tests/data/clipped_text.pdf` reproduces both kinds of clip in 1.5 KB.
 
 **Tesseract can't output ±.** The stock English LSTM model doesn't have `±`, `σ`, `ε` or `µ` in its
 character set. So "value ± uncertainty" cells come out as `422+75`, `534404` or `1148`, and σ or ε

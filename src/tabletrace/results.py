@@ -314,7 +314,7 @@ def write_reports(alpha: float = 0.10) -> dict:
                                    "hidden_chars_by_paper": ghosts}
         lines += ["## Ablation: hidden text in the PDF text layer", "",
                   "The born-digital papers read through their text layer with and without the filter that drops "
-                  "characters clipped inside embedded figures ("
+                  "characters drawn outside the clip, all of them hidden by an embedded figure's bounding box ("
                   + ", ".join(f"{k}: {v:,} hidden characters" for k, v in ghosts.items()) + ").", "",
                   PRF_HEADER.replace("Split", "Text layer"), _prf_row("With the filter", with_f),
                   _prf_row("Without (the raw text layer)", without), ""]

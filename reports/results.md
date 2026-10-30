@@ -28,7 +28,7 @@ Every page of every document, not only the labeled ones:
 | Document route | Pages | Sent to text layer | Sent to OCR | Pages where text inside embedded figures was dropped |
 |---|---|---|---|---|
 | OCR: rendered pages | 41 | 0 | 41 | 0 |
-| Text layer | 56 | 56 | 0 | 24 |
+| Text layer | 56 | 56 | 0 | 23 |
 | OCR: real scans | 52 | 0 | 52 | 0 |
 
 ## Value extraction
@@ -116,17 +116,17 @@ OCR text against the original text layer of the same pages (jiwer, geometric rea
 | Model | Scope | CER | WER |
 |---|---|---|---|
 | stock | pages: chen2014 | 4.6% | 10.6% |
-| stock | pages: haas2019 | 8.6% | 15.3% |
-| stock | pages: sanchez2019 | 8.5% | 13.3% |
+| stock | pages: haas2019 | 8.9% | 15.3% |
+| stock | pages: sanchez2019 | 8.4% | 13.3% |
 | stock | pages: all | 7.5% | 13.2% |
 | stock | tables: chen2014 | 9.5% | 29.0% |
 | stock | tables: haas2019 | 19.2% | 49.6% |
 | stock | tables: sanchez2019 | 43.9% | 64.9% |
 | stock | tables: all | 27.9% | 52.0% |
 | finetuned | pages: chen2014 | 4.9% | 12.5% |
-| finetuned | pages: haas2019 | 8.3% | 14.8% |
-| finetuned | pages: sanchez2019 | 7.0% | 12.7% |
-| finetuned | pages: all | 6.8% | 13.3% |
+| finetuned | pages: haas2019 | 8.5% | 14.8% |
+| finetuned | pages: sanchez2019 | 7.0% | 12.8% |
+| finetuned | pages: all | 6.9% | 13.4% |
 | finetuned | tables: chen2014 | 6.0% | 25.8% |
 | finetuned | tables: haas2019 | 8.5% | 18.3% |
 | finetuned | tables: sanchez2019 | 33.7% | 48.1% |
@@ -169,7 +169,7 @@ Values printed with ± recovered with the right uncertainty: stock 27 of 47, fin
 
 ## Ablation: hidden text in the PDF text layer
 
-The born-digital papers read through their text layer with and without the filter that drops characters clipped inside embedded figures (yao2016: 2,151 hidden characters, tseng2018: 5,402 hidden characters, zyka2019: 1,649 hidden characters).
+The born-digital papers read through their text layer with and without the filter that drops characters drawn outside the clip, all of them hidden by an embedded figure's bounding box (yao2016: 2,150 hidden characters, tseng2018: 5,384 hidden characters, zyka2019: 1,649 hidden characters).
 
 | Text layer | Labels | Extracted | Precision | Recall | F1 (strict) | F1 (lenient) |
 |---|---|---|---|---|---|---|

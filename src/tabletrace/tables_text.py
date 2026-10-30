@@ -3,10 +3,10 @@
 Two problems with real text layers are handled here:
 
 * Ghost text. Several MDPI PDFs embed a whole page of the author's manuscript
-  as a Form XObject so a vector figure can be reused; the renderer clips it to
-  the figure, but pdfminer ignores the clip and returns every character,
-  including a second copy of the table. Characters inside embedded figures are
-  dropped (tables are never drawn inside those figures in this corpus).
+  as a Form XObject so a vector figure can be reused; the form's /BBox clips it
+  to the figure, but pdfminer ignores clipping and returns every character,
+  including a second copy of the table. The page is interpreted once more with
+  clipping tracked, and characters drawn outside the clip are dropped.
 * Subscripts. "Nb1.5TaTiZr0.5" is typeset as five runs on two baselines. Words
   are rebuilt from characters so that subscripts join the line they belong to.
 """
@@ -19,7 +19,12 @@ from functools import lru_cache
 from pathlib import Path
 
 import pdfplumber
-from pdfminer.layout import LTChar, LTFigure
+from pdfminer.converter import PDFPageAggregator
+from pdfminer.layout import LTChar
+from pdfminer.pdfinterp import LITERAL_FORM, PDFPageInterpreter
+from pdfminer.pdftypes import list_value, stream_value
+from pdfminer.psparser import literal_name
+from pdfminer.utils import MATRIX_IDENTITY, apply_matrix_pt, apply_matrix_rect, mult_matrix
 
 from .grid import BBox, Word, assign_words, cluster_rows
 
@@ -31,30 +36,127 @@ SPACE_GAP = 0.15  # gap above this fraction of the font size starts a new word
 @dataclass
 class TextLayerInfo:
     n_chars: int  # visible characters
-    n_ghost: int  # characters dropped because they were clipped inside embedded figures
+    n_ghost: int  # characters drawn outside the clip in effect (invisible), mostly hidden by figure boxes
     full_page_image: bool  # one raster image covers most of the page (a scan)
     text_coverage: float  # fraction of the page area covered by character boxes
 
 
-def _figure_char_keys(page: pdfplumber.page.Page) -> set[tuple[float, float, str]]:
-    keys: set[tuple[float, float, str]] = set()
+def _intersect(a, b):
+    if a is None or b is None:
+        return b if a is None else a
+    x0, y0, x1, y1 = max(a[0], b[0]), max(a[1], b[1]), min(a[2], b[2]), min(a[3], b[3])
+    return (x0, y0, x1, y1) if x0 <= x1 and y0 <= y1 else (x0, y0, x0, y0)  # empty: nothing shows
 
-    def walk(obj, inside: bool) -> None:
-        if isinstance(obj, LTChar):
-            if inside:
-                keys.add((round(obj.x0, 2), round(obj.y0, 2), obj.get_text()))
-            return
-        if hasattr(obj, "__iter__"):
-            for child in obj:
-                walk(child, inside or isinstance(obj, LTFigure))
 
-    walk(page.layout, False)
-    return keys
+class _ClipDevice(PDFPageAggregator):
+    """Keeps every character the way pdfminer does, and notes the ones drawn outside the clip."""
+
+    def __init__(self, rsrcmgr, pageno: int):
+        super().__init__(rsrcmgr, pageno=pageno)
+        self.clip = None
+        self.hidden: set[tuple[float, float, str]] = set()
+
+    def render_char(self, *args, **kwargs):
+        adv = super().render_char(*args, **kwargs)
+        item = self.cur_item._objs[-1] if self.cur_item._objs else None
+        if self.clip is not None and isinstance(item, LTChar):
+            cx, cy = (item.x0 + item.x1) / 2, (item.y0 + item.y1) / 2
+            x0, y0, x1, y1 = self.clip
+            if not (x0 - 0.5 <= cx <= x1 + 0.5 and y0 - 0.5 <= cy <= y1 + 0.5):
+                self.hidden.add((round(item.x0, 2), round(item.y0, 2), item.get_text()))
+        return adv
+
+
+class _ClipInterpreter(PDFPageInterpreter):
+    """pdfminer's interpreter plus the clipping it skips (do_W is a no-op there, issue #414).
+
+    The clip is kept as a rectangle: the bounding box of each clipping path (W, W*), and of each
+    Form XObject's /BBox, which clips the form's content (PDF 32000-1, 8.10.1), intersected down
+    the graphics-state stack. A rectangle is exact for the usual "re W n" clips and for form
+    boxes, and errs towards keeping text for other shapes.
+    """
+
+    inherited_clip = None
+
+    def init_state(self, ctm):
+        super().init_state(ctm)
+        self.clip = self.inherited_clip
+        self.pending_clip = False
+        self.child_clip = None
+
+    def dup(self):
+        child = super().dup()
+        child.inherited_clip = self.child_clip
+        return child
+
+    def get_current_state(self):
+        return (*super().get_current_state(), self.clip)
+
+    def set_current_state(self, state):
+        *base, self.clip = state
+        super().set_current_state(tuple(base))
+
+    def do_W(self):
+        self.pending_clip = True
+
+    def do_W_a(self):
+        self.pending_clip = True
+
+    def _end_path(self):
+        # the clipping path takes effect when the path is ended (usually by n)
+        if self.pending_clip:
+            pts = [apply_matrix_pt(self.ctm, (seg[i], seg[i + 1]))
+                   for seg in self.curpath for i in range(1, len(seg) - 1, 2)]
+            if pts:
+                xs, ys = zip(*pts)
+                self.clip = _intersect(self.clip, (min(xs), min(ys), max(xs), max(ys)))
+            self.pending_clip = False
+
+    def do_n(self):
+        self._end_path()
+        super().do_n()
+
+    def do_f(self):
+        self._end_path()
+        super().do_f()
+
+    def do_S(self):
+        self._end_path()
+        super().do_S()
+
+    def do_TJ(self, seq):
+        self.device.clip = self.clip
+        super().do_TJ(seq)
+
+    def do_Do(self, xobjid_arg):
+        self.child_clip = self.clip
+        try:
+            xobj = stream_value(self.xobjmap[literal_name(xobjid_arg)])
+            if xobj.get("Subtype") is LITERAL_FORM and "BBox" in xobj:
+                x0, y0, x1, y1 = (float(v) for v in list_value(xobj["BBox"]))
+                matrix = list_value(xobj.get("Matrix", MATRIX_IDENTITY))
+                box = apply_matrix_rect(mult_matrix(matrix, self.ctm), (min(x0, x1), min(y0, y1), max(x0, x1), max(y0, y1)))
+                self.child_clip = _intersect(self.clip, box)
+        except (KeyError, TypeError, ValueError):
+            pass
+        super().do_Do(xobjid_arg)
+        self.device.clip = self.clip
+
+
+def clipped_char_keys(page: pdfplumber.page.Page) -> set[tuple[float, float, str]]:
+    """Characters drawn outside the clip in effect, so never visible.
+
+    The page is interpreted a second time with clipping tracked; the keys match pdfminer's own
+    characters, which is what pdfplumber's chars are built from.
+    """
+    device = _ClipDevice(page.pdf.rsrcmgr, page.page_number)
+    _ClipInterpreter(page.pdf.rsrcmgr, device).process_page(page.page_obj)
+    return device.hidden
 
 
 def visible_page(page: pdfplumber.page.Page) -> tuple[pdfplumber.page.Page, int]:
-    """Return the page without characters that sit inside embedded figures."""
-    keys = _figure_char_keys(page)
+    """Return the page without the characters that embedded figures clip away."""
+    keys = clipped_char_keys(page)
     if not keys:
         return page, 0
     height = page.height

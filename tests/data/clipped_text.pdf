@@ -1,0 +1,62 @@
+%PDF-1.3
+%¿÷¢þ
+1 0 obj
+<< /Pages 2 0 R /Type /Catalog >>
+endobj
+2 0 obj
+<< /Count 2 /Kids [ 3 0 R 4 0 R ] /Type /Pages >>
+endobj
+3 0 obj
+<< /Contents 5 0 R /MediaBox [ 0 0 612 792 ] /Parent 2 0 R /Resources << /Font << /F1 6 0 R >> /XObject << /Fm1 7 0 R >> >> /Type /Page >>
+endobj
+4 0 obj
+<< /Contents 8 0 R /MediaBox [ 0 0 612 792 ] /Parent 2 0 R /Resources << /Font << /F1 6 0 R >> >> /Type /Page >>
+endobj
+5 0 obj
+<< /Length 140 >>
+stream
+BT /F1 12 Tf 72 720 Td (Table 1. Hardness of the alloys) Tj ET
+BT /F1 12 Tf 72 700 Td (HfNbTaTiZr 1155) Tj ET
+q 1 0 0 1 22 350 cm /Fm1 Do Q
+
+endstream
+endobj
+6 0 obj
+<< /BaseFont /Helvetica /Subtype /Type1 /Type /Font >>
+endobj
+7 0 obj
+<< /BBox [ 50 50 250 150 ] /Resources << /Font << /F1 6 0 R >> >> /Subtype /Form /Type /XObject /Length 120 >>
+stream
+0.85 g 60 60 180 80 re f 0 g
+BT /F1 10 Tf 70 100 Td (Figure label) Tj ET
+BT /F1 12 Tf 70 300 Td (HfNbTaTiZr 1144) Tj ET
+
+endstream
+endobj
+8 0 obj
+<< /Length 218 >>
+stream
+BT /F1 12 Tf 72 720 Td (Visible line) Tj ET
+q 72 600 200 30 re W n
+BT /F1 12 Tf 80 610 Td (Inside the clip) Tj ET
+BT /F1 12 Tf 80 560 Td (Outside the clip) Tj ET
+Q
+BT /F1 12 Tf 72 500 Td (After Q, visible again) Tj ET
+
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000129 00000 n 
+0000000283 00000 n 
+0000000411 00000 n 
+0000000602 00000 n 
+0000000672 00000 n 
+0000000936 00000 n 
+trailer << /Root 1 0 R /Size 9 /ID [<8c70f3832da1ed2b41c56c89439ce17a><8c70f3832da1ed2b41c56c89439ce17a>] >>
+startxref
+1205
+%%EOF
