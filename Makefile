@@ -2,7 +2,7 @@
 PY ?= .venv/bin/python
 export HF_HUB_DISABLE_PROGRESS_BARS = 1
 
-.PHONY: all data model run eval test labels litx review ocr-model clean
+.PHONY: all data model run eval test labels litx review ocr-model hf-release clean
 
 all: data model run eval
 
@@ -45,3 +45,7 @@ clean:
 ## build outputs/label_review/index.html: each labeled table next to its labels, for a second pass
 review:
 	$(PY) scripts/label_review.py
+
+## build the Hugging Face dataset and model folders in outputs/hf (printed commands upload them)
+hf-release:
+	$(PY) scripts/build_hf_release.py

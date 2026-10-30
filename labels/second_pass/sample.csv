@@ -1,0 +1,51 @@
+label_id,paper_id,page,table_index,material,property,test_temperature_c,loading,condition
+billinghurst1992-T2-014,billinghurst1992,13,2,2335,elongation,-252.8,tension,"Ti-5Al-2.5Sn, tested in LH2; 1 in gauge"
+billinghurst1992-T2-031,billinghurst1992,13,2,2344,elongation,21.1,tension,"Ti-6Al-4V, tested in Air; 1 in gauge"
+billinghurst1992-T2-052,billinghurst1992,13,2,2342,elongation,-252.8,tension,"Ti-6Al-4V, tested in LH2; 2 in gauge"
+billinghurst1992-T2-055,billinghurst1992,13,2,2343,elongation,-252.8,tension,"Ti-6Al-4V, tested in LH2; 1 in gauge"
+billinghurst1992-T3-002,billinghurst1992,14,3,Ti-6Al-4V ELI,yield_strength,21.1,tension,
+billinghurst1992-T3-013,billinghurst1992,14,3,Ti-5Al-2.5Sn ELI,ultimate_strength,-252.8,tension,
+billinghurst1992-T3-014,billinghurst1992,14,3,Ti-5Al-2.5Sn ELI,yield_strength,-252.8,tension,
+billinghurst1992-T3-015,billinghurst1992,14,3,Ti-5Al-2.5Sn ELI,elongation,-252.8,tension,1 in gauge
+chen2014-T3-006,chen2014,7,3,Al1.5,yield_strength,,,
+gray1975-T1-003,gray1975,13,1,Ti-25Nb,ultimate_strength,500,tension,
+gray1975-T1-005,gray1975,13,1,Ti-25Nb,ultimate_strength,650,tension,
+gray1975-T1-025,gray1975,13,1,Ti-40Nb-2Si,ultimate_strength,23,tension,
+gray1975-T1-027,gray1975,13,1,Ti-40Nb-2Si,ultimate_strength,500,tension,
+gray1975-T1-033,gray1975,13,1,Ti-50Nb-5Al,ultimate_strength,23,tension,
+gray1975-T1-048,gray1975,13,1,Ti-20Mo-25V,elongation,23,tension,
+gray1975-T1-052,gray1975,13,1,Ti-25Mo-25V,elongation,500,tension,
+gray1975-T1-067,gray1975,13,1,Ti-50V,ultimate_strength,500,tension,replicate 2
+gray1975-T1-088,gray1975,13,1,Ti-50V-3Si,elongation,23,tension,
+gray1975-T1-098,gray1975,13,1,Ti-50V-1Al,elongation,650,tension,
+gray1975-T1-102,gray1975,13,1,Ti-50V-3Al,elongation,500,tension,
+gray1975-T1-104,gray1975,13,1,Ti-50V-3Al,elongation,650,tension,
+gray1975-T1-115,gray1975,13,1,Ti-50V-7Al,ultimate_strength,500,tension,
+gray1975-T1-142,gray1975,13,1,Ti-50V-3Al-1.2Si,elongation,23,tension,
+gray1975-T1-159,gray1975,13,1,Ti-50V-5Al-1Si,ultimate_strength,500,tension,
+gray1975-T1-160,gray1975,13,1,Ti-50V-5Al-1Si,elongation,500,tension,
+gray1975-T1-178,gray1975,13,1,Ti-50V-1.7Al-1.5Si,elongation,500,tension,
+gray1975-T1-179,gray1975,13,1,Ti-50V-2.3Al-1.5Si,ultimate_strength,23,tension,
+gray1975-T1-183,gray1975,13,1,Ti-50V-3.4Al-1.5Si,ultimate_strength,23,tension,
+haas2019-T2-012,haas2019,6,2,DS,elongation,600,tension,directionally solidified
+haas2019-T2-013,haas2019,6,2,CC,ultimate_strength,700,tension,conventionally cast
+haas2019-T2-019,haas2019,6,2,CC,ultimate_strength,800,tension,conventionally cast
+haas2019-T2-025,haas2019,6,2,CC,ultimate_strength,900,tension,conventionally cast
+rickman2019-T2-002,rickman2019,5,2,Ti18Ni24Ta12Cr22Co24,vickers_hardness,,,
+sanchez2019-T3-015,sanchez2019,9,3,Al70Cu5Mg5Si10Zn5Zr5,elongation,,compression,
+tseng2018-T3-011,tseng2018,7,3,HfMoNbTaZr,elongation,,compression,
+tseng2018-T4-009,tseng2018,7,4,HfMoTaTiZr,yield_strength,1000,compression,
+tseng2018-T4-017,tseng2018,7,4,HfMoNbTaZr,yield_strength,1200,compression,
+yao2016-T1-008,yao2016,3,1,Ta,yield_strength,,,
+yeh2002-T1-004,yeh2002,3,1,2,vickers_hardness,,,"heat-treated 1000 °C / 12 h, furnace cooled"
+yeh2002-T1-007,yeh2002,3,1,4,vickers_hardness,,,as-cast
+yeh2002-T1-022,yeh2002,3,1,11,vickers_hardness,,,"heat-treated 1000 °C / 12 h, furnace cooled"
+yeh2002-T4-001,yeh2002,5,4,Alloy No. 21,vickers_hardness,,,rapidly solidified
+zyka2019-T3-009,zyka2019,4,3,NbTaTi,yield_strength,,,
+zyka2019-T3-010,zyka2019,4,3,NbTaTi,ultimate_strength,,,
+zyka2019-T3-019,zyka2019,4,3,NbTiZr,vickers_hardness,,,
+zyka2019-T3-022,zyka2019,4,3,Nb1.5TaTiZr0.5,elongation,,,
+zyka2019-T7-002,zyka2019,14,7,HfNbTaTiZr,yield_strength,,,
+zyka2019-T7-012,zyka2019,14,7,NbTaTi,elongation,,,
+zyka2019-T7-035,zyka2019,14,7,NbTa0.6Ti1.4Zr,elongation,,,
+zyka2019-T7-041,zyka2019,14,7,NbTa0.2Ti1.8Zr,elongation,,,

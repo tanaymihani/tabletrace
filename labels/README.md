@@ -42,9 +42,19 @@ changing a label.
 LitXAlloy comparison.
 
 The rest of the values (the patent, the elongation columns of TM X-3216, and Tables 3 and 4 of
-TP-3288) were only checked against the page image and the OCR layer in the PDF. A second
-independent read of those tables would be the most useful thing to do next for label quality.
-`make review` builds a local page with each labeled table next to its labels to make that faster.
+TP-3288) were only checked against the page image and the OCR layer in the PDF. `make review`
+builds a local page with each labeled table next to its labels, for anyone who wants to check them.
+
+## Second pass
+
+A month after the first pass, 50 labels were drawn at random (seed 20261030) and listed without
+their values, only the sample name, property, temperature and condition
+(`second_pass/sample.csv`). Each value was then found and read again from a fresh render of the
+page (`second_pass/readings.csv`) before comparing. All 50 agree with the printed number in the
+labels, which puts a one-sided 95% upper bound of 5.8% on the transcription error rate
+(`python labels/second_pass/compare.py`). The sample covers all 10 documents and 19 values
+from the typewritten NASA report. It checks reading and locating values. It can't catch a rule
+applied the same wrong way twice, since the same person did both passes.
 
 ## Problems in the source documents
 
